@@ -8,5 +8,6 @@ class ResponseParser:
         result = content["result"]
         status = bool(int(content["status"]))
         message = content["message"]
-        assert status, f"{result} -- {message}"
+        if not status:
+            raise AssertionError(f"{result} -- {message}")
         return result
