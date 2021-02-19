@@ -10,9 +10,7 @@
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
 
-A complete Python API for [BscScan.io](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). 
-
-Powered by [BscScan.com APIs](https://bscscan.com/apis).
+A complete Python API for [BscScan.io](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). Powered by [BscScan.com APIs](https://bscscan.com/apis).
 
 *This is a gently modified fork of the [etherscan-python](https://github.com/pcko1/etherscan-python) package.*
 
