@@ -10,9 +10,9 @@
 [![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
 
 
-A minimal, yet complete, Python API for [Bscscan.io](https://bscscan.com/). All standard endpoints are provided.
+A complete Python API for [BscScan.io](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). 
 
-Available on [PyPI](https://pypi.org/project/bscscan-python/). Powered by [Bscscan.io APIs](https://bscscan.io/apis).
+Powered by [BscScan.com APIs](https://bscscan.com/apis).
 
 *This is a gently modified fork of the [etherscan-python](https://github.com/pcko1/etherscan-python) package.*
 
@@ -74,7 +74,7 @@ The following endpoints are provided:
 
 ## Installation
 
-Before proceeding, you should register an account on [Bscscan.com](https://bscscan.com/) and [generate a personal API key](https://bscscan.com/myapikey) to use. 
+Before proceeding, you should register an account on [BscScan.com](https://bscscan.com/) and [generate a personal API key](https://bscscan.com/myapikey) to use. 
 
 Install from source:
 
@@ -100,11 +100,11 @@ This will regenerate the logs under `logs/` with the most recent results and the
 
 ## Usage
 
-In `python`, create a client with your personal [Bscscan.com](https://bscscan.com/) API key:
+In `python`, create a client with your personal [BscScan.com](https://bscscan.com/) API key:
 
 ``` python
-from bscscan import Bscscan
-bsc = Bscscan(YOUR_API_KEY) # key in quotation marks
+from bscscan import BscScan
+bsc = BscScan(YOUR_API_KEY) # key in quotation marks
 ```
 
 Then you can call all available methods, e.g.:
@@ -147,14 +147,14 @@ For problems regarding installing or using the package please open an [issue](ht
 
 ## Cite
 
-Kotsias, P. C., A Python API for Etherscan.io. *https://github.com/pcko1/bscscan-python (2020)*. doi:XX.XXXX/zenodo.XXXXXXX
+Kotsias, P. C., A Python API for BscScan.com. *https://github.com/pcko1/bscscan-python (2020)*. doi:XX.XXXX/zenodo.XXXXXXX
 
 or in ```bibtex```:
 
 ```bibtex
 @misc{Kotsias2020,
   author = {Kotsias, P.C.},
-  title = {A Python API for Bscscan.com},
+  title = {A Python API for BscScan.com},
   year = {2021},
   publisher = {GitHub},
   journal = {GitHub repository},
