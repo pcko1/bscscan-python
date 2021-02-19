@@ -7,7 +7,7 @@
 [![PyPI](https://badge.fury.io/py/etherscan-python.svg)](https://badge.fury.io/py/bscscan-python)
 ![GitHub](https://img.shields.io/github/license/pcko1/bscscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
-[![DOI](https://zenodo.org/badge/298646404.svg)](https://zenodo.org/badge/latestdoi/298646404)
+[![DOI](https://zenodo.org/badge/340319392.svg)](https://zenodo.org/badge/latestdoi/340319392)
 
 
 A complete Python API for [BscScan.io](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). Powered by [BscScan.com APIs](https://bscscan.com/apis).
@@ -145,7 +145,7 @@ For problems regarding installing or using the package please open an [issue](ht
 
 ## Cite
 
-Kotsias, P. C., A Python API for BscScan.com. *https://github.com/pcko1/bscscan-python (2020)*. doi:XX.XXXX/zenodo.XXXXXXX
+Kotsias, P. C., A Python API for BscScan.com. *https://github.com/pcko1/bscscan-python (2020)*. doi:10.5281/zenodo.4551169
 
 or in ```bibtex```:
 
@@ -157,7 +157,7 @@ or in ```bibtex```:
   publisher = {GitHub},
   journal = {GitHub repository},
   url = {https://github.com/pcko1/bscscan-python},
-  doi = {XX.XXXX/zenodo.XXXXXX}
+  doi = {10.5281/zenodo.4551169}
 }
 ```
 
