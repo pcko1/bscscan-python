@@ -1,9 +1,8 @@
 # bscscan-python
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39faec4c53e45cda03c92d216278c65)](https://app.codacy.com/gh/pcko1/bscscan-python?utm_source=github.com&utm_medium=referral&utm_content=pcko1/bscscan-python&utm_campaign=Badge_Grade)
 [![Build Status](https://github.com/pcko1/bscscan-python/workflows/build/badge.svg)](https://github.com/pcko1/bscscan-python) 
 [![codecov](https://codecov.io/gh/pcko1/bscscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/bscscan-python)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/6db2e36886ee46f58720c6131ef58dd6)](https://app.codacy.com/gh/pcko1/etherscan-python?utm_source=github.com&utm_medium=referral&utm_content=pcko1/etherscan-python&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39faec4c53e45cda03c92d216278c65)](https://app.codacy.com/gh/pcko1/bscscan-python?utm_source=github.com&utm_medium=referral&utm_content=pcko1/bscscan-python&utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/94c15c6d8b1ec869a7fd/maintainability)](https://codeclimate.com/github/pcko1/etherscan-python/maintainability)
 [![PyPI](https://badge.fury.io/py/etherscan-python.svg)](https://badge.fury.io/py/etherscan-python)
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
