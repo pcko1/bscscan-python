@@ -1,12 +1,13 @@
 import json
 import os
+import time
 from datetime import datetime
 from unittest import TestCase
 
 from bscscan import Bscscan
 
 CONFIG_PATH = "bscscan/configs/stable.json"
-API_KEY = os.environ["API_KEY"]  # Encrypted env var by Travis
+API_KEY = os.environ["API_KEY"]
 
 
 def load(fname):
@@ -40,6 +41,7 @@ class Case(TestCase):
                         "res": res,
                     }
                     dump(log, fname)
+                    time.sleep(0.5)
 
 
 class TestAccounts(Case):
