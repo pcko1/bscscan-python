@@ -1,0 +1,155 @@
+{
+  "method": "get_validators_list",
+  "module": "stats",
+  "kwargs": {},
+  "log_timestamp": "2021-02-19-12:34:14",
+  "res": [
+    {
+      "validatorAddress": "0xce2fd7544e0b2cc94692d4a704debef7bcb61328",
+      "validatorName": "Validator: Pexmons",
+      "validatorStatus": "0",
+      "validatorVotingPower": "25057663730169",
+      "validatorVotingPowerProportion": "0.0749"
+    },
+    {
+      "validatorAddress": "0xb8f7166496996a7da21cf1f1b04d9b3e26a3d077",
+      "validatorName": "Validator: Coinlix",
+      "validatorStatus": "0",
+      "validatorVotingPower": "21572010752917",
+      "validatorVotingPowerProportion": "0.0644"
+    },
+    {
+      "validatorAddress": "0x685b1ded8013785d6623cc18d214320b6bb64759",
+      "validatorName": "Validator: Namelix",
+      "validatorStatus": "0",
+      "validatorVotingPower": "21426708813436",
+      "validatorVotingPowerProportion": "0.0640"
+    },
+    {
+      "validatorAddress": "0x2d4c407bbe49438ed859fe965b140dcf1aab71a9",
+      "validatorName": "Validator: Raptoken",
+      "validatorStatus": "0",
+      "validatorVotingPower": "20826928154013",
+      "validatorVotingPowerProportion": "0.0622"
+    },
+    {
+      "validatorAddress": "0x35e7a025f4da968de7e4d7e4004197917f4070f1",
+      "validatorName": "Validator: Piececoin",
+      "validatorStatus": "0",
+      "validatorVotingPower": "20450647779410",
+      "validatorVotingPowerProportion": "0.0611"
+    },
+    {
+      "validatorAddress": "0x7ae2f5b9e386cd1b50a4550696d957cb4900f03a",
+      "validatorName": "Validator: Fuji",
+      "validatorStatus": "0",
+      "validatorVotingPower": "20421015306795",
+      "validatorVotingPowerProportion": "0.0610"
+    },
+    {
+      "validatorAddress": "0xea0a6e3c511bbd10f4519ece37dc24887e11b55d",
+      "validatorName": "Validator: Defibit",
+      "validatorStatus": "0",
+      "validatorVotingPower": "20357790913937",
+      "validatorVotingPowerProportion": "0.0608"
+    },
+    {
+      "validatorAddress": "0xd6caa02bbebaebb5d7e581e4b66559e635f805ff",
+      "validatorName": "Validator: Leapbnb",
+      "validatorStatus": "0",
+      "validatorVotingPower": "20332420010051",
+      "validatorVotingPowerProportion": "0.0607"
+    },
+    {
+      "validatorAddress": "0x4430b3230294d12c6ab2aac5c2cd68e80b16b581",
+      "validatorName": "Validator: Ciscox",
+      "validatorStatus": "0",
+      "validatorVotingPower": "20271366145821",
+      "validatorVotingPowerProportion": "0.0606"
+    },
+    {
+      "validatorAddress": "0x8c4d90829ce8f72d0163c1d5cf348a862d550630",
+      "validatorName": "Validator: Everest",
+      "validatorStatus": "0",
+      "validatorVotingPower": "19967012495564",
+      "validatorVotingPowerProportion": "0.0596"
+    },
+    {
+      "validatorAddress": "0x82012708dafc9e1b880fd083b32182b869be8e09",
+      "validatorName": "Validator: Kita",
+      "validatorStatus": "0",
+      "validatorVotingPower": "19625349995454",
+      "validatorVotingPowerProportion": "0.0586"
+    },
+    {
+      "validatorAddress": "0x6bbad7cf34b5fa511d8e963dbba288b1960e75d6",
+      "validatorName": "Validator: Ararat",
+      "validatorStatus": "0",
+      "validatorVotingPower": "11238352054534",
+      "validatorVotingPowerProportion": "0.0336"
+    },
+    {
+      "validatorAddress": "0x6488aa4d1955ee33403f8ccb1d4de5fb97c7ade2",
+      "validatorName": "Validator: Seoraksan",
+      "validatorStatus": "0",
+      "validatorVotingPower": "10842218102500",
+      "validatorVotingPowerProportion": "0.0324"
+    },
+    {
+      "validatorAddress": "0x22b81f8e175ffde54d797fe11eb03f9e3bf75f1d",
+      "validatorName": "Validator: Aconcagua",
+      "validatorStatus": "0",
+      "validatorVotingPower": "10583299997788",
+      "validatorVotingPowerProportion": "0.0316"
+    },
+    {
+      "validatorAddress": "0xb218c5d6af1f979ac42bc68d98a5a0d796c6ab01",
+      "validatorName": "Validator: Alan Turing",
+      "validatorStatus": "0",
+      "validatorVotingPower": "10583050000000",
+      "validatorVotingPowerProportion": "0.0316"
+    },
+    {
+      "validatorAddress": "0x0bac492386862ad3df4b666bc096b0505bb694da",
+      "validatorName": "Validator: Claude Shannon",
+      "validatorStatus": "0",
+      "validatorVotingPower": "10445590000000",
+      "validatorVotingPowerProportion": "0.0312"
+    },
+    {
+      "validatorAddress": "0xada8c942f31098482748fcf2b9d3dc1d8de7b0e4",
+      "validatorName": "Validator: James Clerk Maxwell",
+      "validatorStatus": "0",
+      "validatorVotingPower": "10357244000000",
+      "validatorVotingPowerProportion": "0.0309"
+    },
+    {
+      "validatorAddress": "0xa6f79b60359f141df90a0c745125b131caaffd12",
+      "validatorName": "Validator: Avengers",
+      "validatorStatus": "0",
+      "validatorVotingPower": "10244762415863",
+      "validatorVotingPowerProportion": "0.0306"
+    },
+    {
+      "validatorAddress": "0x72b61c6014342d914470ec7ac2975be345796c2b",
+      "validatorName": "Validator: BNB48 Club",
+      "validatorStatus": "0",
+      "validatorVotingPower": "10079648900000",
+      "validatorVotingPowerProportion": "0.0301"
+    },
+    {
+      "validatorAddress": "0xa34efe6222e33adb84307f41b218d1823afb6f6d",
+      "validatorName": "Validator: Enrico Fermi",
+      "validatorStatus": "0",
+      "validatorVotingPower": "10058783114628",
+      "validatorVotingPowerProportion": "0.0300"
+    },
+    {
+      "validatorAddress": "0x4396e28197653d0c244d95f8c1e57da902a72b4e",
+      "validatorName": "Validator: Alps",
+      "validatorStatus": "0",
+      "validatorVotingPower": "10019542000000",
+      "validatorVotingPowerProportion": "0.0299"
+    }
+  ]
+}

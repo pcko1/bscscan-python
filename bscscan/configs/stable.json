@@ -1,0 +1,155 @@
+{
+  "get_total_bnb_supply": {
+    "module": "stats",
+    "kwargs": {}
+  },
+  "get_validators_list": {
+    "module": "stats",
+    "kwargs": {}
+  },
+  "get_total_supply_by_contract_address": {
+    "module": "tokens",
+    "kwargs": {
+      "contract_address": "0xe9e7cea3dedca5984780bafc599bd69add087d56"
+    }
+  },
+  "get_circulating_supply_by_contract_address": {
+    "module": "tokens",
+    "kwargs": {
+      "contract_address": "0xe9e7cea3dedca5984780bafc599bd69add087d56"
+    }
+  },
+  "get_acc_balance_by_token_contract_address": {
+    "module": "tokens",
+    "kwargs": {
+      "contract_address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+      "address": "0x89e73303049ee32919903c09e8de5629b84f59eb"
+    }
+  },
+  "get_contract_abi": {
+    "module": "contracts",
+    "kwargs": {
+      "address": "0x0000000000000000000000000000000000001004"
+    }
+  },
+  "get_contract_source_code": {
+    "module": "contracts",
+    "kwargs": {
+      "address": "0x0000000000000000000000000000000000001004"
+    }
+  },
+  "get_bnb_balance": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x0000000000000000000000000000000000001004"
+    }
+  },
+  "get_bnb_balance_multiple": {
+    "module": "accounts",
+    "kwargs": {
+      "addresses": [
+        "0x0000000000000000000000000000000000001004",
+        "0x63a9975ba31b0b9626b34300f7f627147df1f526",
+        "0x198ef1ec325a96cc354c7266a038be8b5c558f67"
+      ]
+    }
+  },
+  "get_normal_txs_by_address": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x35e7a025f4da968de7e4d7e4004197917f4070f1",
+      "startblock": 0,
+      "endblock": 99999999,
+      "sort": "asc"
+    }
+  },
+  "get_normal_txs_by_address_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x35e7a025f4da968de7e4d7e4004197917f4070f1",
+      "startblock": 0,
+      "endblock": 99999999,
+      "page": 1,
+      "offset": 10,
+      "sort": "asc"
+    }
+  },
+  "get_internal_txs_by_address": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x0000000000000000000000000000000000001004",
+      "startblock": 0,
+      "endblock": 2702578,
+      "sort": "asc"
+    }
+  },
+  "get_internal_txs_by_address_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x0000000000000000000000000000000000001004",
+      "startblock": 0,
+      "endblock": 2702578,
+      "page": 1,
+      "offset": 10,
+      "sort": "asc"
+    }
+  },
+  "get_internal_txs_by_txhash": {
+    "module": "accounts",
+    "kwargs": {
+      "txhash": "0x6dbc8f3e1ba98c63463b19ebef957ccd842db274ed499a54f2cdde8499604d54"
+    }
+  },
+  "get_internal_txs_by_block_range_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "startblock": 0,
+      "endblock": 2702578,
+      "page": 1,
+      "offset": 10,
+      "sort": "asc"
+    }
+  },
+  "get_bep20_token_transfer_events_by_address": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x63aea877b5d5fa234a1532f1b26a4f6d9051866e",
+      "startblock": 0,
+      "endblock": 999999999,
+      "sort": "asc"
+    }
+  },
+  "get_bep20_token_transfer_events_by_contract_address_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "contract_address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "page": 1,
+      "offset": 100,
+      "sort": "asc"
+    }
+  },
+  "get_bep20_token_transfer_events_by_address_and_contract_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "contract_address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+      "address": "0x63aea877b5d5fa234a1532f1b26a4f6d9051866e",
+      "page": 1,
+      "offset": 100,
+      "sort": "asc"
+    }
+  },
+  "get_validated_blocks_by_address": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x4396e28197653d0c244d95f8c1e57da902a72b4e"
+    }
+  },
+  "get_validated_blocks_by_address_paginated": {
+    "module": "accounts",
+    "kwargs": {
+      "address": "0x4396e28197653d0c244d95f8c1e57da902a72b4e",
+      "page": 1,
+      "offset": 100
+    }
+  }
+}

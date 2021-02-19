@@ -1,0 +1,7 @@
+{
+  "method": "get_total_bnb_supply",
+  "module": "stats",
+  "kwargs": {},
+  "log_timestamp": "2021-02-19-12:34:13",
+  "res": "9211306278333190000000000"
+}

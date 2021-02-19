@@ -1,0 +1,17 @@
+# notebooks
+*.ipynb
+
+# pyc files
+*pyc*
+
+# coverage
+*coverage*
+
+# VSCode
+.vscode/*
+
+# Sphinx
+docs
+
+# eggs
+*egg*
