@@ -21,8 +21,7 @@ jobs:
       run: |
         export PERSONAL_ACCESS_TOKEN=${{ secrets.PERSONAL_ACCESS_TOKEN }}
         python -m pip install --upgrade pip
-        pip install git+https://${PERSONAL_ACCESS_TOKEN}@github.com/pcko1/bscscan-python.git
-        pip install flake8 && pip install .
+        pip install git+https://${PERSONAL_ACCESS_TOKEN}@github.com/pcko1/bscscan-python.git coverage flake8 .
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
