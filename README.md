@@ -10,7 +10,7 @@
 [![PyPI](https://badge.fury.io/py/bscscan-python.svg)](https://badge.fury.io/py/bscscan-python)
 ![GitHub](https://img.shields.io/github/license/pcko1/bscscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
-[![DOI](https://zenodo.org/badge/340319392.svg)](https://zenodo.org/badge/latestdoi/340319392)
+[![DOI](https://zenodo.org/badge/340319392.svg)](https://zenodo.org/badge/latestdoi/340319392) 
 
 
 A complete Python API for [BscScan.io](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). Powered by [BscScan.com APIs](https://bscscan.com/apis).
