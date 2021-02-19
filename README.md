@@ -1,6 +1,6 @@
 # bscscan-python
 
-[![Build Status](https://travis-ci.com/pcko1/etherscan-python.svg?branch=master)](https://travis-ci.com/pcko1/etherscan-python) 
+[![Build Status](https://github.com/pcko1/bscscan-python/workflows/build/badge.svg)](https://github.com/pcko1/bscscan-python) 
 [![codecov](https://codecov.io/gh/pcko1/etherscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/etherscan-python)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/6db2e36886ee46f58720c6131ef58dd6)](https://app.codacy.com/gh/pcko1/etherscan-python?utm_source=github.com&utm_medium=referral&utm_content=pcko1/etherscan-python&utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/94c15c6d8b1ec869a7fd/maintainability)](https://codeclimate.com/github/pcko1/etherscan-python/maintainability)
@@ -147,7 +147,7 @@ For problems regarding installing or using the package please open an [issue](ht
 
 ## Cite
 
-Kotsias, P. C., A Python API for Etherscan.io. *https://github.com/pcko1/bscan-python (2020)*. doi:XX.XXXX/zenodo.XXXXXXX
+Kotsias, P. C., A Python API for Etherscan.io. *https://github.com/pcko1/bscscan-python (2020)*. doi:XX.XXXX/zenodo.XXXXXXX
 
 or in ```bibtex```:
 
