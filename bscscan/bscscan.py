@@ -9,7 +9,7 @@ from bscscan.enums.fields_enum import FieldsEnum as fields
 from bscscan.utils.parsing import ResponseParser as parser
 
 
-class Bscscan:
+class BscScan:
     def __new__(cls, api_key: str):
         with resources.path(configs, "stable.json") as path:
             config_path = str(path)

@@ -1,4 +1,4 @@
-from .bscscan import Bscscan
+from .bscscan import BscScan
 from .modules.accounts import Accounts as accounts
 from .modules.contracts import Contracts as contracts
 from .modules.stats import Stats as stats

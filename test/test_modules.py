@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 from unittest import TestCase
 
-from bscscan import Bscscan
+from bscscan import BscScan
 
 CONFIG_PATH = "bscscan/configs/stable.json"
 API_KEY = os.environ["API_KEY"]
@@ -26,7 +26,7 @@ class Case(TestCase):
     def test_methods(self):
         print(f"\nMODULE: {self._MODULE}")
         config = load(CONFIG_PATH)
-        bscscan = Bscscan(API_KEY)
+        bscscan = BscScan(API_KEY)
         for fun, v in config.items():
             if not fun.startswith("_"):  # disabled if _
                 if v["module"] == self._MODULE:
