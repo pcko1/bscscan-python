@@ -3,7 +3,7 @@
 [![Build Status](https://github.com/pcko1/bscscan-python/workflows/build/badge.svg)](https://github.com/pcko1/bscscan-python) 
 [![codecov](https://codecov.io/gh/pcko1/bscscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/bscscan-python)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39faec4c53e45cda03c92d216278c65)](https://app.codacy.com/gh/pcko1/bscscan-python?utm_source=github.com&utm_medium=referral&utm_content=pcko1/bscscan-python&utm_campaign=Badge_Grade)
-[![Maintainability](https://api.codeclimate.com/v1/badges/94c15c6d8b1ec869a7fd/maintainability)](https://codeclimate.com/github/pcko1/etherscan-python/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/b9fefb77fed228a664d2/maintainability)](https://codeclimate.com/github/pcko1/bscscan-python/maintainability)
 [![PyPI](https://badge.fury.io/py/etherscan-python.svg)](https://badge.fury.io/py/etherscan-python)
 ![GitHub](https://img.shields.io/github/license/pcko1/etherscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
