@@ -8,6 +8,7 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/pcko1/bscscan-python/badge)](https://www.codefactor.io/repository/github/pcko1/bscscan-python)
 
 [![PyPI](https://badge.fury.io/py/bscscan-python.svg)](https://badge.fury.io/py/bscscan-python)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/bscscan-python)
 ![GitHub](https://img.shields.io/github/license/pcko1/bscscan-python)
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
 [![DOI](https://zenodo.org/badge/340319392.svg)](https://zenodo.org/badge/latestdoi/340319392) 
