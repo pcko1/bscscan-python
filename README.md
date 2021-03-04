@@ -14,7 +14,7 @@
 [![DOI](https://zenodo.org/badge/340319392.svg)](https://zenodo.org/badge/latestdoi/340319392) 
 
 
-A complete Python API for [BscScan.io](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). Powered by [BscScan.com APIs](https://bscscan.com/apis).
+A complete Python API for [BscScan.com](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). Powered by [BscScan.com APIs](https://bscscan.com/apis).
 
 *This is a gently modified fork of the [etherscan-python](https://github.com/pcko1/etherscan-python) package.*
 
@@ -52,7 +52,7 @@ The following endpoints are provided:
 
 </details>
 
-<details><summary>Transactions <a href="https://bscscan.io/apis#transactions">(source)</a></summary>
+<details><summary>Transactions <a href="https://bscscan.com/apis#transactions">(source)</a></summary>
 <p>
   
 * `get_contract_execution_status`
@@ -60,7 +60,7 @@ The following endpoints are provided:
 
 </details>
 
-<details><summary>Blocks <a href="https://bscscan.io/apis#blocks">(source)</a></summary>
+<details><summary>Blocks <a href="https://bscscan.com/apis#blocks">(source)</a></summary>
 <p>
   
 * `get_block_reward_by_block_number`
@@ -69,7 +69,7 @@ The following endpoints are provided:
 
 </details>
 
-<details><summary>GETH/Parity Proxy <a href="https://bscscan.io/apis#proxy">(source)</a></summary>
+<details><summary>GETH/Parity Proxy <a href="https://bscscan.com/apis#proxy">(source)</a></summary>
 <p>
 
 * `get_proxy_block_number`
