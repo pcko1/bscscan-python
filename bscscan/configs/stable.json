@@ -1,4 +1,105 @@
 {
+  "get_proxy_block_number": {
+    "module": "proxy",
+    "kwargs": {}
+  },
+  "get_proxy_block_by_number": {
+    "module": "proxy",
+    "kwargs": {
+      "tag": "0x3d0900"
+    }
+  },
+  "get_proxy_block_transaction_count_by_number": {
+    "module": "proxy",
+    "kwargs": {
+      "tag": "0x3d0900"
+    }
+  },
+  "get_proxy_transaction_by_hash": {
+    "module": "proxy",
+    "kwargs": {
+      "txhash": "0xa0f2e87dfb75e3ebb8b23eff7b490442ff74cf8921eb61217dfc48918fe4020f"
+    }
+  },
+  "get_proxy_transaction_by_block_number_and_index": {
+    "module": "proxy",
+    "kwargs": {
+      "tag": "0x3d0900",
+      "index": "0x0"
+    }
+  },
+  "get_proxy_transaction_count": {
+    "module": "proxy",
+    "kwargs": {
+      "address": "0x4430b3230294D12c6AB2aAC5C2cd68E80B16b581"
+    }
+  },
+  "get_proxy_transaction_receipt": {
+    "module": "proxy",
+    "kwargs": {
+      "txhash": "0xa0f2e87dfb75e3ebb8b23eff7b490442ff74cf8921eb61217dfc48918fe4020f"
+    }
+  },
+  "get_proxy_call": {
+    "module": "proxy",
+    "kwargs": {
+      "to": "0xAEEF46DB4855E25702F8237E8f403FddcaF931C0",
+      "data": "0x70a08231000000000000000000000000e16359506c028e51f16be38986ec5746251e9724"
+    }
+  },
+  "get_proxy_code_at": {
+    "module": "proxy",
+    "kwargs": {
+      "address": "0x0000000000000000000000000000000000001000"
+    }
+  },
+  "get_proxy_storage_position_at": {
+    "module": "proxy",
+    "kwargs": {
+      "position": "0x0",
+      "address": "0x0000000000000000000000000000000000001004"
+    }
+  },
+  "get_proxy_gas_price": {
+    "module": "proxy",
+    "kwargs": {}
+  },
+  "get_proxy_est_gas": {
+    "module": "proxy",
+    "kwargs": {
+      "data": "0x4e71d92d",
+      "from_addr": "0xbe0eb53f46cd790cd13851d5eff43d12404d33e8",
+      "to_addr": "0xf0160428a8552ac9bb7e050d90eeade4ddd52843",
+      "value": "0xff22",
+      "gas_price": "0x51da038cc",
+      "gas": "0x5f5e0ff"
+    }
+  },
+  "get_block_reward_by_block_number": {
+    "module": "blocks",
+    "kwargs": {
+      "block_no": "2150000"
+    }
+  },
+  "get_est_block_countdown_time_by_block_number": {
+    "module": "blocks",
+    "kwargs": {
+      "block_no": "8000000"
+    }
+  },
+  "get_block_number_by_timestamp": {
+    "module": "blocks",
+    "kwargs": {
+      "timestamp": "1601510400",
+      "closest": "before"
+    }
+  },
+  "get_tx_receipt_status": {
+    "module": "transactions",
+    "kwargs": {
+      "txhash": "0xe9975702518c79caf81d5da65dea689dcac701fcdd063f848d4f03c85392fd00"
+    }
+  },
   "get_total_bnb_supply": {
     "module": "stats",
     "kwargs": {}

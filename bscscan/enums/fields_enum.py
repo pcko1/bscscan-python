@@ -15,6 +15,7 @@ class FieldsEnum:
     DATA: str = "&data="
     END_BLOCK: str = "&endblock="
     END_DATE: str = "&enddate="
+    FROM: str = "&from="
     GAS_PRICE: str = "&gasPrice="
     GAS: str = "&gas="
     HEX: str = "&hex="

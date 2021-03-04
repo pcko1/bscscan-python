@@ -48,8 +48,16 @@ class TestAccounts(Case):
     _MODULE = "accounts"
 
 
+class TestBlocks(Case):
+    _MODULE = "blocks"
+
+
 class TestContracts(Case):
     _MODULE = "contracts"
+
+
+class TestProxy(Case):
+    _MODULE = "proxy"
 
 
 class TestStats(Case):
@@ -58,3 +66,7 @@ class TestStats(Case):
 
 class TestTokens(Case):
     _MODULE = "tokens"
+
+
+class TestTransactions(Case):
+    _MODULE = "transactions"

@@ -1,0 +1,10 @@
+{
+  "method": "get_proxy_call",
+  "module": "proxy",
+  "kwargs": {
+    "to": "0xAEEF46DB4855E25702F8237E8f403FddcaF931C0",
+    "data": "0x70a08231000000000000000000000000e16359506c028e51f16be38986ec5746251e9724"
+  },
+  "log_timestamp": "2021-03-04-11:56:18",
+  "res": "0x"
+}

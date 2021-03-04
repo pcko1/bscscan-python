@@ -1,0 +1,14 @@
+{
+  "method": "get_proxy_est_gas",
+  "module": "proxy",
+  "kwargs": {
+    "data": "0x4e71d92d",
+    "from_addr": "0xbe0eb53f46cd790cd13851d5eff43d12404d33e8",
+    "to_addr": "0xf0160428a8552ac9bb7e050d90eeade4ddd52843",
+    "value": "0xff22",
+    "gas_price": "0x51da038cc",
+    "gas": "0x5f5e0ff"
+  },
+  "log_timestamp": "2021-03-04-11:56:22",
+  "res": "0x5248"
+}
