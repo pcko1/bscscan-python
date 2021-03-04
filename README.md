@@ -52,6 +52,39 @@ The following endpoints are provided:
 
 </details>
 
+<details><summary>Transactions <a href="https://bscscan.io/apis#transactions">(source)</a></summary>
+<p>
+  
+* `get_contract_execution_status`
+* `get_tx_receipt_status`
+
+</details>
+
+<details><summary>Blocks <a href="https://bscscan.io/apis#blocks">(source)</a></summary>
+<p>
+  
+* `get_block_reward_by_block_number`
+* `get_est_block_countdown_time_by_block_number`
+* `get_block_number_by_timestamp`
+
+</details>
+
+<details><summary>GETH/Parity Proxy <a href="https://bscscan.io/apis#proxy">(source)</a></summary>
+<p>
+
+* `get_proxy_block_number`
+* `get_proxy_block_by_number`
+* `get_proxy_block_transaction_count_by_number`
+* `get_proxy_transaction_by_hash`
+* `get_proxy_transaction_by_block_number_and_index`
+* `get_proxy_transaction_count`
+* `get_proxy_transaction_receipt`
+* `get_proxy_call`
+* `get_proxy_code_at`
+* `get_proxy_storage_position_at`
+* `get_proxy_gas_price`
+* `get_proxy_est_gas`
+
 </details>
 
 <details><summary>Tokens <a href="https://bscscan.com/apis#tokens">(source)</a></summary>
