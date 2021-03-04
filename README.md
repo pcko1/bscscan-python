@@ -188,7 +188,7 @@ or in ```bibtex```:
 ```bibtex
 @misc{Kotsias2020,
   author = {Kotsias, P.C.},
-  title = {pcko1/bscscan-python: v1.0.0},
+  title = {pcko1/bscscan-python},
   year = {2021},
   publisher = {Zenodo},
   url = {https://github.com/pcko1/bscscan-python},
