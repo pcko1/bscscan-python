@@ -181,7 +181,7 @@ For problems regarding installing or using the package please open an [issue](ht
 
 ## Cite
 
-Kotsias, P. C., A Python API for BscScan.com. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4551169
+Kotsias, P. C., A Python API for BscScan.com. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4580473
 
 or in ```bibtex```:
 
@@ -193,7 +193,7 @@ or in ```bibtex```:
   publisher = {GitHub},
   journal = {GitHub repository},
   url = {https://github.com/pcko1/bscscan-python},
-  doi = {10.5281/zenodo.4551169}
+  doi = {10.5281/zenodo.4580473}
 }
 ```
 
