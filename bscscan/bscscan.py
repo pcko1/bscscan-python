@@ -1,4 +1,5 @@
 import json
+import warnings
 from importlib import resources
 
 from requests import Session
@@ -6,13 +7,16 @@ from requests import Session
 import bscscan
 from bscscan import configs
 from bscscan.enums.fields_enum import FieldsEnum as fields
+from bscscan.enums.warnings_enum import WarningsEnum as Warnings
 from bscscan.utils.parsing import ResponseParser as parser
 
 CONFIG_FILE = "stable.json"
 
 
 class BscScan:
-    def __init__(self, api_key: str):
+    def __init__(self, api_key: str, suppress_warnings=False):
+        if not suppress_warnings:
+            warnings.warn(Warnings.CONTEXT_MANAGER_WARNING)
         self.__api_key = api_key
 
     @staticmethod
