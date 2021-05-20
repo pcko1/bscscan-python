@@ -30,7 +30,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with unittest
       run: |
-        export TERM=1
+        export TERM=xterm
         export API_KEY=${{ secrets.BSCSCAN_API_KEY }}
         bash run_tests.sh API_KEY
         bash <(curl -s https://codecov.io/bash)
