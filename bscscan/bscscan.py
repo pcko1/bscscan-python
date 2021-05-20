@@ -1,44 +1,49 @@
 import json
 from importlib import resources
 
-import requests
+from requests import Session
 
 import bscscan
 from bscscan import configs
 from bscscan.enums.fields_enum import FieldsEnum as fields
 from bscscan.utils.parsing import ResponseParser as parser
 
+CONFIG_FILE = "stable.json"
+
 
 class BscScan:
-    def __new__(cls, api_key: str):
-        with resources.path(configs, "stable.json") as path:
-            config_path = str(path)
-        return cls.from_config(api_key=api_key, config_path=config_path)
+    def __init__(self, api_key: str):
+        self.__api_key = api_key
 
     @staticmethod
     def __load_config(config_path: str) -> dict:
         with open(config_path, "r") as f:
             return json.load(f)
 
-    @staticmethod
-    def __run(func, api_key: str):
+    def __build(self, config: dict):
+        for func, v in config.items():
+            if not func.startswith("_"):  # disabled if _
+                attr = getattr(getattr(bscscan, v["module"]), func)
+                setattr(self, func, self.__run(attr))
+
+    def __run(self, func):
         def wrapper(*args, **kwargs):
             url = (
                 f"{fields.PREFIX}"
                 f"{func(*args, **kwargs)}"
                 f"{fields.API_KEY}"
-                f"{api_key}"
+                f"{self.__api_key}"
             )
-            r = requests.get(url)
-            return parser.parse(r)
+            with self.__session.get(url) as response:
+                return parser.parse(response.json())
 
         return wrapper
 
-    @classmethod
-    def from_config(cls, api_key: str, config_path: str):
-        config = cls.__load_config(config_path)
-        for func, v in config.items():
-            if not func.startswith("_"):  # disabled if _
-                attr = getattr(getattr(bscscan, v["module"]), func)
-                setattr(cls, func, cls.__run(attr, api_key))
-        return cls
+    def __enter__(self):
+        self.__session = Session()
+        with resources.path(configs, CONFIG_FILE) as path:
+            self.__build(self.__load_config(str(path)))
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.__session.close()

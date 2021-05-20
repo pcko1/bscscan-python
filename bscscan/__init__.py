@@ -1,4 +1,5 @@
 from .bscscan import BscScan
+from .bscscan_async import AsyncBscScan
 from .modules.accounts import Accounts as accounts
 from .modules.blocks import Blocks as blocks
 from .modules.contracts import Contracts as contracts
