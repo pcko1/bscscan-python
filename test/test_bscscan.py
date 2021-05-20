@@ -43,7 +43,7 @@ class Case(TestCase):
                             "res": res,
                         }
                         dump(log, fname)
-                        time.sleep(0.1)
+                        time.sleep(0.5)
 
 
 class TestAccounts(Case):
