@@ -12,10 +12,11 @@ setup(
         "bscscan",
         "bscscan.configs",
         "bscscan.enums",
+        "bscscan.legacy",
         "bscscan.modules",
         "bscscan.utils",
     ],
-    install_requires=["requests"],
+    install_requires=["aiohttp", "requests"],
     include_package_data=True,
     zip_safe=False,
 )
