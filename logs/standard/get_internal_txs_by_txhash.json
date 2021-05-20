@@ -4,22 +4,8 @@
   "kwargs": {
     "txhash": "0x6dbc8f3e1ba98c63463b19ebef957ccd842db274ed499a54f2cdde8499604d54"
   },
-  "log_timestamp": "2021-03-04-11:55:58",
+  "log_timestamp": "2021-05-20-21:36:00",
   "res": [
-    {
-      "blockNumber": "5012927",
-      "timeStamp": "1613725978",
-      "from": "0xcde540d7eafe93ac5fe6233bee57e1270d3e330f",
-      "to": "0xe1480027aadbd9d9a4dc6f5d65f8b0dfa7a9d4d4",
-      "value": "0",
-      "contractAddress": "",
-      "input": "",
-      "type": "staticcall",
-      "gas": "128417",
-      "gasUsed": "1182",
-      "isError": "0",
-      "errCode": ""
-    },
     {
       "blockNumber": "5012927",
       "timeStamp": "1613725978",
@@ -31,34 +17,6 @@
       "type": "call",
       "gas": "117864",
       "gasUsed": "22674",
-      "isError": "0",
-      "errCode": ""
-    },
-    {
-      "blockNumber": "5012927",
-      "timeStamp": "1613725978",
-      "from": "0xe1480027aadbd9d9a4dc6f5d65f8b0dfa7a9d4d4",
-      "to": "0x4206931337dc273a630d328da6441786bfad668f",
-      "value": "0",
-      "contractAddress": "",
-      "input": "",
-      "type": "staticcall",
-      "gas": "51882",
-      "gasUsed": "1292",
-      "isError": "0",
-      "errCode": ""
-    },
-    {
-      "blockNumber": "5012927",
-      "timeStamp": "1613725978",
-      "from": "0xe1480027aadbd9d9a4dc6f5d65f8b0dfa7a9d4d4",
-      "to": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
-      "value": "0",
-      "contractAddress": "",
-      "input": "",
-      "type": "staticcall",
-      "gas": "49023",
-      "gasUsed": "1234",
       "isError": "0",
       "errCode": ""
     },

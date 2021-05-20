@@ -2,154 +2,154 @@
   "method": "get_validators_list",
   "module": "stats",
   "kwargs": {},
-  "log_timestamp": "2021-03-04-11:56:23",
+  "log_timestamp": "2021-05-20-21:36:38",
   "res": [
     {
-      "validatorAddress": "0xce2fd7544e0b2cc94692d4a704debef7bcb61328",
-      "validatorName": "Validator: Pexmons",
+      "validatorAddress": "0x9f8ccdafcc39f3c7d6ebf637c9151673cbc36b88",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "24862862420782",
-      "validatorVotingPowerProportion": "0.0723"
+      "validatorVotingPower": "43379676392570",
+      "validatorVotingPowerProportion": "0.0617"
+    },
+    {
+      "validatorAddress": "0x2465176c461afb316ebc773c61faee85a6515daa",
+      "validatorName": "",
+      "validatorStatus": "0",
+      "validatorVotingPower": "38039845465042",
+      "validatorVotingPowerProportion": "0.0541"
+    },
+    {
+      "validatorAddress": "0x295e26495cef6f69dfa69911d9d8e4f3bbadb89b",
+      "validatorName": "",
+      "validatorStatus": "0",
+      "validatorVotingPower": "36001465051540",
+      "validatorVotingPowerProportion": "0.0512"
+    },
+    {
+      "validatorAddress": "0x3f349bbafec1551819b8be1efea2fc46ca749aa1",
+      "validatorName": "",
+      "validatorStatus": "0",
+      "validatorVotingPower": "35447938608024",
+      "validatorVotingPowerProportion": "0.0504"
     },
     {
       "validatorAddress": "0xb8f7166496996a7da21cf1f1b04d9b3e26a3d077",
-      "validatorName": "Validator: Coinlix",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "21654243943987",
-      "validatorVotingPowerProportion": "0.0630"
+      "validatorVotingPower": "34759057223644",
+      "validatorVotingPowerProportion": "0.0494"
     },
     {
-      "validatorAddress": "0x685b1ded8013785d6623cc18d214320b6bb64759",
-      "validatorName": "Validator: Namelix",
+      "validatorAddress": "0x8b6c8fd93d6f4cea42bbb345dbc6f0dfdb5bec73",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "21449380330133",
-      "validatorVotingPowerProportion": "0.0624"
+      "validatorVotingPower": "34034134278597",
+      "validatorVotingPowerProportion": "0.0484"
     },
     {
-      "validatorAddress": "0x2d4c407bbe49438ed859fe965b140dcf1aab71a9",
-      "validatorName": "Validator: Raptoken",
+      "validatorAddress": "0xe2d3a739effcd3a99387d015e260eefac72ebea1",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "20883371402779",
-      "validatorVotingPowerProportion": "0.0608"
+      "validatorVotingPower": "33842874387134",
+      "validatorVotingPowerProportion": "0.0481"
     },
     {
-      "validatorAddress": "0x7ae2f5b9e386cd1b50a4550696d957cb4900f03a",
-      "validatorName": "Validator: Fuji",
+      "validatorAddress": "0x70f657164e5b75689b64b7fd1fa275f334f28e18",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "20457512040603",
-      "validatorVotingPowerProportion": "0.0595"
+      "validatorVotingPower": "33673212307142",
+      "validatorVotingPowerProportion": "0.0479"
     },
     {
-      "validatorAddress": "0x35e7a025f4da968de7e4d7e4004197917f4070f1",
-      "validatorName": "Validator: Piececoin",
+      "validatorAddress": "0xce2fd7544e0b2cc94692d4a704debef7bcb61328",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "20441747779410",
-      "validatorVotingPowerProportion": "0.0595"
+      "validatorVotingPower": "33629837009970",
+      "validatorVotingPowerProportion": "0.0478"
+    },
+    {
+      "validatorAddress": "0xe9ae3261a475a27bb1028f140bc2a7c843318afd",
+      "validatorName": "",
+      "validatorStatus": "0",
+      "validatorVotingPower": "33567141174764",
+      "validatorVotingPowerProportion": "0.0478"
+    },
+    {
+      "validatorAddress": "0xee226379db83cffc681495730c11fdde79ba4c0c",
+      "validatorName": "",
+      "validatorStatus": "0",
+      "validatorVotingPower": "33256243330009",
+      "validatorVotingPowerProportion": "0.0473"
     },
     {
       "validatorAddress": "0x4430b3230294d12c6ab2aac5c2cd68e80b16b581",
-      "validatorName": "Validator: Ciscox",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "20324270145821",
-      "validatorVotingPowerProportion": "0.0591"
+      "validatorVotingPower": "33228641464353",
+      "validatorVotingPowerProportion": "0.0473"
+    },
+    {
+      "validatorAddress": "0xbe807dddb074639cd9fa61b47676c064fc50d62c",
+      "validatorName": "",
+      "validatorStatus": "0",
+      "validatorVotingPower": "33077249200000",
+      "validatorVotingPowerProportion": "0.0471"
     },
     {
       "validatorAddress": "0xea0a6e3c511bbd10f4519ece37dc24887e11b55d",
-      "validatorName": "Validator: Defibit",
-      "validatorStatus": "0",
-      "validatorVotingPower": "20297626453937",
-      "validatorVotingPowerProportion": "0.0591"
-    },
-    {
-      "validatorAddress": "0xd6caa02bbebaebb5d7e581e4b66559e635f805ff",
-      "validatorName": "Validator: Leapbnb",
-      "validatorStatus": "0",
-      "validatorVotingPower": "20277944010051",
-      "validatorVotingPowerProportion": "0.0590"
-    },
-    {
-      "validatorAddress": "0x82012708dafc9e1b880fd083b32182b869be8e09",
-      "validatorName": "Validator: Kita",
-      "validatorStatus": "0",
-      "validatorVotingPower": "19546116195454",
-      "validatorVotingPowerProportion": "0.0569"
-    },
-    {
-      "validatorAddress": "0x8c4d90829ce8f72d0163c1d5cf348a862d550630",
-      "validatorName": "Validator: Everest",
-      "validatorStatus": "0",
-      "validatorVotingPower": "19049988451196",
-      "validatorVotingPowerProportion": "0.0554"
-    },
-    {
-      "validatorAddress": "0x72b61c6014342d914470ec7ac2975be345796c2b",
-      "validatorName": "Validator: BNB48 Club",
-      "validatorStatus": "0",
-      "validatorVotingPower": "13047441000000",
-      "validatorVotingPowerProportion": "0.0380"
-    },
-    {
-      "validatorAddress": "0xa34efe6222e33adb84307f41b218d1823afb6f6d",
-      "validatorName": "Validator: Enrico Fermi",
-      "validatorStatus": "0",
-      "validatorVotingPower": "12560388214628",
-      "validatorVotingPowerProportion": "0.0365"
-    },
-    {
-      "validatorAddress": "0x0bac492386862ad3df4b666bc096b0505bb694da",
-      "validatorName": "Validator: Claude Shannon",
-      "validatorStatus": "0",
-      "validatorVotingPower": "11945529000000",
-      "validatorVotingPowerProportion": "0.0348"
-    },
-    {
-      "validatorAddress": "0x1685d4fd385748afa2c802ccff09294b3065840e",
       "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "11849768000000",
-      "validatorVotingPowerProportion": "0.0345"
+      "validatorVotingPower": "32918682733163",
+      "validatorVotingPowerProportion": "0.0468"
     },
     {
-      "validatorAddress": "0x6bbad7cf34b5fa511d8e963dbba288b1960e75d6",
-      "validatorName": "Validator: Ararat",
+      "validatorAddress": "0x685b1ded8013785d6623cc18d214320b6bb64759",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "11560774464122",
-      "validatorVotingPowerProportion": "0.0336"
+      "validatorVotingPower": "32809283477031",
+      "validatorVotingPowerProportion": "0.0467"
+    },
+    {
+      "validatorAddress": "0x2d4c407bbe49438ed859fe965b140dcf1aab71a9",
+      "validatorName": "",
+      "validatorStatus": "0",
+      "validatorVotingPower": "32482679046901",
+      "validatorVotingPowerProportion": "0.0462"
+    },
+    {
+      "validatorAddress": "0x7ae2f5b9e386cd1b50a4550696d957cb4900f03a",
+      "validatorName": "",
+      "validatorStatus": "0",
+      "validatorVotingPower": "32465229735035",
+      "validatorVotingPowerProportion": "0.0462"
     },
     {
       "validatorAddress": "0xa6f79b60359f141df90a0c745125b131caaffd12",
-      "validatorName": "Validator: Avengers",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "11389549681386",
-      "validatorVotingPowerProportion": "0.0331"
+      "validatorVotingPower": "30434669522824",
+      "validatorVotingPowerProportion": "0.0433"
     },
     {
-      "validatorAddress": "0x4396e28197653d0c244d95f8c1e57da902a72b4e",
-      "validatorName": "Validator: Alps",
+      "validatorAddress": "0x9bb832254baf4e8b4cc26bd2b52b31389b56e98b",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "11123200370946",
-      "validatorVotingPowerProportion": "0.0324"
+      "validatorVotingPower": "29665806074076",
+      "validatorVotingPowerProportion": "0.0422"
     },
     {
-      "validatorAddress": "0xada8c942f31098482748fcf2b9d3dc1d8de7b0e4",
-      "validatorName": "Validator: James Clerk Maxwell",
+      "validatorAddress": "0xb218c5d6af1f979ac42bc68d98a5a0d796c6ab01",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "11050674000000",
-      "validatorVotingPowerProportion": "0.0322"
+      "validatorVotingPower": "29136549636340",
+      "validatorVotingPowerProportion": "0.0415"
     },
     {
-      "validatorAddress": "0x68bf0b8b6fb4e317a0f9d6f03eaf8ce6675bc60d",
-      "validatorName": "Validator: Stakepulse",
+      "validatorAddress": "0x72b61c6014342d914470ec7ac2975be345796c2b",
+      "validatorName": "",
       "validatorStatus": "0",
-      "validatorVotingPower": "9977082153551",
-      "validatorVotingPowerProportion": "0.0290"
-    },
-    {
-      "validatorAddress": "0x78f3adfc719c99674c072166708589033e2d9afe",
-      "validatorName": "Validator: Nariox",
-      "validatorStatus": "0",
-      "validatorVotingPower": "9965353053578",
-      "validatorVotingPowerProportion": "0.0290"
+      "validatorVotingPower": "27078089699342",
+      "validatorVotingPowerProportion": "0.0385"
     }
   ]
 }

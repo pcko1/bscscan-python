@@ -4,11 +4,11 @@
   "kwargs": {
     "block_no": "8000000"
   },
-  "log_timestamp": "2021-03-04-11:56:09",
+  "log_timestamp": "2021-05-20-21:36:20",
   "res": {
-    "CurrentBlock": "5383694",
+    "CurrentBlock": "7581458",
     "CountdownBlock": "8000000",
-    "RemainingBlock": "2616306",
-    "EstimateTimeInSec": "7848933.0"
+    "RemainingBlock": "418542",
+    "EstimateTimeInSec": "1255641.0"
   }
 }
