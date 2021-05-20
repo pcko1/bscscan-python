@@ -45,7 +45,7 @@ class Case(IsolatedAsyncioTestCase):
                             "res": res,
                         }
                         dump(log, fname)
-                        await asyncio.sleep(0.1)
+                        await asyncio.sleep(0.5)
 
 
 class TestAccounts(Case):
