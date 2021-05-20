@@ -39,6 +39,9 @@ The following endpoints are provided:
 * `get_bep20_token_transfer_events_by_address`
 * `get_bep20_token_transfer_events_by_contract_address_paginated`
 * `get_bep20_token_transfer_events_by_address_and_contract_paginated`
+* `get_erc721_token_transfer_events_by_address`
+* `get_erc721_token_transfer_events_by_contract_address_paginated`
+* `get_erc721_token_transfer_events_by_address_and_contract_paginated`
 * `get_validated_blocks_by_address`
 * `get_validated_blocks_by_address_paginated`
 
