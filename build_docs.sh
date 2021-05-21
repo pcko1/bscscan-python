@@ -1,5 +1,5 @@
 #!/bin/bash
+# rm -r build/*
 clear
-rm -r build/*
 sphinx-apidoc -f -o source bscscan
 make html

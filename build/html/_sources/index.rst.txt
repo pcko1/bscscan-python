@@ -6,6 +6,17 @@
 Welcome to bscscan-python's documentation!
 ==========================================
 
+This package adds a pythonic flavor to the endpoints provided by `BscScan`_.
+
+It has integrated asynchronous (`asyncio`) support and it is available on PyPI. 
+
+Powered by `BscScan.com`_ APIs.
+
+
+
+.. BscScan: http://bscscan.com/
+.. BscScan.com: https://bscscan.com/apis
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
