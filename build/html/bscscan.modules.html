@@ -213,10 +213,10 @@
 <span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep20_token_transfer_events_by_address</span><span class="p">(</span>
-            <span class="n">address</span><span class="o">=</span><span class="mh">0x63aea877b5d5fa234a1532f1b26a4f6d9051866e</span><span class="s2">&quot;,</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x63aea877b5d5fa234a1532f1b26a4f6d9051866e&quot;</span><span class="p">,</span>
             <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
             <span class="n">endblock</span><span class="o">=</span><span class="mi">999999999</span><span class="p">,</span>
-            <span class="n">sort</span><span class="o">=</span><span class="n">asc</span><span class="s2">&quot;</span>
+            <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
         <span class="p">)</span>
     <span class="p">)</span>
 </pre></div>
@@ -1145,18 +1145,22 @@
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_block_number_by_timestamp(</dt><dd><p>timestamp=”1601510400”,
-closest=”before”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><p>“946206”</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_block_number_by_timestamp</span><span class="p">(</span>
+            <span class="n">timestamp</span><span class="o">=</span><span class="s2">&quot;1601510400&quot;</span><span class="p">,</span>
+            <span class="n">closest</span><span class="o">=</span><span class="s2">&quot;before&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;946206&quot;</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -1174,26 +1178,28 @@ closest=”before”</p>
 <dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_block_reward_by_block_number(</dt><dd><p>block_no=”2150000”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “2150000”,
-“timeStamp”: “1605122780”,
-“blockMiner”: “0xee01c3b1283aa067c58eab4709f85e99d46de5fe”,
-“blockReward”: “12141249999983048”,
-“uncles”: [],
-“uncleInclusionReward”: “0”</p>
-</dd>
-</dl>
-<p>}</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_block_reward_by_block_number</span><span class="p">(</span>
+            <span class="n">block_no</span><span class="o">=</span><span class="s2">&quot;2150000&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;2150000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1605122780&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blockMiner&quot;</span><span class="p">:</span> <span class="s2">&quot;0xee01c3b1283aa067c58eab4709f85e99d46de5fe&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blockReward&quot;</span><span class="p">:</span> <span class="s2">&quot;12141249999983048&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;uncles&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="s2">&quot;uncleInclusionReward&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -1211,24 +1217,26 @@ closest=”before”</p>
 <dd class="field-odd"><p>dict</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_est_block_countdown_time_by_block_number(</dt><dd><p>block_no=”8000000”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“CurrentBlock”: “7584646”,
-“CountdownBlock”: “8000000”,
-“RemainingBlock”: “415354”,
-“EstimateTimeInSec”: “1246077.0”</p>
-</dd>
-</dl>
-<p>}</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_est_block_countdown_time_by_block_number</span><span class="p">(</span>
+            <span class="n">block_no</span><span class="o">=</span><span class="s2">&quot;8000000&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;CurrentBlock&quot;</span><span class="p">:</span> <span class="s2">&quot;7584646&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;CountdownBlock&quot;</span><span class="p">:</span> <span class="s2">&quot;8000000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;RemainingBlock&quot;</span><span class="p">:</span> <span class="s2">&quot;415354&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;EstimateTimeInSec&quot;</span><span class="p">:</span> <span class="s2">&quot;1246077.0&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -1256,11 +1264,18 @@ closest=”before”</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_contract_abi</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
 
-<span class="s2">&quot;[{&quot;</span><span class="n">inputs</span><span class="s2">&quot;:[],&quot;</span><span class="n">stateMutability</span><span class="s2">&quot;:&quot;</span><span class="n">nonpayable</span><span class="s2">&quot;,&quot;</span><span class="nb">type</span><span class="s2">&quot;:&quot;</span><span class="n">constructor</span><span class="s2">&quot;}, ...]&quot;</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_contract_abi</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;[{&#39;inputs&#39;:[],&#39;stateMutability&#39;:&#39;nonpayable&#39;,&#39;type&#39;:&#39;constructor&#39;}, ...]&quot;</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -1277,11 +1292,18 @@ closest=”before”</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_contract_source_code</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
 
-<span class="p">[</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_contract_source_code</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
     <span class="p">{</span>
         <span class="s2">&quot;SourceCode&quot;</span><span class="p">:</span> <span class="s2">&quot;// File: contracts/interface/IBEP20.sol</span>
 </pre></div>
@@ -1290,7 +1312,7 @@ closest=”before”</p>
 <dl>
 <dt>pragma…”,</dt><dd><blockquote>
 <div><blockquote>
-<div><p>“ABI”: “[{“inputs”:[],”stateMutability”:”nonpayable”,…”,
+<div><p>“ABI”: “[{‘inputs’:[],’stateMutability’:’nonpayable’,…}]”,
 “ContractName”: “TokenHub”,
 “CompilerVersion”: “v0.6.4+commit.1dca32f3”,
 “OptimizationUsed”: “1”,
@@ -1400,21 +1422,22 @@ closest=”before”</p>
 <dd class="field-even"><p>dict</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><p>get_bnb_last_price(</p>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“ethbtc”: “0.00927”,
-“ethbtc_timestamp”: “1621600148”,
-“ethusd”: “379.15”,
-“ethusd_timestamp”: “1621600183”</p>
-</dd>
-</dl>
-<p>}</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bnb_last_price</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;ethbtc&quot;</span><span class="p">:</span> <span class="s2">&quot;0.00927&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ethbtc_timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1621600148&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ethusd&quot;</span><span class="p">:</span> <span class="s2">&quot;379.15&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ethusd_timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1621600183&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -1429,14 +1452,17 @@ closest=”before”</p>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><p>get_total_bnb_supply(</p>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><p>“17673568869449800000000000”</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_total_bnb_supply</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;17673568869449800000000000&quot;</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -1451,36 +1477,34 @@ closest=”before”</p>
 <dd class="field-even"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><p>get_validators_list(</p>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“validatorAddress”: “0x9f8ccdafcc39f3c7d6ebf637c9151673cbc36b88”,
-“validatorName”: “”,
-“validatorStatus”: “0”,
-“validatorVotingPower”: “43379676392570”,
-“validatorVotingPowerProportion”: “0.0617”</p>
-</dd>
-</dl>
-<p>},
-{</p>
-<blockquote>
-<div><p>“validatorAddress”: “0x2465176c461afb316ebc773c61faee85a6515daa”,
-“validatorName”: “”,
-“validatorStatus”: “0”,
-“validatorVotingPower”: “38039845465042”,
-“validatorVotingPowerProportion”: “0.0541”</p>
-</div></blockquote>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_validators_list</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;validatorAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0x9f8ccdafcc39f3c7d6ebf637c9151673cbc36b88&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;validatorName&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;validatorStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;validatorVotingPower&quot;</span><span class="p">:</span> <span class="s2">&quot;43379676392570&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;validatorVotingPowerProportion&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0617&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;validatorAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0x2465176c461afb316ebc773c61faee85a6515daa&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;validatorName&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;validatorStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;validatorVotingPower&quot;</span><span class="p">:</span> <span class="s2">&quot;38039845465042&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;validatorVotingPowerProportion&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0541&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -1510,18 +1534,22 @@ closest=”before”</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_acc_balance_by_token_contract_address(</dt><dd><p>contract_address=”0xe9e7cea3dedca5984780bafc599bd69add087d56”,
-address=”0x89e73303049ee32919903c09e8de5629b84f59eb”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><p>“0”</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_acc_balance_by_token_contract_address</span><span class="p">(</span>
+            <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xe9e7cea3dedca5984780bafc599bd69add087d56&quot;</span><span class="p">,</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x89e73303049ee32919903c09e8de5629b84f59eb&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;0&quot;</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -1539,17 +1567,21 @@ address=”0x89e73303049ee32919903c09e8de5629b84f59eb”</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_circulating_supply_by_contract_address(</dt><dd><p>contract_address=”0xe9e7cea3dedca5984780bafc599bd69add087d56”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><p>“4086900168016026430118545633”</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_circulating_supply_by_contract_address</span><span class="p">(</span>
+            <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xe9e7cea3dedca5984780bafc599bd69add087d56&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;4086900168016026430118545633&quot;</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -1567,17 +1599,21 @@ address=”0x89e73303049ee32919903c09e8de5629b84f59eb”</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_total_supply_by_contract_address(</dt><dd><p>contract_address=”0xe9e7cea3dedca5984780bafc599bd69add087d56”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><p>“4200999999996203280118545633”</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_total_supply_by_contract_address</span><span class="p">(</span>
+                <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xe9e7cea3dedca5984780bafc599bd69add087d56&quot;</span>
+            <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;4200999999996203280118545633&quot;</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </dd></dl>

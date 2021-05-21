@@ -14,13 +14,19 @@ class Blocks:
         Returns:
             dict: Block reward as a dictionary of various data.
 
-        Example:
-            Args:
-                get_block_reward_by_block_number(
-                    block_no="2150000"
+        Example::
+
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_block_reward_by_block_number(
+                        block_no="2150000"
+                    )
                 )
 
-            Returns:
+        Results::
+
                 {
                     "blockNumber": "2150000",
                     "timeStamp": "1605122780",
@@ -49,13 +55,19 @@ class Blocks:
         Returns:
             dict: Countdown time in a dictionary of various data.
 
-        Example:
-            Args:
-                get_est_block_countdown_time_by_block_number(
-                    block_no="8000000"
+        Example::
+
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_est_block_countdown_time_by_block_number(
+                        block_no="8000000"
+                    )
                 )
 
-            Returns:
+        Results::
+
                 {
                     "CurrentBlock": "7584646",
                     "CountdownBlock": "8000000",
@@ -85,15 +97,21 @@ class Blocks:
         Returns:
             str: Block number for requested timestamp.
 
-        Example:
-            Args:
-                get_block_number_by_timestamp(
-                    timestamp="1601510400",
-                    closest="before"
+        Example::
+
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_block_number_by_timestamp(
+                        timestamp="1601510400",
+                        closest="before"
+                    )
                 )
 
-            Returns:
-                "946206"
+        Results::
+
+            "946206"
         """
         assert closest in ["before", "after"], "Specify 'before' or 'after'."
         return (

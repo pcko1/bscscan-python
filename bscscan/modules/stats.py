@@ -11,14 +11,16 @@ class Stats:
         Returns:
             str: The total supply of BNB.
 
-        Example:
-            Args:
-                get_total_bnb_supply(
+        Example::
 
-                )
+            from bscscan import AsyncBscScan
 
-            Returns:
-                "17673568869449800000000000"
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(await client.get_total_bnb_supply())
+
+        Results::
+
+            "17673568869449800000000000"
 
         """
         return (
@@ -35,31 +37,33 @@ class Stats:
         Returns:
             List[dict]: All validators as a list of dictionaries.
 
-        Example:
-            Args:
-                get_validators_list(
+        Example::
 
-                )
+            from bscscan import AsyncBscScan
 
-            Returns:
-                [
-                    {
-                        "validatorAddress": "0x9f8ccdafcc39f3c7d6ebf637c9151673cbc36b88",
-                        "validatorName": "",
-                        "validatorStatus": "0",
-                        "validatorVotingPower": "43379676392570",
-                        "validatorVotingPowerProportion": "0.0617"
-                    },
-                    {
-                        "validatorAddress": "0x2465176c461afb316ebc773c61faee85a6515daa",
-                        "validatorName": "",
-                        "validatorStatus": "0",
-                        "validatorVotingPower": "38039845465042",
-                        "validatorVotingPowerProportion": "0.0541"
-                    },
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(await client.get_validators_list())
 
-                    ...
-                ]
+        Results::
+
+            [
+                {
+                    "validatorAddress": "0x9f8ccdafcc39f3c7d6ebf637c9151673cbc36b88",
+                    "validatorName": "",
+                    "validatorStatus": "0",
+                    "validatorVotingPower": "43379676392570",
+                    "validatorVotingPowerProportion": "0.0617"
+                },
+                {
+                    "validatorAddress": "0x2465176c461afb316ebc773c61faee85a6515daa",
+                    "validatorName": "",
+                    "validatorStatus": "0",
+                    "validatorVotingPower": "38039845465042",
+                    "validatorVotingPowerProportion": "0.0541"
+                },
+
+                ...
+            ]
         """
         return (
             f"{fields.MODULE}"
@@ -75,19 +79,22 @@ class Stats:
         Returns:
             dict: Latest dictionary of BNB price pairs.
 
-        Example:
-            Args:
-                get_bnb_last_price(
+        Example::
 
-                )
+            from bscscan import AsyncBscScan
 
-            Returns:
-                {
-                    "ethbtc": "0.00927",
-                    "ethbtc_timestamp": "1621600148",
-                    "ethusd": "379.15",
-                    "ethusd_timestamp": "1621600183"
-                }
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(await client.get_bnb_last_price())
+
+
+        Results::
+
+            {
+                "ethbtc": "0.00927",
+                "ethbtc_timestamp": "1621600148",
+                "ethusd": "379.15",
+                "ethusd_timestamp": "1621600183"
+            }
         """
         return (
             f"{fields.MODULE}"

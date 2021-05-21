@@ -16,11 +16,18 @@ class Contracts:
 
         Example::
 
-            get_contract_abi(
-                address="0x0000000000000000000000000000000000001004"
-            )
+            from bscscan import AsyncBscScan
 
-            "[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}, ...]"
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_contract_abi(
+                        address="0x0000000000000000000000000000000000001004"
+                    )
+                )
+
+        Results::
+
+            "[{\'inputs\':[],\'stateMutability\':\'nonpayable\',\'type\':\'constructor\'}, ...]"
         """
         return (
             f"{fields.MODULE}"
@@ -43,14 +50,21 @@ class Contracts:
 
         Example::
 
-            get_contract_source_code(
-                address="0x0000000000000000000000000000000000001004"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_contract_source_code(
+                        address="0x0000000000000000000000000000000000001004"
+                    )
+                )
+
+        Results::
 
             [
                 {
                     "SourceCode": "// File: contracts/interface/IBEP20.sol\r\n\r\npragma...",
-                    "ABI": "[{\"inputs\":[],\"stateMutability\":\"nonpayable\",...",
+                    "ABI": "[{\'inputs\':[],\'stateMutability\':\'nonpayable\',...}]",
                     "ContractName": "TokenHub",
                     "CompilerVersion": "v0.6.4+commit.1dca32f3",
                     "OptimizationUsed": "1",
