@@ -42,6 +42,7 @@ class Contracts:
             List[dict]: Source code in a list of dictionaries of various data.
 
         Example::
+
             get_contract_source_code(
                 address="0x0000000000000000000000000000000000001004"
             )
