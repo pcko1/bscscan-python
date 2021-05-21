@@ -56,3 +56,5 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
 
 extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon", "sphinx_rtd_dark_mode"]
+# for sphinx_rtd_dark_mode extension
+default_dark_mode = False
