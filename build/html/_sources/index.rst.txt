@@ -6,11 +6,11 @@
 Welcome to bscscan-python's documentation!
 ==========================================
 
-This package adds a pythonic flavor to the endpoints provided by `BscScan`_.
+   This package adds a pythonic flavor to the endpoints provided by `BscScan`_.
 
-It has integrated asynchronous (`asyncio`) support and it is available on PyPI. 
+   It has integrated asynchronous (`asyncio`) support and it is available on PyPI. 
 
-Powered by `BscScan.com`_ APIs.
+   Powered by `BscScan.com`_ APIs.
 
 
 
