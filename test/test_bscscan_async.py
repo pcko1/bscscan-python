@@ -33,7 +33,7 @@ class Case(IsolatedAsyncioTestCase):
                 if not fun.startswith("_"):  # disabled if _
                     if v["module"] == self._MODULE:
                         res = await getattr(bscscan, fun)(**v["kwargs"])
-                        print(f"ASYNC: YES, METHOD: {fun}, RTYPE: {type(res)}")
+                        print(f"ASYNC: True, METHOD: {fun}, RTYPE: {type(res)}")
                         fname = f"logs/standard/{fun}.json"
                         log = {
                             "method": fun,

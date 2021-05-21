@@ -31,7 +31,7 @@ class Case(TestCase):
                 if not fun.startswith("_"):  # disabled if _
                     if v["module"] == self._MODULE:
                         res = getattr(bscscan, fun)(**v["kwargs"])
-                        print(f"ASYNC: NO, METHOD: {fun}, RTYPE: {type(res)}")
+                        print(f"ASYNC: False, METHOD: {fun}, RTYPE: {type(res)}")
                         fname = f"logs/standard/{fun}.json"
                         log = {
                             "method": fun,
