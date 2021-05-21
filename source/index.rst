@@ -33,13 +33,15 @@ Indices and tables
 Cite
 ===========
 
+Kindly cite this software as::
+   
    @misc{Kotsias2021,
-   author = {Kotsias, P.C.},
-   title = {pcko1/bscscan-python},
-   year = {2021},
-   publisher = {Zenodo},
-   url = {https://github.com/pcko1/bscscan-python},
-   doi = {10.5281/zenodo.4580473}
+      author = {Kotsias, P.C.},
+      title = {pcko1/bscscan-python},
+      year = {2021},
+      publisher = {Zenodo},
+      url = {https://github.com/pcko1/bscscan-python},
+      doi = {10.5281/zenodo.4580473}
    }
 
 
