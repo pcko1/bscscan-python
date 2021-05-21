@@ -33,8 +33,12 @@ Indices and tables
 Cite
 ===========
 
-Kindly cite this software as::
-   
+Please cite this software as:
+
+Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4580473
+
+or in ``bibtex``::
+
    @misc{Kotsias2021,
       author = {Kotsias, P.C.},
       title = {pcko1/bscscan-python},
