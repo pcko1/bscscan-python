@@ -28,7 +28,7 @@ class Accounts:
                 "158732998695887136972460565"
         """
 
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -38,7 +38,6 @@ class Accounts:
             f"{fields.TAG}"
             f"{tags.LATEST}"
         )
-        return url
 
     @staticmethod
     def get_bnb_balance_multiple(addresses: List[str]):
@@ -79,7 +78,7 @@ class Accounts:
                 ]
         """
         address_list = reduce(lambda w1, w2: str(w1) + "," + str(w2), addresses)
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -89,7 +88,6 @@ class Accounts:
             f"{fields.TAG}"
             f"{tags.LATEST}"
         )
-        return url
 
     @staticmethod
     def get_normal_txs_by_address(
@@ -146,7 +144,7 @@ class Accounts:
                     ...
                 ]
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -160,7 +158,6 @@ class Accounts:
             f"{fields.SORT}"
             f"{sort}"
         )
-        return url
 
     @staticmethod
     def get_normal_txs_by_address_paginated(
@@ -221,7 +218,7 @@ class Accounts:
                     ...
                 ]
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -239,7 +236,6 @@ class Accounts:
             f"{fields.OFFSET}"
             f"{str(offset)}"
         )
-        return url
 
     @staticmethod
     def get_internal_txs_by_address(
@@ -292,7 +288,7 @@ class Accounts:
                     ...
                 ]
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -306,7 +302,6 @@ class Accounts:
             f"{fields.SORT}"
             f"{sort}"
         )
-        return url
 
     @staticmethod
     def get_internal_txs_by_address_paginated(
@@ -363,7 +358,7 @@ class Accounts:
                     ...
                 ]
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -381,7 +376,6 @@ class Accounts:
             f"{fields.OFFSET}"
             f"{str(offset)}"
         )
-        return url
 
     @staticmethod
     def get_internal_txs_by_txhash(txhash: str):
@@ -421,7 +415,7 @@ class Accounts:
                     ...
                 ]
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -429,7 +423,6 @@ class Accounts:
             f"{fields.TXHASH}"
             f"{txhash}"
         )
-        return url
 
     @staticmethod
     def get_internal_txs_by_block_range_paginated(
@@ -486,7 +479,7 @@ class Accounts:
                 ]
 
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -502,7 +495,6 @@ class Accounts:
             f"{fields.OFFSET}"
             f"{str(offset)}"
         )
-        return url
 
     @staticmethod
     def get_bep20_token_transfer_events_by_address(
@@ -561,7 +553,7 @@ class Accounts:
                 ]
         """
 
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -575,7 +567,6 @@ class Accounts:
             f"{fields.SORT}"
             f"{sort}"
         )
-        return url
 
     @staticmethod
     def get_bep20_token_transfer_events_by_contract_address_paginated(
@@ -630,7 +621,7 @@ class Accounts:
                     ...
                 ]
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -644,7 +635,6 @@ class Accounts:
             f"{fields.OFFSET}"
             f"{str(offset)}"
         )
-        return url
 
     @staticmethod
     def get_bep20_token_transfer_events_by_address_and_contract_paginated(
@@ -700,7 +690,7 @@ class Accounts:
                 ]
         """
 
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -716,7 +706,6 @@ class Accounts:
             f"{fields.OFFSET}"
             f"{str(offset)}"
         )
-        return url
 
     @staticmethod
     def get_bep721_token_transfer_events_by_address(
@@ -774,7 +763,7 @@ class Accounts:
                     ...
                 ]
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -788,7 +777,6 @@ class Accounts:
             f"{fields.SORT}"
             f"{sort}"
         )
-        return url
 
     @staticmethod
     def get_bep721_token_transfer_events_by_contract_address_paginated(
@@ -843,7 +831,7 @@ class Accounts:
                     ...
                 ]
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -857,7 +845,6 @@ class Accounts:
             f"{fields.OFFSET}"
             f"{str(offset)}"
         )
-        return url
 
     @staticmethod
     def get_bep721_token_transfer_events_by_address_and_contract_paginated(
@@ -912,7 +899,7 @@ class Accounts:
                     ...
                 ]
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -928,7 +915,6 @@ class Accounts:
             f"{fields.OFFSET}"
             f"{str(offset)}"
         )
-        return url
 
     @staticmethod
     def get_validated_blocks_by_address(address: str):
@@ -963,7 +949,7 @@ class Accounts:
                 ]
 
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -973,7 +959,6 @@ class Accounts:
             f"{fields.BLOCK_TYPE}"
             f"{fields.BLOCKS}"
         )
-        return url
 
     @staticmethod
     def get_validated_blocks_by_address_paginated(address: str, page: int, offset: int):
@@ -987,7 +972,7 @@ class Accounts:
         Returns:
             List[dict]: All validated blocks as list of dictionaries per page.
         """
-        url = (
+        return (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
             f"{fields.ACTION}"
@@ -1001,4 +986,3 @@ class Accounts:
             f"{fields.OFFSET}"
             f"{str(offset)}"
         )
-        return url
