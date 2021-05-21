@@ -161,25 +161,70 @@
 <h1>Welcome to bscscan-python’s documentation!<a class="headerlink" href="#welcome-to-bscscan-python-s-documentation" title="Permalink to this headline">¶</a></h1>
 <p>This is an unofficial <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.8+</span></code> wrapper for the endpoints provided by <a class="reference external" href="https://bscscan.com">BscScan</a>.</p>
 <p>It supports asynchronous calls and it is available on PyPI.</p>
+<p>Powered by <a class="reference external" href="https://bscscan.com/apis">BscScan APIs</a>.</p>
 <p>Disclaimer: The author assumes no responsibility neither for the way this software is used
 nor for its behavior. The code is open-source and everyone is encouraged to inspect it before
 integrating into their products.</p>
-<p>Cite this software as:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@misc</span><span class="p">{</span><span class="n">Kotsias2021</span><span class="p">,</span>
-<span class="n">author</span> <span class="o">=</span> <span class="p">{</span><span class="n">Kotsias</span><span class="p">,</span> <span class="n">P</span><span class="o">.</span><span class="n">C</span><span class="o">.</span><span class="p">},</span>
-<span class="n">title</span> <span class="o">=</span> <span class="p">{</span><span class="n">pcko1</span><span class="o">/</span><span class="n">bscscan</span><span class="o">-</span><span class="n">python</span><span class="p">},</span>
-<span class="n">year</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2021</span><span class="p">},</span>
-<span class="n">publisher</span> <span class="o">=</span> <span class="p">{</span><span class="n">Zenodo</span><span class="p">},</span>
-<span class="n">url</span> <span class="o">=</span> <span class="p">{</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pcko1</span><span class="o">/</span><span class="n">bscscan</span><span class="o">-</span><span class="n">python</span><span class="p">},</span>
-<span class="n">doi</span> <span class="o">=</span> <span class="p">{</span><span class="mf">10.5281</span><span class="o">/</span><span class="n">zenodo</span><span class="o">.</span><span class="mi">4580473</span><span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
 </div>
+<div class="section" id="cite">
+<h1>Cite<a class="headerlink" href="#cite" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><dl class="simple">
+<dt>&#64;misc{Kotsias2021,</dt><dd><p>author = {Kotsias, P.C.},
+title = {pcko1/bscscan-python},
+year = {2021},
+publisher = {Zenodo},
+url = {<a class="reference external" href="https://github.com/pcko1/bscscan-python">https://github.com/pcko1/bscscan-python</a>},
+doi = {10.5281/zenodo.4580473}</p>
+</dd>
+</dl>
+<p>}</p>
+</div></blockquote>
 </div>
 <div class="section" id="faq">
 <h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li></li>
+<li><p>Why async?</p></li>
+</ul>
+<p>Because your application might not want to wait for BscScan to respond before
+proceeding to the next step. Async calls execute in the background.</p>
+<ul class="simple">
+<li><p>How do I use method <em>X</em>?</p></li>
+</ul>
+<p>Kindly read the documentation of this package since detailed examples have been added for all methods.</p>
+<ul class="simple">
+<li><p>Can you add support for <em>X</em>?</p></li>
+</ul>
+<p>If (and only if) <em>X</em> is a method on BscScan.com that I have missed, kindly open an issue.</p>
+<ul class="simple">
+<li><p>Is a particular functionality provided?</p></li>
+</ul>
+<p>Kindly read the documentation of this package. If it’s not there, it’s not provided.</p>
+<ul class="simple">
+<li><p>May I suggest some improvements?</p></li>
+</ul>
+<p>Absolutely, PRs are more than just welcome. Just make sure the unittests pass and that coverage
+remains at 100% in order for me to accept it.</p>
+<ul class="simple">
+<li><p>Are you affiliated with BscScan.com?</p></li>
+</ul>
+<p>Not at all. I independently composed this package for my daily tasks and thought of open-sourcing it.</p>
+<ul class="simple">
+<li><p>Are you open for collaboration?</p></li>
+</ul>
+<p>Surprisingly, I have received several emails asking for collaboration. I am currently working full-time on my
+own projects so unfortunately I cannot promise anything - yet, do reach out :)</p>
+<ul class="simple">
+<li><p>How can I reach you?</p></li>
+</ul>
+<p>My contact details may be found at <a class="reference external" href="https://pankotsias.com">https://pankotsias.com</a>. For professional matters, kindly do prioritize LinkedIn.</p>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
@@ -190,14 +235,6 @@ integrating into their products.</p>
 </li>
 </ul>
 </div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
 </div>
 
 
