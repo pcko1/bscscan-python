@@ -26,7 +26,7 @@ class Case(TestCase):
     def test_methods(self):
         print(f"\nMODULE: {self._MODULE}")
         config = load(CONFIG_PATH)
-        with BscScan(API_KEY) as bscscan:
+        with BscScan(api_key=API_KEY, asynchronous=False) as bscscan:
             for fun, v in config.items():
                 if not fun.startswith("_"):  # disabled if _
                     if v["module"] == self._MODULE:

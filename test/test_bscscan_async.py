@@ -4,7 +4,7 @@ import os
 from datetime import datetime
 from unittest import IsolatedAsyncioTestCase
 
-from bscscan import AsyncBscScan
+from bscscan import BscScan
 
 CONFIG_PATH = "bscscan/configs/stable.json"
 API_KEY = os.environ["API_KEY"]
@@ -26,7 +26,7 @@ class Case(IsolatedAsyncioTestCase):
     async def test_methods(self):
         print(f"\nMODULE: {self._MODULE}")
         config = load(CONFIG_PATH)
-        async with AsyncBscScan(API_KEY) as bscscan:
+        async with BscScan(api_key=API_KEY, asynchronous=True) as bscscan:
             for fun, v in config.items():
                 if not fun.startswith("_"):  # disabled if _
                     if v["module"] == self._MODULE:

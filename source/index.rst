@@ -29,7 +29,7 @@ Install
 
 There are two ways to install this package; from PyPI or from source.
 
-Install from PyPi as::
+Install from PyPI as::
 
    pip install bscscan-python
 
@@ -43,7 +43,7 @@ Basic Usage
 
 This package supports both synchronous and asynchronous calls.
 
-Both implementations need to be run inside a content manager, which is the most *pythonic* way to (de)allocate resources.
+Both implementations need to be run inside a content manager, which is the *de facto pythonic* way for resource allocation.
 
 Async client::
 
@@ -120,7 +120,7 @@ FAQ
 * Are you open for collaboration?
 
    Surprisingly, I have received several emails asking for collaboration. I am currently working full-time on my 
-   own projects so unfortunately I cannot promise anything - yet, do reach out :)
+   own projects so unfortunately I cannot promise much - yet, do reach out :)
 
 * How can I reach you?
 
