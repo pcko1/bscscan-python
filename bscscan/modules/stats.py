@@ -67,3 +67,31 @@ class Stats:
             f"{fields.ACTION}"
             f"{actions.VALIDATORS}"
         )
+
+    @staticmethod
+    def get_bnb_last_price():
+        """Get the last price of BNB against BTC and USD.
+
+        Returns:
+            dict: Latest dictionary of BNB price pairs.
+
+        Example:
+            Args:
+                get_bnb_last_price(
+
+                )
+
+            Returns:
+                {
+                    "ethbtc": "0.00927",
+                    "ethbtc_timestamp": "1621600148",
+                    "ethusd": "379.15",
+                    "ethusd_timestamp": "1621600183"
+                }
+        """
+        return (
+            f"{fields.MODULE}"
+            f"{modules.STATS}"
+            f"{fields.ACTION}"
+            f"{actions.BNB_PRICE}"
+        )

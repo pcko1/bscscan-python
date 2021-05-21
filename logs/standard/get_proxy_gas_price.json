@@ -2,6 +2,6 @@
   "method": "get_proxy_gas_price",
   "module": "proxy",
   "kwargs": {},
-  "log_timestamp": "2021-05-21-00:15:48",
+  "log_timestamp": "2021-05-21-14:32:42",
   "res": "0x12a05f200"
 }

@@ -9,8 +9,6 @@ from bscscan import AsyncBscScan
 CONFIG_PATH = "bscscan/configs/stable.json"
 API_KEY = os.environ["API_KEY"]
 
-print("RUNNING BSCSCAN ASYNC.")
-
 
 def load(fname):
     with open(fname, "r") as f:

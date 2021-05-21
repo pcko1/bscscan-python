@@ -108,6 +108,10 @@
     "module": "stats",
     "kwargs": {}
   },
+  "get_bnb_last_price": {
+    "module": "stats",
+    "kwargs": {}
+  },
   "get_total_supply_by_contract_address": {
     "module": "tokens",
     "kwargs": {
@@ -130,13 +134,13 @@
   "get_contract_abi": {
     "module": "contracts",
     "kwargs": {
-      "address": "0x0000000000000000000000000000000000001004"
+      "contract_address": "0x0000000000000000000000000000000000001004"
     }
   },
   "get_contract_source_code": {
     "module": "contracts",
     "kwargs": {
-      "address": "0x0000000000000000000000000000000000001004"
+      "contract_address": "0x0000000000000000000000000000000000001004"
     }
   },
   "get_bnb_balance": {
