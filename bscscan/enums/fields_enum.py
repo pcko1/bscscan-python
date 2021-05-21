@@ -8,6 +8,7 @@ class FieldsEnum:
     API_KEY: str = "&apikey="
     BLOCK_TYPE: str = "&blocktype="
     BLOCKNO: str = "&blockno="
+    BLOCKS: str = "blocks"  #
     BOOLEAN: str = "&boolean="
     CLIENT_TYPE: str = "&clienttype="
     CLOSEST: str = "&closest="
