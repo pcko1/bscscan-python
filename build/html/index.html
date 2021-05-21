@@ -160,11 +160,7 @@
   <div class="section" id="welcome-to-bscscan-python-s-documentation">
 <h1>Welcome to bscscan-python’s documentation!<a class="headerlink" href="#welcome-to-bscscan-python-s-documentation" title="Permalink to this headline">¶</a></h1>
 <p>This is an unofficial <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.8+</span></code> wrapper for the endpoints provided by <a class="reference external" href="https://bscscan.com">BscScan</a>.</p>
-<p>It supports asynchronous calls and it is available on PyPI.</p>
-<p>Powered by <a class="reference external" href="https://bscscan.com/apis">BscScan APIs</a>.</p>
-<p>Disclaimer: The author assumes no responsibility neither for the way this software is used
-nor for its behavior. The code is open-source and everyone is encouraged to inspect it before
-integrating into their products.</p>
+<p>It supports asynchronous calls and it is available on <a class="reference external" href="https://pypi.org/project/bscscan-python/">PyPI</a>. Powered by <a class="reference external" href="https://bscscan.com/apis">BscScan APIs</a>.</p>
 </div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
@@ -183,10 +179,49 @@ integrating into their products.</p>
 </ul>
 </div>
 </div>
+<div class="section" id="install">
+<h1>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h1>
+<p>There are two ways to install this package; from PyPI or from source.</p>
+<p>Install from PyPi as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">bscscan</span><span class="o">-</span><span class="n">python</span>
+</pre></div>
+</div>
+<p>Install from source as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pcko1</span><span class="o">/</span><span class="n">bscscan</span><span class="o">-</span><span class="n">python</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="basic-usage">
+<h1>Basic Usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a></h1>
+<p>This package supports both synchronous and asynchronous calls.</p>
+<p>Both implementations need to be run inside a content manager, which is the most <em>pythonic</em> way to (de)allocate resources.</p>
+<p>Async client:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bnb_last_price</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Standard (sync) client:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
+
+<span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">get_bnb_last_price</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="disclaimer">
+<h1>Disclaimer<a class="headerlink" href="#disclaimer" title="Permalink to this headline">¶</a></h1>
+<p>The author assumes no responsibility neither for the way this software is used
+nor for its behavior. The code is open-source and everyone is encouraged to inspect it before
+integrating into their products.</p>
+</div>
 <div class="section" id="cite">
 <h1>Cite<a class="headerlink" href="#cite" title="Permalink to this headline">¶</a></h1>
 <p>Please cite this software as:</p>
-<p>Kotsias, P. C., pcko1/bscscan-python: v1.0.0. <em>https://github.com/pcko1/bscscan-python (2021)</em>. doi:10.5281/zenodo.4580473</p>
+<blockquote>
+<div><p>Kotsias, P. C., pcko1/bscscan-python: v1.0.0. <em>https://github.com/pcko1/bscscan-python (2021)</em>. doi:10.5281/zenodo.4580473</p>
+</div></blockquote>
 <p>or in <code class="docutils literal notranslate"><span class="pre">bibtex</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@misc</span><span class="p">{</span><span class="n">Kotsias2021</span><span class="p">,</span>
    <span class="n">author</span> <span class="o">=</span> <span class="p">{</span><span class="n">Kotsias</span><span class="p">,</span> <span class="n">P</span><span class="o">.</span><span class="n">C</span><span class="o">.</span><span class="p">},</span>
@@ -205,7 +240,8 @@ integrating into their products.</p>
 <li><p>Why async?</p>
 <blockquote>
 <div><p>Because your application might not want to wait for BscScan to respond before
-proceeding to the next step. Async calls execute in the background.</p>
+proceeding to the next step. Async calls execute in the background and are ideal for
+I/O bound scenarios such as HTTP requests.</p>
 </div></blockquote>
 </li>
 <li><p>How do I use method <em>X</em>?</p>
@@ -215,7 +251,7 @@ proceeding to the next step. Async calls execute in the background.</p>
 </li>
 <li><p>Can you add support for <em>X</em>?</p>
 <blockquote>
-<div><p>If (and only if) <em>X</em> is a method on BscScan.com that I have missed, kindly open an issue.</p>
+<div><p>If (and only if) <em>X</em> is a method on BscScan.com that I have missed, please open a GitHub <a class="reference external" href="https://github.com/pcko1/bscscan-python/issues/new">issue</a>.</p>
 </div></blockquote>
 </li>
 <li><p>Is a particular functionality provided?</p>

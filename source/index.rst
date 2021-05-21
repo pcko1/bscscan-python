@@ -8,13 +8,7 @@ Welcome to bscscan-python's documentation!
 
 This is an unofficial ``Python 3.8+`` wrapper for the endpoints provided by `BscScan`_.
 
-It supports asynchronous calls and it is available on PyPI.
-
-Powered by `BscScan APIs`_.
-
-Disclaimer: The author assumes no responsibility neither for the way this software is used
-nor for its behavior. The code is open-source and everyone is encouraged to inspect it before
-integrating into their products.
+It supports asynchronous calls and it is available on `PyPI`_. Powered by `BscScan APIs`_.
 
 Indices and tables
 ==================
@@ -30,12 +24,56 @@ Indices and tables
 
    modules
 
+Install
+==================
+
+There are two ways to install this package; from PyPI or from source.
+
+Install from PyPi as::
+
+   pip install bscscan-python
+
+Install from source as::
+
+   pip install git+https://github.com/pcko1/bscscan-python.git
+
+
+Basic Usage
+==================
+
+This package supports both synchronous and asynchronous calls.
+
+Both implementations need to be run inside a content manager, which is the most *pythonic* way to (de)allocate resources.
+
+Async client::
+
+   from bscscan import AsyncBscScan
+
+   async with AsyncBscScan(YOUR_API_KEY) as client:
+      print(await client.get_bnb_last_price())
+
+Standard (sync) client::
+
+   from bscscan import BscScan
+
+   with BscScan(YOUR_API_KEY) as client:
+      print(client.get_bnb_last_price())
+
+
+Disclaimer
+==================
+
+The author assumes no responsibility neither for the way this software is used
+nor for its behavior. The code is open-source and everyone is encouraged to inspect it before
+integrating into their products.
+
+
 Cite
 ===========
 
 Please cite this software as:
 
-Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4580473
+   Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4580473
 
 or in ``bibtex``::
 
@@ -55,7 +93,8 @@ FAQ
 * Why async?
 
    Because your application might not want to wait for BscScan to respond before
-   proceeding to the next step. Async calls execute in the background.
+   proceeding to the next step. Async calls execute in the background and are ideal for
+   I/O bound scenarios such as HTTP requests.
 
 * How do I use method *X*?
 
@@ -63,7 +102,7 @@ FAQ
 
 * Can you add support for *X*?
 
-   If (and only if) *X* is a method on BscScan.com that I have missed, kindly open an issue.
+   If (and only if) *X* is a method on BscScan.com that I have missed, please open a GitHub `issue`_.
 
 * Is a particular functionality provided?
 
@@ -88,7 +127,7 @@ FAQ
    My contact details may be found at https://pankotsias.com. For professional matters, kindly do prioritize LinkedIn.
 
 
-
-
 .. _BscScan: https://bscscan.com
 .. _BscScan APIs: https://bscscan.com/apis
+.. _PyPI: https://pypi.org/project/bscscan-python/
+.. _issue: https://github.com/pcko1/bscscan-python/issues/new
