@@ -9,7 +9,8 @@ from bscscan.enums.tags_enum import TagsEnum as tags
 
 class Accounts:
     @staticmethod
-    def get_bnb_balance(address: str) -> str:
+    def get_bnb_balance(address: str):
+
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -21,11 +22,9 @@ class Accounts:
             f"{tags.LATEST}"
         )
         return url
-        # r = requests.get(url)
-        # return conversions.to_ticker_unit(parser.get_result(r))
 
     @staticmethod
-    def get_bnb_balance_multiple(addresses: List[str]) -> str:
+    def get_bnb_balance_multiple(addresses: List[str]):
         # NOTE: Max 20 wallets at a time
         address_list = reduce(lambda w1, w2: str(w1) + "," + str(w2), addresses)
         url = (
@@ -39,8 +38,6 @@ class Accounts:
             f"{tags.LATEST}"
         )
         return url
-        # r = requests.get(url)
-        # return [conversions.to_ticker_unit(r["balance"]) for r in parser.get_result(r)]
 
     @staticmethod
     def get_normal_txs_by_address(
@@ -48,7 +45,7 @@ class Accounts:
         startblock: int,
         endblock: int,
         sort: str,
-    ) -> str:
+    ):
         # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
@@ -74,7 +71,7 @@ class Accounts:
         startblock: int,
         endblock: int,
         sort: str,
-    ) -> str:
+    ):
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -101,7 +98,7 @@ class Accounts:
         startblock: int,
         endblock: int,
         sort: str,
-    ) -> str:
+    ):
         # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
@@ -127,7 +124,7 @@ class Accounts:
         startblock: int,
         endblock: int,
         sort: str,
-    ) -> str:
+    ):
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -149,7 +146,7 @@ class Accounts:
         return url
 
     @staticmethod
-    def get_internal_txs_by_txhash(txhash: str) -> str:
+    def get_internal_txs_by_txhash(txhash: str):
         # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
@@ -168,7 +165,7 @@ class Accounts:
         page: int,
         offset: int,
         sort: str,
-    ) -> str:
+    ):
         # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
@@ -194,7 +191,7 @@ class Accounts:
         startblock: int,
         endblock: int,
         sort: str,
-    ) -> str:
+    ):
         # NOTE: Returns the last 10k events
         url = (
             f"{fields.MODULE}"
@@ -215,7 +212,7 @@ class Accounts:
     @staticmethod
     def get_bep20_token_transfer_events_by_contract_address_paginated(
         contract_address: str, page: int, offset: int, sort: str
-    ) -> str:
+    ):
 
         url = (
             f"{fields.MODULE}"
@@ -236,7 +233,7 @@ class Accounts:
     @staticmethod
     def get_bep20_token_transfer_events_by_address_and_contract_paginated(
         contract_address: str, address: str, page: int, offset: int, sort: str
-    ) -> str:
+    ):
 
         url = (
             f"{fields.MODULE}"
@@ -262,7 +259,7 @@ class Accounts:
         startblock: int,
         endblock: int,
         sort: str,
-    ) -> str:
+    ):
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -282,7 +279,7 @@ class Accounts:
     @staticmethod
     def get_bep721_token_transfer_events_by_contract_address_paginated(
         contract_address: str, page: int, offset: int, sort: str
-    ) -> str:
+    ):
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -302,7 +299,7 @@ class Accounts:
     @staticmethod
     def get_bep721_token_transfer_events_by_address_and_contract_paginated(
         contract_address: str, address: str, page: int, offset: int, sort: str
-    ) -> str:
+    ):
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -322,7 +319,7 @@ class Accounts:
         return url
 
     @staticmethod
-    def get_validated_blocks_by_address(address: str) -> str:
+    def get_validated_blocks_by_address(address: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"
@@ -336,9 +333,7 @@ class Accounts:
         return url
 
     @staticmethod
-    def get_validated_blocks_by_address_paginated(
-        address: str, page: int, offset: int
-    ) -> str:
+    def get_validated_blocks_by_address_paginated(address: str, page: int, offset: int):
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"

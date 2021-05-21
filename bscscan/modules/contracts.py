@@ -5,7 +5,7 @@ from bscscan.enums.modules_enum import ModulesEnum as modules
 
 class Contracts:
     @staticmethod
-    def get_contract_abi(address: str) -> str:
+    def get_contract_abi(address: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.CONTRACT}"
@@ -17,7 +17,7 @@ class Contracts:
         return url
 
     @staticmethod
-    def get_contract_source_code(address: str) -> str:
+    def get_contract_source_code(address: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.CONTRACT}"

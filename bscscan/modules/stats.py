@@ -5,7 +5,7 @@ from bscscan.enums.modules_enum import ModulesEnum as modules
 
 class Stats:
     @staticmethod
-    def get_total_bnb_supply() -> str:
+    def get_total_bnb_supply():
         url = (
             f"{fields.MODULE}"
             f"{modules.STATS}"
@@ -15,7 +15,7 @@ class Stats:
         return url
 
     @staticmethod
-    def get_validators_list() -> str:
+    def get_validators_list():
         url = (
             f"{fields.MODULE}"
             f"{modules.STATS}"

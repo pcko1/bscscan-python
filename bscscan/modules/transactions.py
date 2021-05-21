@@ -5,7 +5,7 @@ from bscscan.enums.modules_enum import ModulesEnum as modules
 
 class Transactions:
     @staticmethod
-    def get_tx_receipt_status(txhash: str) -> str:
+    def get_tx_receipt_status(txhash: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.TRANSACTION}"

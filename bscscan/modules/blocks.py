@@ -5,7 +5,7 @@ from bscscan.enums.modules_enum import ModulesEnum as modules
 
 class Blocks:
     @staticmethod
-    def get_block_reward_by_block_number(block_no: str) -> str:
+    def get_block_reward_by_block_number(block_no: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.BLOCK}"
@@ -17,7 +17,7 @@ class Blocks:
         return url
 
     @staticmethod
-    def get_est_block_countdown_time_by_block_number(block_no: str) -> str:
+    def get_est_block_countdown_time_by_block_number(block_no: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.BLOCK}"
@@ -29,7 +29,7 @@ class Blocks:
         return url
 
     @staticmethod
-    def get_block_number_by_timestamp(timestamp: int, closest: str) -> str:
+    def get_block_number_by_timestamp(timestamp: int, closest: str):
         # NOTE: Supports UNIX timestamps in seconds
         url = (
             f"{fields.MODULE}"

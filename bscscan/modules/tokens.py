@@ -6,7 +6,7 @@ from bscscan.enums.tags_enum import TagsEnum as tags
 
 class Tokens:
     @staticmethod
-    def get_total_supply_by_contract_address(contract_address: str) -> str:
+    def get_total_supply_by_contract_address(contract_address: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.STATS}"
@@ -18,7 +18,7 @@ class Tokens:
         return url
 
     @staticmethod
-    def get_circulating_supply_by_contract_address(contract_address: str) -> str:
+    def get_circulating_supply_by_contract_address(contract_address: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.STATS}"
@@ -30,9 +30,7 @@ class Tokens:
         return url
 
     @staticmethod
-    def get_acc_balance_by_token_contract_address(
-        contract_address: str, address: str
-    ) -> str:
+    def get_acc_balance_by_token_contract_address(contract_address: str, address: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.ACCOUNT}"

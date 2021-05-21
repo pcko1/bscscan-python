@@ -6,7 +6,7 @@ from bscscan.enums.tags_enum import TagsEnum as tags
 
 class Proxy:
     @staticmethod
-    def get_proxy_block_number() -> str:
+    def get_proxy_block_number():
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -16,7 +16,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_block_by_number(tag: str) -> str:
+    def get_proxy_block_by_number(tag: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -30,7 +30,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_block_transaction_count_by_number(tag: str) -> str:
+    def get_proxy_block_transaction_count_by_number(tag: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -42,7 +42,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_transaction_by_hash(txhash: str) -> str:
+    def get_proxy_transaction_by_hash(txhash: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -54,7 +54,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_transaction_by_block_number_and_index(tag: str, index: str) -> str:
+    def get_proxy_transaction_by_block_number_and_index(tag: str, index: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -68,7 +68,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_transaction_count(address: str) -> str:
+    def get_proxy_transaction_count(address: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -82,7 +82,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_transaction_receipt(txhash: str) -> str:
+    def get_proxy_transaction_receipt(txhash: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -94,7 +94,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_call(to: str, data: str) -> str:
+    def get_proxy_call(to: str, data: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -110,7 +110,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_code_at(address: str) -> str:
+    def get_proxy_code_at(address: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -124,7 +124,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_storage_position_at(position: str, address: str) -> str:
+    def get_proxy_storage_position_at(position: str, address: str):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
@@ -140,7 +140,7 @@ class Proxy:
         return url
 
     @staticmethod
-    def get_proxy_gas_price() -> str:
+    def get_proxy_gas_price():
         # NOTE: Results are in WEI
         url = (
             f"{fields.MODULE}"
@@ -153,7 +153,7 @@ class Proxy:
     @staticmethod
     def get_proxy_est_gas(
         from_addr: str, to_addr: str, data: str, value: str, gas_price: str, gas: str
-    ) -> str:
+    ):
         url = (
             f"{fields.MODULE}"
             f"{modules.PROXY}"
