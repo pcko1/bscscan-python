@@ -25,6 +25,8 @@ class Transactions:
                         )
                     )
 
+        Results::
+
             "1"
         """
         return (
