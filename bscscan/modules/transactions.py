@@ -18,9 +18,9 @@ class Transactions:
 
             from bscscan import AsyncBscScan
 
-            with AsyncBscScan(YOUR_API_KEY) as client:
+            async with AsyncBscScan(YOUR_API_KEY) as client:
                 print(
-                    await get_tx_receipt_status(
+                    await client.get_tx_receipt_status(
                         txhash="0xe9975702518c79caf81d5da65dea689dcac701fcdd063f848d4f03c85392fd00"
                         )
                     )

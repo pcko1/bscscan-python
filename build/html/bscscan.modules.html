@@ -208,12 +208,17 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep20_token_transfer_events_by_address</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="mh">0x63aea877b5d5fa234a1532f1b26a4f6d9051866e</span><span class="s2">&quot;,</span>
-    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="n">endblock</span><span class="o">=</span><span class="mi">999999999</span><span class="p">,</span>
-    <span class="n">sort</span><span class="o">=</span><span class="n">asc</span><span class="s2">&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep20_token_transfer_events_by_address</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="mh">0x63aea877b5d5fa234a1532f1b26a4f6d9051866e</span><span class="s2">&quot;,</span>
+            <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">endblock</span><span class="o">=</span><span class="mi">999999999</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="n">asc</span><span class="s2">&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -266,13 +271,18 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep20_token_transfer_events_by_address_and_contract_paginated</span><span class="p">(</span>
-    <span class="s2">&quot;contract_address&quot;</span><span class="p">:</span> <span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;0x63aea877b5d5fa234a1532f1b26a4f6d9051866e&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-    <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="s2">&quot;asc&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep20_token_transfer_events_by_address_and_contract_paginated</span><span class="p">(</span>
+            <span class="s2">&quot;contract_address&quot;</span><span class="p">:</span> <span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;0x63aea877b5d5fa234a1532f1b26a4f6d9051866e&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="s2">&quot;asc&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -325,12 +335,17 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep20_token_transfer_events_by_contract_address_paginated</span><span class="p">(</span>
-    <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
-    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">offset</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
-    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep20_token_transfer_events_by_contract_address_paginated</span><span class="p">(</span>
+            <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
+            <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">offset</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -383,12 +398,17 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep721_token_transfer_events_by_address</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="mh">0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c</span><span class="s2">&quot;,</span>
-    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="n">endblock</span><span class="o">=</span><span class="mi">999999999</span><span class="p">,</span>
-    <span class="n">sort</span><span class="o">=</span><span class="n">asc</span><span class="s2">&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep721_token_transfer_events_by_address</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="mh">0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c</span><span class="s2">&quot;,</span>
+            <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">endblock</span><span class="o">=</span><span class="mi">999999999</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="n">asc</span><span class="s2">&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -441,13 +461,18 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep721_token_transfer_events_by_address_and_contract_paginated</span><span class="p">(</span>
-    <span class="s2">&quot;contract_address&quot;</span><span class="p">:</span> <span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
-    <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="s2">&quot;asc&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep721_token_transfer_events_by_address_and_contract_paginated</span><span class="p">(</span>
+            <span class="s2">&quot;contract_address&quot;</span><span class="p">:</span> <span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="s2">&quot;asc&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -500,12 +525,17 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep721_token_transfer_events_by_contract_address_paginated</span><span class="p">(</span>
-    <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
-    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">offset</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
-    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep721_token_transfer_events_by_contract_address_paginated</span><span class="p">(</span>
+            <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
+            <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">offset</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -552,9 +582,14 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bnb_balance</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bnb_balance</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
+            <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="s2">&quot;158732998695887136972460565&quot;</span>
 </pre></div>
@@ -578,14 +613,18 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bnb_balance_multiple</span><span class="p">(</span>
-    <span class="n">addresses</span><span class="o">=</span><span class="p">[</span>
-        <span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;0x63a9975ba31b0b9626b34300f7f627147df1f526&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;0x198ef1ec325a96cc354c7266a038be8b5c558f67&quot;</span>
-    <span class="p">]</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
 
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bnb_balance_multiple</span><span class="p">(</span>
+            <span class="n">addresses</span><span class="o">=</span><span class="p">[</span>
+                <span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;0x63a9975ba31b0b9626b34300f7f627147df1f526&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;0x198ef1ec325a96cc354c7266a038be8b5c558f67&quot;</span>
+            <span class="p">]</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -627,12 +666,17 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_internal_txs_by_address</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
-    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="n">endblock</span><span class="o">=</span><span class="mi">2702578</span><span class="p">,</span>
-    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_internal_txs_by_address</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+            <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">endblock</span><span class="o">=</span><span class="mi">2702578</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -681,14 +725,19 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_internal_txs_by_address_paginated</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
-    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="n">endblock</span><span class="o">=</span><span class="mi">2702578</span><span class="p">,</span>
-    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span><span class="p">,</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_internal_txs_by_address_paginated</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+            <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">endblock</span><span class="o">=</span><span class="mi">2702578</span><span class="p">,</span>
+            <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -737,13 +786,18 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_internal_txs_by_block_range_paginated</span><span class="p">(</span>
-    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="n">endblock</span><span class="o">=</span><span class="mi">2702578</span><span class="p">,</span>
-    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_internal_txs_by_block_range_paginated</span><span class="p">(</span>
+            <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">endblock</span><span class="o">=</span><span class="mi">2702578</span><span class="p">,</span>
+            <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -785,35 +839,36 @@
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<dl>
-<dt>Example::</dt><dd><dl class="simple">
-<dt>get_internal_txs_by_txhash(</dt><dd><p>txhash=”0x6dbc8f3e1ba98c63463b19ebef957ccd842db274ed499a54f2cdde8499604d54”</p>
-</dd>
-</dl>
-<p>)</p>
-<dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “5012927”,
-“timeStamp”: “1613725978”,
-“from”: “0xcde540d7eafe93ac5fe6233bee57e1270d3e330f”,
-“to”: “0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c”,
-“value”: “21820550428160139857”,
-“contractAddress”: “”,
-“input”: “”,
-“type”: “call”,
-“gas”: “117864”,
-“gasUsed”: “22674”,
-“isError”: “0”,
-“errCode”: “”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_internal_txs_by_txhash</span><span class="p">(</span>
+            <span class="n">txhash</span><span class="o">=</span><span class="s2">&quot;0x6dbc8f3e1ba98c63463b19ebef957ccd842db274ed499a54f2cdde8499604d54&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;5012927&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1613725978&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0xcde540d7eafe93ac5fe6233bee57e1270d3e330f&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;21820550428160139857&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;call&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;117864&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;22674&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;isError&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;errCode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -838,12 +893,17 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_normal_txs_by_address</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
-    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="n">endblock</span><span class="o">=</span><span class="mi">99999999</span><span class="p">,</span>
-    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_normal_txs_by_address</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
+            <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">endblock</span><span class="o">=</span><span class="mi">99999999</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -896,14 +956,19 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_normal_txs_by_address_paginated</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
-    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-    <span class="n">endblock</span><span class="o">=</span><span class="mi">99999999</span><span class="p">,</span>
-    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span><span class="p">,</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_normal_txs_by_address_paginated</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
+            <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="n">endblock</span><span class="o">=</span><span class="mi">99999999</span><span class="p">,</span>
+            <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+            <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -949,10 +1014,14 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_validated_blocks_by_address</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x4396e28197653d0c244d95f8c1e57da902a72b4e&quot;</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
 
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_validated_blocks_by_address</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x4396e28197653d0c244d95f8c1e57da902a72b4e&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -992,11 +1061,16 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_validated_blocks_by_address_paginated</span><span class="p">(</span>
-    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x4396e28197653d0c244d95f8c1e57da902a72b4e&quot;</span><span class="p">,</span>
-    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-    <span class="n">offset</span><span class="o">=</span><span class="mi">100</span>
-<span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_validated_blocks_by_address_paginated</span><span class="p">(</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x4396e28197653d0c244d95f8c1e57da902a72b4e&quot;</span><span class="p">,</span>
+            <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">offset</span><span class="o">=</span><span class="mi">100</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
 
 <span class="p">[</span>
     <span class="p">{</span>
@@ -1501,9 +1575,9 @@ address=”0x89e73303049ee32919903c09e8de5629b84f59eb”</p>
 <p>Example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
 
-<span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
-        <span class="k">await</span> <span class="n">get_tx_receipt_status</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_tx_receipt_status</span><span class="p">(</span>
             <span class="n">txhash</span><span class="o">=</span><span class="s2">&quot;0xe9975702518c79caf81d5da65dea689dcac701fcdd063f848d4f03c85392fd00&quot;</span>
             <span class="p">)</span>
         <span class="p">)</span>

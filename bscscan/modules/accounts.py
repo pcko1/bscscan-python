@@ -20,9 +20,14 @@ class Accounts:
 
         Example::
 
-            get_bnb_balance(
-                address="0x0000000000000000000000000000000000001004"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_bnb_balance(
+                        address="0x0000000000000000000000000000000000001004"
+                        )
+                )
 
             "158732998695887136972460565"
         """
@@ -52,14 +57,18 @@ class Accounts:
 
         Example::
 
-            get_bnb_balance_multiple(
-                addresses=[
-                    "0x0000000000000000000000000000000000001004",
-                    "0x63a9975ba31b0b9626b34300f7f627147df1f526",
-                    "0x198ef1ec325a96cc354c7266a038be8b5c558f67"
-                ]
-            )
+            from bscscan import AsyncBscScan
 
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_bnb_balance_multiple(
+                        addresses=[
+                            "0x0000000000000000000000000000000000001004",
+                            "0x63a9975ba31b0b9626b34300f7f627147df1f526",
+                            "0x198ef1ec325a96cc354c7266a038be8b5c558f67"
+                        ]
+                    )
+                )
 
             [
                 {
@@ -110,12 +119,17 @@ class Accounts:
 
         Example::
 
-            get_normal_txs_by_address(
-                address="0x35e7a025f4da968de7e4d7e4004197917f4070f1",
-                startblock=0,
-                endblock=99999999,
-                sort="asc"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_normal_txs_by_address(
+                        address="0x35e7a025f4da968de7e4d7e4004197917f4070f1",
+                        startblock=0,
+                        endblock=99999999,
+                        sort="asc"
+                    )
+                )
 
             [
                 {
@@ -181,14 +195,19 @@ class Accounts:
 
         Example::
 
-            get_normal_txs_by_address_paginated(
-                address="0x35e7a025f4da968de7e4d7e4004197917f4070f1",
-                startblock=0,
-                endblock=99999999,
-                page=1,
-                offset=10,
-                sort="asc",
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_normal_txs_by_address_paginated(
+                        address="0x35e7a025f4da968de7e4d7e4004197917f4070f1",
+                        startblock=0,
+                        endblock=99999999,
+                        page=1,
+                        offset=10,
+                        sort="asc",
+                    )
+                )
 
             [
                 {
@@ -256,12 +275,17 @@ class Accounts:
 
         Example::
 
-            get_internal_txs_by_address(
-                address="0x0000000000000000000000000000000000001004",
-                startblock=0,
-                endblock=2702578,
-                sort="asc"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_internal_txs_by_address(
+                        address="0x0000000000000000000000000000000000001004",
+                        startblock=0,
+                        endblock=2702578,
+                        sort="asc"
+                    )
+                )
 
             [
                 {
@@ -323,14 +347,19 @@ class Accounts:
 
         Example::
 
-            get_internal_txs_by_address_paginated(
-                address="0x0000000000000000000000000000000000001004",
-                startblock=0,
-                endblock=2702578,
-                page=1,
-                offset=10,
-                sort="asc",
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_internal_txs_by_address_paginated(
+                        address="0x0000000000000000000000000000000000001004",
+                        startblock=0,
+                        endblock=2702578,
+                        page=1,
+                        offset=10,
+                        sort="asc",
+                    )
+                )
 
             [
                 {
@@ -385,9 +414,15 @@ class Accounts:
             List[dict]: All internal transactions as a list of dictionaries.
 
         Example::
-            get_internal_txs_by_txhash(
-                txhash="0x6dbc8f3e1ba98c63463b19ebef957ccd842db274ed499a54f2cdde8499604d54"
-            )
+
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_internal_txs_by_txhash(
+                        txhash="0x6dbc8f3e1ba98c63463b19ebef957ccd842db274ed499a54f2cdde8499604d54"
+                    )
+                )
 
             [
                 {
@@ -441,13 +476,18 @@ class Accounts:
 
         Example::
 
-            get_internal_txs_by_block_range_paginated(
-                startblock=0,
-                endblock=2702578,
-                page=1,
-                offset=10,
-                sort="asc"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_internal_txs_by_block_range_paginated(
+                        startblock=0,
+                        endblock=2702578,
+                        page=1,
+                        offset=10,
+                        sort="asc"
+                    )
+                )
 
             [
                 {
@@ -510,12 +550,17 @@ class Accounts:
 
         Example::
 
-            get_bep20_token_transfer_events_by_address(
-                address=0x63aea877b5d5fa234a1532f1b26a4f6d9051866e",
-                startblock=0,
-                endblock=999999999,
-                sort=asc"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_bep20_token_transfer_events_by_address(
+                        address=0x63aea877b5d5fa234a1532f1b26a4f6d9051866e",
+                        startblock=0,
+                        endblock=999999999,
+                        sort=asc"
+                    )
+                )
 
             [
                 {
@@ -578,12 +623,17 @@ class Accounts:
 
         Example::
 
-            get_bep20_token_transfer_events_by_contract_address_paginated(
-                contract_address="0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
-                page=1,
-                offset=100,
-                sort="asc"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_bep20_token_transfer_events_by_contract_address_paginated(
+                        contract_address="0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+                        page=1,
+                        offset=100,
+                        sort="asc"
+                    )
+                )
 
             [
                 {
@@ -644,13 +694,18 @@ class Accounts:
 
         Example::
 
-            get_bep20_token_transfer_events_by_address_and_contract_paginated(
-                "contract_address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
-                "address": "0x63aea877b5d5fa234a1532f1b26a4f6d9051866e",
-                "page": 1,
-                "offset": 100,
-                "sort": "asc"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_bep20_token_transfer_events_by_address_and_contract_paginated(
+                        "contract_address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+                        "address": "0x63aea877b5d5fa234a1532f1b26a4f6d9051866e",
+                        "page": 1,
+                        "offset": 100,
+                        "sort": "asc"
+                    )
+                )
 
             [
                 {
@@ -718,12 +773,17 @@ class Accounts:
 
         Example::
 
-            get_bep721_token_transfer_events_by_address(
-                address=0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c",
-                startblock=0,
-                endblock=999999999,
-                sort=asc"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_bep721_token_transfer_events_by_address(
+                        address=0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c",
+                        startblock=0,
+                        endblock=999999999,
+                        sort=asc"
+                    )
+                )
 
             [
                 {
@@ -785,12 +845,17 @@ class Accounts:
 
         Example::
 
-            get_bep721_token_transfer_events_by_contract_address_paginated(
-                contract_address="0x5e74094cd416f55179dbd0e45b1a8ed030e396a1",
-                page=1,
-                offset=100,
-                sort="asc"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_bep721_token_transfer_events_by_contract_address_paginated(
+                        contract_address="0x5e74094cd416f55179dbd0e45b1a8ed030e396a1",
+                        page=1,
+                        offset=100,
+                        sort="asc"
+                    )
+                )
 
             [
                 {
@@ -851,13 +916,18 @@ class Accounts:
 
         Example::
 
-            get_bep721_token_transfer_events_by_address_and_contract_paginated(
-                "contract_address": "0x5e74094cd416f55179dbd0e45b1a8ed030e396a1",
-                "address": "0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c",
-                "page": 1,
-                "offset": 100,
-                "sort": "asc"
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_bep721_token_transfer_events_by_address_and_contract_paginated(
+                        "contract_address": "0x5e74094cd416f55179dbd0e45b1a8ed030e396a1",
+                        "address": "0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c",
+                        "page": 1,
+                        "offset": 100,
+                        "sort": "asc"
+                    )
+                )
 
             [
                 {
@@ -914,10 +984,14 @@ class Accounts:
 
         Example::
 
-            get_validated_blocks_by_address(
-                address="0x4396e28197653d0c244d95f8c1e57da902a72b4e"
-            )
+            from bscscan import AsyncBscScan
 
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_validated_blocks_by_address(
+                        address="0x4396e28197653d0c244d95f8c1e57da902a72b4e"
+                    )
+                )
 
             [
                 {
@@ -960,11 +1034,16 @@ class Accounts:
 
         Example::
 
-            get_validated_blocks_by_address_paginated(
-                address="0x4396e28197653d0c244d95f8c1e57da902a72b4e",
-                page=1,
-                offset=100
-            )
+            from bscscan import AsyncBscScan
+
+            async with AsyncBscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.get_validated_blocks_by_address_paginated(
+                        address="0x4396e28197653d0c244d95f8c1e57da902a72b4e",
+                        page=1,
+                        offset=100
+                    )
+                )
 
             [
                 {
