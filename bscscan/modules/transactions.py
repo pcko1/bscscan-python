@@ -15,13 +15,14 @@ class Transactions:
             str: The status code.
 
         Example:
-            Args:
-                get_tx_receipt_status(
-                    txhash="0xe9975702518c79caf81d5da65dea689dcac701fcdd063f848d4f03c85392fd00"
-                )
+        .. highlight:: python
+        .. code-block:: python
+            get_tx_receipt_status(
+                txhash="0xe9975702518c79caf81d5da65dea689dcac701fcdd063f848d4f03c85392fd00"
+            )
 
-            Returns:
-                "1"
+            "1"
+        ...
         """
         return (
             f"{fields.MODULE}"
