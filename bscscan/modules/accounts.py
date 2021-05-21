@@ -571,10 +571,10 @@ class Accounts:
             async with AsyncBscScan(YOUR_API_KEY) as client:
                 print(
                     await client.get_bep20_token_transfer_events_by_address(
-                        address=0x63aea877b5d5fa234a1532f1b26a4f6d9051866e",
+                        address="0x63aea877b5d5fa234a1532f1b26a4f6d9051866e",
                         startblock=0,
                         endblock=999999999,
-                        sort=asc"
+                        sort="asc"
                     )
                 )
 
