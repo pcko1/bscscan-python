@@ -63,7 +63,7 @@ class Contracts:
 
             [
                 {
-                    "SourceCode": "// File: contracts/interface/IBEP20.sol\r\n\r\npragma...",
+                    "SourceCode": "// File: contracts/interface/IBEP20.sol\\r\\n\\r\\npragma...",
                     "ABI": "[{\'inputs\':[],\'stateMutability\':\'nonpayable\',...}]",
                     "ContractName": "TokenHub",
                     "CompilerVersion": "v0.6.4+commit.1dca32f3",
