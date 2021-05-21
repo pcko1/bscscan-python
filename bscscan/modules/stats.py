@@ -13,7 +13,7 @@ class Stats:
 
         Example:
             Args:
-                def get_total_bnb_supply(
+                get_total_bnb_supply(
 
                 )
 
