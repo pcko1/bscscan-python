@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="bscscan-python",
-    version="1.0.0",
+    version="2.0.0",
     description="A python API for bscscan.com.",
     url="https://github.com/pcko1/bscscan-python",
     author="Panagiotis-Christos Kotsias",
@@ -11,8 +11,8 @@ setup(
     packages=[
         "bscscan",
         "bscscan.configs",
+        "bscscan.core",
         "bscscan.enums",
-        "bscscan.legacy",
         "bscscan.modules",
         "bscscan.utils",
     ],
