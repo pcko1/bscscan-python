@@ -1219,17 +1219,14 @@ closest=”before”</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_contract_abi(</dt><dd><p>address=”0x0000000000000000000000000000000000001004”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><p>“[{“inputs”:[],”stateMutability”:”nonpayable”,”type”:”constructor”}, …]”</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_contract_abi</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
+<span class="p">)</span>
+
+<span class="s2">&quot;[{&quot;</span><span class="n">inputs</span><span class="s2">&quot;:[],&quot;</span><span class="n">stateMutability</span><span class="s2">&quot;:&quot;</span><span class="n">nonpayable</span><span class="s2">&quot;,&quot;</span><span class="nb">type</span><span class="s2">&quot;:&quot;</span><span class="n">constructor</span><span class="s2">&quot;}, ...]&quot;</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -1242,18 +1239,14 @@ closest=”before”</p>
 </dd>
 <dt>Returns:</dt><dd><p>List[dict]: Source code in a list of dictionaries of various data.</p>
 </dd>
-<dt>Example:</dt><dd><dl>
-<dt>Args:</dt><dd><dl class="simple">
+<dt>Example::</dt><dd><dl class="simple">
 <dt>get_contract_source_code(</dt><dd><p>address=”0x0000000000000000000000000000000000001004”</p>
 </dd>
 </dl>
 <p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl class="simple">
+<dl class="simple">
 <dt>[</dt><dd><dl class="simple">
 <dt>{</dt><dd><p>“SourceCode”: “// File: contracts/interface/IBEP20.sol</p>
-</dd>
-</dl>
 </dd>
 </dl>
 </dd>
@@ -1566,7 +1559,7 @@ address=”0x89e73303049ee32919903c09e8de5629b84f59eb”</p>
 <dl class="py method">
 <dt id="bscscan.modules.transactions.Transactions.get_tx_receipt_status">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_tx_receipt_status</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txhash</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.transactions.Transactions.get_tx_receipt_status" title="Permalink to this definition">¶</a></dt>
-<dd><p>Chect the status of a transaction receipt.</p>
+<dd><p>Check the status of a transaction receipt.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>txhash</strong> (<em>str</em>) – Target tx hash.</p>
