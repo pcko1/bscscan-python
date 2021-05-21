@@ -94,14 +94,14 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">bscscan package</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="bscscan.configs.html">bscscan.configs package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bscscan.core.html">bscscan.core package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bscscan.enums.html">bscscan.enums package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bscscan.modules.html">bscscan.modules package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="bscscan.utils.html">bscscan.utils package</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-bscscan.bscscan">bscscan.bscscan module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-bscscan.bscscan_async">bscscan.bscscan_async module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-bscscan.client">bscscan.client module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-bscscan">Module contents</a></li>
 </ul>
 </li>
@@ -186,6 +186,14 @@
 <li class="toctree-l2"><a class="reference internal" href="bscscan.configs.html#module-bscscan.configs">Module contents</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="bscscan.core.html">bscscan.core package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#module-bscscan.core.async_client">bscscan.core.async_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#module-bscscan.core.base">bscscan.core.base module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#module-bscscan.core.sync_client">bscscan.core.sync_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#module-bscscan.core">Module contents</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="bscscan.enums.html">bscscan.enums package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bscscan.enums.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bscscan.enums.html#module-bscscan.enums.actions_enum">bscscan.enums.actions_enum module</a></li>
@@ -221,21 +229,13 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-bscscan.bscscan">
-<span id="bscscan-bscscan-module"></span><h2>bscscan.bscscan module<a class="headerlink" href="#module-bscscan.bscscan" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-bscscan.client">
+<span id="bscscan-client-module"></span><h2>bscscan.client module<a class="headerlink" href="#module-bscscan.client" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="bscscan.bscscan.BscScan">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">bscscan.bscscan.</span></code><code class="sig-name descname"><span class="pre">BscScan</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suppress_warnings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.bscscan.BscScan" title="Permalink to this definition">¶</a></dt>
+<dt id="bscscan.client.BscScan">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">bscscan.client.</span></code><code class="sig-name descname"><span class="pre">BscScan</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asynchronous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.client.BscScan" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-</dd></dl>
-
-</div>
-<div class="section" id="module-bscscan.bscscan_async">
-<span id="bscscan-bscscan-async-module"></span><h2>bscscan.bscscan_async module<a class="headerlink" href="#module-bscscan.bscscan_async" title="Permalink to this headline">¶</a></h2>
-<dl class="py class">
-<dt id="bscscan.bscscan_async.AsyncBscScan">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">bscscan.bscscan_async.</span></code><code class="sig-name descname"><span class="pre">AsyncBscScan</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">suppress_warnings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.bscscan_async.AsyncBscScan" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Client factory.</p>
 </dd></dl>
 
 </div>

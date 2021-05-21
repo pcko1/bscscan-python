@@ -8,6 +8,7 @@ Subpackages
    :maxdepth: 4
 
    bscscan.configs
+   bscscan.core
    bscscan.enums
    bscscan.modules
    bscscan.utils
@@ -15,18 +16,10 @@ Subpackages
 Submodules
 ----------
 
-bscscan.bscscan module
-----------------------
+bscscan.client module
+---------------------
 
-.. automodule:: bscscan.bscscan
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-bscscan.bscscan\_async module
------------------------------
-
-.. automodule:: bscscan.bscscan_async
+.. automodule:: bscscan.client
    :members:
    :undoc-members:
    :show-inheritance:

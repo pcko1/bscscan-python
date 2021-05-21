@@ -6,7 +6,7 @@
 Welcome to bscscan-python's documentation!
 ==========================================
 
-This is an unofficial ``Python 3.8+`` wrapper for the endpoints provided by `BscScan`_.
+This is an unofficial ``Python >=3.8`` wrapper for the endpoints provided by `BscScan`_.
 
 It supports asynchronous calls and it is available on `PyPI`_. Powered by `BscScan APIs`_.
 
