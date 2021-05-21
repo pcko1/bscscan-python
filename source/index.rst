@@ -6,7 +6,12 @@
 Welcome to bscscan-python's documentation!
 ==========================================
 
-test 1
+This is an unofficial `Python 3.8+` wrapper for the endpoints provided by BscScan.
+
+It supports asyncronous calls and it is available on PyPI.
+
+
+
 
 .. toctree::
    :maxdepth: 2
@@ -14,7 +19,6 @@ test 1
 
    modules
 
-test 2
 
 Indices and tables
 ==================
@@ -22,4 +26,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-* test 3
+* :ref:`FAQ`

@@ -9,7 +9,6 @@ Subpackages
 
    bscscan.configs
    bscscan.enums
-   bscscan.legacy
    bscscan.modules
    bscscan.utils
 
