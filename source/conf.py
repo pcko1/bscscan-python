@@ -19,8 +19,8 @@ sys.path.insert(0, os.path.abspath("../bscscan-python"))
 # -- Project information -----------------------------------------------------
 
 project = "bscscan-python"
-copyright = "2021, Panagiotis Kotsias"
-author = "Panagiotis Kotsias"
+copyright = "2021, Panagiotis-Christos Kotsias (hi@pankotsias.com)"
+author = "Panagiotis-Christos Kotsias (hi@pankotsias.com)"
 
 # The full version, including alpha/beta/rc tags
 release = "2.0.0"

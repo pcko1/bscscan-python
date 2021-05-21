@@ -6,23 +6,20 @@
 Welcome to bscscan-python's documentation!
 ==========================================
 
+test 1
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    modules
 
-Test1
-
+test 2
 
 Indices and tables
 ==================
-
-test2
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
 * test 3
-
-test4
