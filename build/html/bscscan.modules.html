@@ -190,7 +190,7 @@
 <dt id="bscscan.modules.accounts.Accounts.get_bep20_token_transfer_events_by_address">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_bep20_token_transfer_events_by_address</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.accounts.Accounts.get_bep20_token_transfer_events_by_address" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get all BEP20 token transfer events for a given address.</p>
-<p>NOTE: Returns the 10,000 most recent events.</p>
+<p><strong>NOTE: Returns the 10,000 most recent events.</strong></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -207,47 +207,41 @@
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_bep20_token_transfer_events_by_address(</dt><dd><p>address=0x63aea877b5d5fa234a1532f1b26a4f6d9051866e”,
-startblock=0,
-endblock=999999999,
-sort=asc”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “4387931”,
-“timeStamp”: “1611843685”,
-“hash”: “0x9603a00eaad4572fc03aae6ce4e64d129767752da95f53e3f726ad4ed86a843e”,
-“nonce”: “0”,
-“blockHash”: “0x33667c5034de6cb748e2d746b31b21f2c90dc20e8b670658bbb1c2201ced17f3”,
-“from”: “0x7be44b47c12761eab1b80b5779638fb09165c743”,
-“contractAddress”: “0xe9e7cea3dedca5984780bafc599bd69add087d56”,
-“to”: “0x63aea877b5d5fa234a1532f1b26a4f6d9051866e”,
-“value”: “42265483120736185167”,
-“tokenName”: “Binance-Peg BUSD Token”,
-“tokenSymbol”: “BUSD”,
-“tokenDecimal”: “18”,
-“transactionIndex”: “8”,
-“gas”: “411698”,
-“gasPrice”: “20000000000”,
-“gasUsed”: “286489”,
-“cumulativeGasUsed”: “1154025”,
-“input”: “deprecated”,
-“confirmations”: “3196712”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep20_token_transfer_events_by_address</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="mh">0x63aea877b5d5fa234a1532f1b26a4f6d9051866e</span><span class="s2">&quot;,</span>
+    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">endblock</span><span class="o">=</span><span class="mi">999999999</span><span class="p">,</span>
+    <span class="n">sort</span><span class="o">=</span><span class="n">asc</span><span class="s2">&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;4387931&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1611843685&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x9603a00eaad4572fc03aae6ce4e64d129767752da95f53e3f726ad4ed86a843e&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockHash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x33667c5034de6cb748e2d746b31b21f2c90dc20e8b670658bbb1c2201ced17f3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x7be44b47c12761eab1b80b5779638fb09165c743&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0xe9e7cea3dedca5984780bafc599bd69add087d56&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0x63aea877b5d5fa234a1532f1b26a4f6d9051866e&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;42265483120736185167&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenName&quot;</span><span class="p">:</span> <span class="s2">&quot;Binance-Peg BUSD Token&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenSymbol&quot;</span><span class="p">:</span> <span class="s2">&quot;BUSD&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenDecimal&quot;</span><span class="p">:</span> <span class="s2">&quot;18&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;transactionIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;8&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;411698&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasPrice&quot;</span><span class="p">:</span> <span class="s2">&quot;20000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;286489&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cumulativeGasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;1154025&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;deprecated&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;confirmations&quot;</span><span class="p">:</span> <span class="s2">&quot;3196712&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -271,55 +265,49 @@ sort=asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_bep20_token_transfer_events_by_address_and_contract_paginated(</dt><dd><p>“contract_address”: “0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c”,
-“address”: “0x63aea877b5d5fa234a1532f1b26a4f6d9051866e”,
-“page”: 1,
-“offset”: 100,
-“sort”: “asc”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “4505611”,
-“timeStamp”: “1612197293”,
-“hash”: “0x3ac8603f421ccc08e198e4d06f05b8b31dc76b747369d78f3e7fa489f4692c44”,
-“nonce”: “43”,
-“blockHash”: “0x3ea200d5770ce8fcfa17754fad9143c77ab9ef5c3a5bd9ceb18c13a40ec6e926”,
-“from”: “0x7be44b47c12761eab1b80b5779638fb09165c743”,
-“contractAddress”: “0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c”,
-“to”: “0x63aea877b5d5fa234a1532f1b26a4f6d9051866e”,
-“value”: “98000000000000000000”,
-“tokenName”: “Wrapped BNB”,
-“tokenSymbol”: “WBNB”,
-“tokenDecimal”: “18”,
-“transactionIndex”: “127”,
-“gas”: “209173”,
-“gasPrice”: “20000000000”,
-“gasUsed”: “130773”,
-“cumulativeGasUsed”: “6294816”,
-“input”: “deprecated”,
-“confirmations”: “3079034”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep20_token_transfer_events_by_address_and_contract_paginated</span><span class="p">(</span>
+    <span class="s2">&quot;contract_address&quot;</span><span class="p">:</span> <span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;0x63aea877b5d5fa234a1532f1b26a4f6d9051866e&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+    <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="s2">&quot;asc&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;4505611&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1612197293&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x3ac8603f421ccc08e198e4d06f05b8b31dc76b747369d78f3e7fa489f4692c44&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;43&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockHash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x3ea200d5770ce8fcfa17754fad9143c77ab9ef5c3a5bd9ceb18c13a40ec6e926&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x7be44b47c12761eab1b80b5779638fb09165c743&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0x63aea877b5d5fa234a1532f1b26a4f6d9051866e&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;98000000000000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenName&quot;</span><span class="p">:</span> <span class="s2">&quot;Wrapped BNB&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenSymbol&quot;</span><span class="p">:</span> <span class="s2">&quot;WBNB&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenDecimal&quot;</span><span class="p">:</span> <span class="s2">&quot;18&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;transactionIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;127&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;209173&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasPrice&quot;</span><span class="p">:</span> <span class="s2">&quot;20000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;130773&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cumulativeGasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;6294816&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;deprecated&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;confirmations&quot;</span><span class="p">:</span> <span class="s2">&quot;3079034&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
 <dt id="bscscan.modules.accounts.Accounts.get_bep20_token_transfer_events_by_contract_address_paginated">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_bep20_token_transfer_events_by_contract_address_paginated</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contract_address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.accounts.Accounts.get_bep20_token_transfer_events_by_contract_address_paginated" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get all token transfer events for a given BEP20 contract as numbered pages.</p>
-<p>NOTE: Returns the 10,000 most recent events.</p>
+<p><strong>NOTE: Returns the 10,000 most recent events.</strong></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -336,54 +324,48 @@ sort=asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_bep20_token_transfer_events_by_contract_address_paginated(</dt><dd><p>contract_address=”0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c”,
-page=1,
-offset=100,
-sort=”asc”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “188549”,
-“timeStamp”: “1599237427”,
-“hash”: “0x817585be21abae212524b1f86fb0c6ceaff0048ae4a29739108476b2ca06290e”,
-“nonce”: “16”,
-“blockHash”: “0x499c458e0ba984af9a2d1a188e2ba36c117f7a7eeba7ee23471e85b01653e10c”,
-“from”: “0x72af20bdae54756576b3725e73b75391e599a191”,
-“contractAddress”: “0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c”,
-“to”: “0x72af20bdae54756576b3725e73b75391e599a191”,
-“value”: “10000000000000000”,
-“tokenName”: “Wrapped BNB”,
-“tokenSymbol”: “WBNB”,
-“tokenDecimal”: “18”,
-“transactionIndex”: “0”,
-“gas”: “45614”,
-“gasPrice”: “22000000000”,
-“gasUsed”: “28382”,
-“cumulativeGasUsed”: “28382”,
-“input”: “deprecated”,
-“confirmations”: “7396096”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep20_token_transfer_events_by_contract_address_paginated</span><span class="p">(</span>
+    <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
+    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">offset</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;188549&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1599237427&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x817585be21abae212524b1f86fb0c6ceaff0048ae4a29739108476b2ca06290e&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;16&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockHash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x499c458e0ba984af9a2d1a188e2ba36c117f7a7eeba7ee23471e85b01653e10c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x72af20bdae54756576b3725e73b75391e599a191&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0x72af20bdae54756576b3725e73b75391e599a191&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;10000000000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenName&quot;</span><span class="p">:</span> <span class="s2">&quot;Wrapped BNB&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenSymbol&quot;</span><span class="p">:</span> <span class="s2">&quot;WBNB&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenDecimal&quot;</span><span class="p">:</span> <span class="s2">&quot;18&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;transactionIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;45614&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasPrice&quot;</span><span class="p">:</span> <span class="s2">&quot;22000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;28382&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cumulativeGasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;28382&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;deprecated&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;confirmations&quot;</span><span class="p">:</span> <span class="s2">&quot;7396096&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
 <dt id="bscscan.modules.accounts.Accounts.get_bep721_token_transfer_events_by_address">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_bep721_token_transfer_events_by_address</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.accounts.Accounts.get_bep721_token_transfer_events_by_address" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get all BEP721 token transfer events for a given address.</p>
-<p>NOTE: Returns the 10,000 most recent events.</p>
+<p><strong>NOTE: Returns the 10,000 most recent events.</strong></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -400,47 +382,41 @@ sort=”asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_bep721_token_transfer_events_by_address(</dt><dd><p>address=0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c”,
-startblock=0,
-endblock=999999999,
-sort=asc”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “2657100”,
-“timeStamp”: “1606646313”,
-“hash”: “0x43485c443c235156777148dddcc1483a1c8f46cccf5ab185cfc4bd678f247b6b”,
-“nonce”: “6”,
-“blockHash”: “0x20b6e2e67e74badc19b225a0aa4febe2382569c99842e32bc9d5dc94631a349d”,
-“from”: “0x0000000000000000000000000000000000000000”,
-“contractAddress”: “0x5e74094cd416f55179dbd0e45b1a8ed030e396a1”,
-“to”: “0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c”,
-“tokenID”: “384552”,
-“tokenName”: “Pancake Lottery Ticket”,
-“tokenSymbol”: “PLT”,
-“tokenDecimal”: “0”,
-“transactionIndex”: “2”,
-“gas”: “27000000”,
-“gasPrice”: “20000000000”,
-“gasUsed”: “22547256”,
-“cumulativeGasUsed”: “22947060”,
-“input”: “deprecated”,
-“confirmations”: “4927545”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep721_token_transfer_events_by_address</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="mh">0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c</span><span class="s2">&quot;,</span>
+    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">endblock</span><span class="o">=</span><span class="mi">999999999</span><span class="p">,</span>
+    <span class="n">sort</span><span class="o">=</span><span class="n">asc</span><span class="s2">&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;2657100&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1606646313&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x43485c443c235156777148dddcc1483a1c8f46cccf5ab185cfc4bd678f247b6b&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;6&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockHash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x20b6e2e67e74badc19b225a0aa4febe2382569c99842e32bc9d5dc94631a349d&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x0000000000000000000000000000000000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenID&quot;</span><span class="p">:</span> <span class="s2">&quot;384552&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenName&quot;</span><span class="p">:</span> <span class="s2">&quot;Pancake Lottery Ticket&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenSymbol&quot;</span><span class="p">:</span> <span class="s2">&quot;PLT&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenDecimal&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;transactionIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;27000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasPrice&quot;</span><span class="p">:</span> <span class="s2">&quot;20000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;22547256&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cumulativeGasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;22947060&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;deprecated&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;confirmations&quot;</span><span class="p">:</span> <span class="s2">&quot;4927545&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -464,55 +440,49 @@ sort=asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_bep721_token_transfer_events_by_address_and_contract_paginated(</dt><dd><p>“contract_address”: “0x5e74094cd416f55179dbd0e45b1a8ed030e396a1”,
-“address”: “0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c”,
-“page”: 1,
-“offset”: 100,
-“sort”: “asc”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “2657100”,
-“timeStamp”: “1606646313”,
-“hash”: “0x43485c443c235156777148dddcc1483a1c8f46cccf5ab185cfc4bd678f247b6b”,
-“nonce”: “6”,
-“blockHash”: “0x20b6e2e67e74badc19b225a0aa4febe2382569c99842e32bc9d5dc94631a349d”,
-“from”: “0x0000000000000000000000000000000000000000”,
-“contractAddress”: “0x5e74094cd416f55179dbd0e45b1a8ed030e396a1”,
-“to”: “0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c”,
-“tokenID”: “384552”,
-“tokenName”: “Pancake Lottery Ticket”,
-“tokenSymbol”: “PLT”,
-“tokenDecimal”: “0”,
-“transactionIndex”: “2”,
-“gas”: “27000000”,
-“gasPrice”: “20000000000”,
-“gasUsed”: “22547256”,
-“cumulativeGasUsed”: “22947060”,
-“input”: “deprecated”,
-“confirmations”: “4927545”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep721_token_transfer_events_by_address_and_contract_paginated</span><span class="p">(</span>
+    <span class="s2">&quot;contract_address&quot;</span><span class="p">:</span> <span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">&quot;offset&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+    <span class="s2">&quot;sort&quot;</span><span class="p">:</span> <span class="s2">&quot;asc&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;2657100&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1606646313&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x43485c443c235156777148dddcc1483a1c8f46cccf5ab185cfc4bd678f247b6b&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;6&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockHash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x20b6e2e67e74badc19b225a0aa4febe2382569c99842e32bc9d5dc94631a349d&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x0000000000000000000000000000000000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenID&quot;</span><span class="p">:</span> <span class="s2">&quot;384552&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenName&quot;</span><span class="p">:</span> <span class="s2">&quot;Pancake Lottery Ticket&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenSymbol&quot;</span><span class="p">:</span> <span class="s2">&quot;PLT&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenDecimal&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;transactionIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;2&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;27000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasPrice&quot;</span><span class="p">:</span> <span class="s2">&quot;20000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;22547256&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cumulativeGasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;22947060&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;deprecated&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;confirmations&quot;</span><span class="p">:</span> <span class="s2">&quot;4927545&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
 <dt id="bscscan.modules.accounts.Accounts.get_bep721_token_transfer_events_by_contract_address_paginated">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_bep721_token_transfer_events_by_contract_address_paginated</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contract_address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.accounts.Accounts.get_bep721_token_transfer_events_by_contract_address_paginated" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get all token transfer events for a given BEP721 contract as numbered pages.</p>
-<p>NOTE: Returns the 10,000 most recent events.</p>
+<p><strong>NOTE: Returns the 10,000 most recent events.</strong></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -529,47 +499,41 @@ sort=asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_bep721_token_transfer_events_by_contract_address_paginated(</dt><dd><p>contract_address=”0x5e74094cd416f55179dbd0e45b1a8ed030e396a1”,
-page=1,
-offset=100,
-sort=”asc”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “1592608”,
-“timeStamp”: “1603449812”,
-“hash”: “0x4d9d86b931bdaef28c2437d1dcf6bdbc9c80c5681cbf819726cad94c04edcd7a”,
-“nonce”: “391”,
-“blockHash”: “0x69e55bc5300dff5c5c009e818a0e8f71e0c895d1ce36da6b79182c860381524d”,
-“from”: “0x0000000000000000000000000000000000000000”,
-“contractAddress”: “0x5e74094cd416f55179dbd0e45b1a8ed030e396a1”,
-“to”: “0xb9fa21a62fc96cb2ac635a051061e2e50d964051”,
-“tokenID”: “1”,
-“tokenName”: “Pancake Lottery Ticket”,
-“tokenSymbol”: “PLT”,
-“tokenDecimal”: “0”,
-“transactionIndex”: “4”,
-“gas”: “1919509”,
-“gasPrice”: “20000000000”,
-“gasUsed”: “1260114”,
-“cumulativeGasUsed”: “1700085”,
-“input”: “deprecated”,
-“confirmations”: “5992037”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bep721_token_transfer_events_by_contract_address_paginated</span><span class="p">(</span>
+    <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
+    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">offset</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;1592608&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1603449812&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x4d9d86b931bdaef28c2437d1dcf6bdbc9c80c5681cbf819726cad94c04edcd7a&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;391&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockHash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x69e55bc5300dff5c5c009e818a0e8f71e0c895d1ce36da6b79182c860381524d&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x0000000000000000000000000000000000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0xb9fa21a62fc96cb2ac635a051061e2e50d964051&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenID&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenName&quot;</span><span class="p">:</span> <span class="s2">&quot;Pancake Lottery Ticket&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenSymbol&quot;</span><span class="p">:</span> <span class="s2">&quot;PLT&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;tokenDecimal&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;transactionIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;1919509&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasPrice&quot;</span><span class="p">:</span> <span class="s2">&quot;20000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;1260114&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cumulativeGasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;1700085&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;deprecated&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;confirmations&quot;</span><span class="p">:</span> <span class="s2">&quot;5992037&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -587,24 +551,21 @@ sort=”asc”</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_bnb_balance(</dt><dd><p>address=”0x0000000000000000000000000000000000001004”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><p>“158732998695887136972460565”</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bnb_balance</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
+<span class="p">)</span>
+
+<span class="s2">&quot;158732998695887136972460565&quot;</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
 <dt id="bscscan.modules.accounts.Accounts.get_bnb_balance_multiple">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_bnb_balance_multiple</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">addresses</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.accounts.Accounts.get_bnb_balance_multiple" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the BNB balance of multiple accounts.</p>
-<p>NOTE: Max 20 accounts per call are supported.</p>
+<p><strong>NOTE: Max 20 accounts per call are supported.</strong></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>addresses</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List of target accounts.</p>
@@ -616,51 +577,39 @@ sort=”asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl>
-<dt>get_bnb_balance_multiple(</dt><dd><dl class="simple">
-<dt>addresses=[</dt><dd><p>“0x0000000000000000000000000000000000001004”,
-“0x63a9975ba31b0b9626b34300f7f627147df1f526”,
-“0x198ef1ec325a96cc354c7266a038be8b5c558f67”</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“account”: “0x0000000000000000000000000000000000001004”,
-“balance”: “158732998695887136972460565”</p>
-</dd>
-</dl>
-<p>},
-{</p>
-<blockquote>
-<div><p>“account”: “0x63a9975ba31b0b9626b34300f7f627147df1f526”,
-“balance”: “0”</p>
-</div></blockquote>
-<p>},
-{</p>
-<blockquote>
-<div><p>“account”: “0x198ef1ec325a96cc354c7266a038be8b5c558f67”,
-“balance”: “0”</p>
-</div></blockquote>
-<p>}</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_bnb_balance_multiple</span><span class="p">(</span>
+    <span class="n">addresses</span><span class="o">=</span><span class="p">[</span>
+        <span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;0x63a9975ba31b0b9626b34300f7f627147df1f526&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;0x198ef1ec325a96cc354c7266a038be8b5c558f67&quot;</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;account&quot;</span><span class="p">:</span> <span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;balance&quot;</span><span class="p">:</span> <span class="s2">&quot;158732998695887136972460565&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;account&quot;</span><span class="p">:</span> <span class="s2">&quot;0x63a9975ba31b0b9626b34300f7f627147df1f526&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;balance&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;account&quot;</span><span class="p">:</span> <span class="s2">&quot;0x198ef1ec325a96cc354c7266a038be8b5c558f67&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;balance&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
 <dt id="bscscan.modules.accounts.Accounts.get_internal_txs_by_address">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_internal_txs_by_address</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.accounts.Accounts.get_internal_txs_by_address" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a list of all internal transactions for an address.</p>
-<p>NOTE: Returns the 10,000 most recent transactions.</p>
+<p><strong>NOTE: Returns the 10,000 most recent transactions.</strong></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -677,42 +626,36 @@ sort=”asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_internal_txs_by_address(</dt><dd><p>address=”0x0000000000000000000000000000000000001004”,
-startblock=0,
-endblock=2702578,
-sort=”asc”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “958”,
-“timeStamp”: “1598674477”,
-“hash”: “0x4d74a6fc84d57f18b8e1dfa07ee517c4feb296d16a8353ee41adc03669982028”,
-“from”: “0x0000000000000000000000000000000000001004”,
-“to”: “0x4e656459ed25bf986eea1196bc1b00665401645d”,
-“value”: “100000000000000”,
-“contractAddress”: “”,
-“input”: “”,
-“type”: “call”,
-“gas”: “12300”,
-“gasUsed”: “0”,
-“traceId”: “0_1_1”,
-“isError”: “0”,
-“errCode”: “”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_internal_txs_by_address</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">endblock</span><span class="o">=</span><span class="mi">2702578</span><span class="p">,</span>
+    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;958&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1598674477&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x4d74a6fc84d57f18b8e1dfa07ee517c4feb296d16a8353ee41adc03669982028&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0x4e656459ed25bf986eea1196bc1b00665401645d&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;100000000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;call&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;12300&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;traceId&quot;</span><span class="p">:</span> <span class="s2">&quot;0_1_1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;isError&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;errCode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -737,51 +680,45 @@ sort=”asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_internal_txs_by_address_paginated(</dt><dd><p>address=”0x0000000000000000000000000000000000001004”,
-startblock=0,
-endblock=2702578,
-page=1,
-offset=10,
-sort=”asc”,</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “958”,
-“timeStamp”: “1598674477”,
-“hash”: “0x4d74a6fc84d57f18b8e1dfa07ee517c4feb296d16a8353ee41adc03669982028”,
-“from”: “0x0000000000000000000000000000000000001004”,
-“to”: “0x4e656459ed25bf986eea1196bc1b00665401645d”,
-“value”: “100000000000000”,
-“contractAddress”: “”,
-“input”: “”,
-“type”: “call”,
-“gas”: “12300”,
-“gasUsed”: “0”,
-“traceId”: “0_1_1”,
-“isError”: “0”,
-“errCode”: “”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_internal_txs_by_address_paginated</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">endblock</span><span class="o">=</span><span class="mi">2702578</span><span class="p">,</span>
+    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;958&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1598674477&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x4d74a6fc84d57f18b8e1dfa07ee517c4feb296d16a8353ee41adc03669982028&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0x4e656459ed25bf986eea1196bc1b00665401645d&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;100000000000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;call&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;12300&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;traceId&quot;</span><span class="p">:</span> <span class="s2">&quot;0_1_1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;isError&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;errCode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
 <dt id="bscscan.modules.accounts.Accounts.get_internal_txs_by_block_range_paginated">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_internal_txs_by_block_range_paginated</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">startblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">offset</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.accounts.Accounts.get_internal_txs_by_block_range_paginated" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get all internal transactions given for a given block range as numbered pages.</p>
-<p>NOTE: Returns the 10,000 most recent transactions.</p>
+<p><strong>NOTE: Returns the 10,000 most recent transactions.</strong></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -799,48 +736,44 @@ sort=”asc”,</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_internal_txs_by_block_range_paginated(</dt><dd><p>startblock=0,
-endblock=2702578,
-page=1,
-offset=10,
-sort=”asc”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><p>{
-“blockNumber”: “958”,
-“timeStamp”: “1598674477”,
-“hash”: “0x4d74a6fc84d57f18b8e1dfa07ee517c4feb296d16a8353ee41adc03669982028”,
-“from”: “0x0000000000000000000000000000000000001004”,
-“to”: “0x4e656459ed25bf986eea1196bc1b00665401645d”,
-“value”: “100000000000000”,
-“contractAddress”: “”,
-“input”: “”,
-“type”: “call”,
-“gas”: “12300”,
-“gasUsed”: “0”,
-“traceId”: “0_1_1”,
-“isError”: “0”,
-“errCode”: “”
-},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_internal_txs_by_block_range_paginated</span><span class="p">(</span>
+    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">endblock</span><span class="o">=</span><span class="mi">2702578</span><span class="p">,</span>
+    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+    <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;958&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1598674477&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x4d74a6fc84d57f18b8e1dfa07ee517c4feb296d16a8353ee41adc03669982028&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0x4e656459ed25bf986eea1196bc1b00665401645d&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;100000000000000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;call&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;12300&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;traceId&quot;</span><span class="p">:</span> <span class="s2">&quot;0_1_1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;isError&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;errCode&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
 <dt id="bscscan.modules.accounts.Accounts.get_internal_txs_by_txhash">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_internal_txs_by_txhash</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txhash</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.accounts.Accounts.get_internal_txs_by_txhash" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get all internal transactions given for a tx hash.</p>
-<p>NOTE: Returns the 10,000 most recent transactions.</p>
+<p><strong>NOTE: Returns the 10,000 most recent transactions.</strong></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>txhash</strong> (<em>str</em>) – Target tx hash.</p>
@@ -852,15 +785,13 @@ sort=”asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
 <dl>
-<dt>Args:</dt><dd><dl class="simple">
+<dt>Example::</dt><dd><dl class="simple">
 <dt>get_internal_txs_by_txhash(</dt><dd><p>txhash=”0x6dbc8f3e1ba98c63463b19ebef957ccd842db274ed499a54f2cdde8499604d54”</p>
 </dd>
 </dl>
 <p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
+<dl>
 <dt>[</dt><dd><dl class="simple">
 <dt>{</dt><dd><p>“blockNumber”: “5012927”,
 “timeStamp”: “1613725978”,
@@ -889,7 +820,7 @@ sort=”asc”</p>
 <dt id="bscscan.modules.accounts.Accounts.get_normal_txs_by_address">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_normal_txs_by_address</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">startblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endblock</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.accounts.Accounts.get_normal_txs_by_address" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a list of all normal transactions for an address.</p>
-<p>NOTE: Returns the 10,000 most recent transactions.</p>
+<p><strong>NOTE: Returns the 10,000 most recent transactions.</strong></p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -906,46 +837,40 @@ sort=”asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_normal_txs_by_address(</dt><dd><p>address=”0x35e7a025f4da968de7e4d7e4004197917f4070f1”,
-startblock=0,
-endblock=99999999,
-sort=”asc”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “3385”,
-“timeStamp”: “1598681758”,
-“hash”: “0xd638d39681335a703c9ed03d389c468e3ddaf74efbbc59f0be8b0217f1281df8”,
-“nonce”: “0”,
-“blockHash”: “0x51bdc4233991acedb25a895c8659f6fb7607dc40626a1dcb795e57ed7ed1a673”,
-“transactionIndex”: “1”,
-“from”: “0x35e7a025f4da968de7e4d7e4004197917f4070f1”,
-“to”: “0x0000000000000000000000000000000000001002”,
-“value”: “207350625000000”,
-“gas”: “9223372036854775807”,
-“gasPrice”: “0”,
-“isError”: “0”,
-“txreceipt_status”: “1”,
-“input”: “0x”,
-“contractAddress”: “”,
-“cumulativeGasUsed”: “112103”,
-“gasUsed”: “1516”,
-“confirmations”: “7581257”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_normal_txs_by_address</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
+    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">endblock</span><span class="o">=</span><span class="mi">99999999</span><span class="p">,</span>
+    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;3385&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1598681758&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0xd638d39681335a703c9ed03d389c468e3ddaf74efbbc59f0be8b0217f1281df8&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockHash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x51bdc4233991acedb25a895c8659f6fb7607dc40626a1dcb795e57ed7ed1a673&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;transactionIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0x0000000000000000000000000000000000001002&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;207350625000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;9223372036854775807&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasPrice&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;isError&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;txreceipt_status&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;0x&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cumulativeGasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;112103&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;1516&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;confirmations&quot;</span><span class="p">:</span> <span class="s2">&quot;7581257&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -970,48 +895,42 @@ sort=”asc”</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_normal_txs_by_address_paginated(</dt><dd><p>address=”0x35e7a025f4da968de7e4d7e4004197917f4070f1”,
-startblock=0,
-endblock=99999999,
-page=1,
-offset=10,
-sort=”asc”,</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “3385”,
-“timeStamp”: “1598681758”,
-“hash”: “0xd638d39681335a703c9ed03d389c468e3ddaf74efbbc59f0be8b0217f1281df8”,
-“nonce”: “0”,
-“blockHash”: “0x51bdc4233991acedb25a895c8659f6fb7607dc40626a1dcb795e57ed7ed1a673”,
-“transactionIndex”: “1”,
-“from”: “0x35e7a025f4da968de7e4d7e4004197917f4070f1”,
-“to”: “0x0000000000000000000000000000000000001002”,
-“value”: “207350625000000”,
-“gas”: “9223372036854775807”,
-“gasPrice”: “0”,
-“isError”: “0”,
-“txreceipt_status”: “1”,
-“input”: “0x”,
-“contractAddress”: “”,
-“cumulativeGasUsed”: “112103”,
-“gasUsed”: “1516”,
-“confirmations”: “7581258”</p>
-</dd>
-</dl>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_normal_txs_by_address_paginated</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
+    <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">endblock</span><span class="o">=</span><span class="mi">99999999</span><span class="p">,</span>
+    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+    <span class="n">sort</span><span class="o">=</span><span class="s2">&quot;asc&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;3385&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1598681758&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;0xd638d39681335a703c9ed03d389c468e3ddaf74efbbc59f0be8b0217f1281df8&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;nonce&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockHash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x51bdc4233991acedb25a895c8659f6fb7607dc40626a1dcb795e57ed7ed1a673&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;transactionIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;0x0000000000000000000000000000000000001002&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;207350625000000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gas&quot;</span><span class="p">:</span> <span class="s2">&quot;9223372036854775807&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasPrice&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;isError&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;txreceipt_status&quot;</span><span class="p">:</span> <span class="s2">&quot;1&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;0x&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;contractAddress&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cumulativeGasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;112103&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;1516&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;confirmations&quot;</span><span class="p">:</span> <span class="s2">&quot;7581258&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -1029,35 +948,28 @@ sort=”asc”,</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
-<p class="rubric">Example</p>
-<dl>
-<dt>Args:</dt><dd><dl class="simple">
-<dt>get_validated_blocks_by_address(</dt><dd><p>address=”0x4396e28197653d0c244d95f8c1e57da902a72b4e”</p>
-</dd>
-</dl>
-<p>)</p>
-</dd>
-<dt>Returns:</dt><dd><dl>
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“blockNumber”: “5572207”,
-“timeStamp”: “1615421320”,
-“blockReward”: “82705403500220352”</p>
-</dd>
-</dl>
-<p>},
-{</p>
-<blockquote>
-<div><p>“blockNumber”: “5572186”,
-“timeStamp”: “1615421257”,
-“blockReward”: “86981148000000000”</p>
-</div></blockquote>
-<p>},</p>
-<p>…</p>
-</dd>
-</dl>
-<p>]</p>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_validated_blocks_by_address</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x4396e28197653d0c244d95f8c1e57da902a72b4e&quot;</span>
+<span class="p">)</span>
+
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;5572207&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1615421320&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockReward&quot;</span><span class="p">:</span> <span class="s2">&quot;82705403500220352&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;5572186&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1615421257&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;blockReward&quot;</span><span class="p">:</span> <span class="s2">&quot;86981148000000000&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -1079,6 +991,24 @@ sort=”asc”,</p>
 <dd class="field-odd"><p>List[dict]</p>
 </dd>
 </dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_validated_blocks_by_address_paginated</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x4396e28197653d0c244d95f8c1e57da902a72b4e&quot;</span><span class="p">,</span>
+    <span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">offset</span><span class="o">=</span><span class="mi">100</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+    <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;5572207&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;1615421320&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blockReward&quot;</span><span class="p">:</span> <span class="s2">&quot;82705403500220352&quot;</span>
+    <span class="p">},</span>
+
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </dd></dl>
@@ -1234,25 +1164,22 @@ closest=”before”</p>
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_contract_source_code</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contract_address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.contracts.Contracts.get_contract_source_code" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get source code for a specific contract, if uploaded.</p>
 <blockquote>
-<div><dl>
+<div><dl class="simple">
 <dt>Args:</dt><dd><p>contract_address (str): Target contract address.</p>
 </dd>
 <dt>Returns:</dt><dd><p>List[dict]: Source code in a list of dictionaries of various data.</p>
 </dd>
-<dt>Example::</dt><dd><dl class="simple">
-<dt>get_contract_source_code(</dt><dd><p>address=”0x0000000000000000000000000000000000001004”</p>
-</dd>
 </dl>
-<p>)</p>
-<dl class="simple">
-<dt>[</dt><dd><dl class="simple">
-<dt>{</dt><dd><p>“SourceCode”: “// File: contracts/interface/IBEP20.sol</p>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd>
-</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">get_contract_source_code</span><span class="p">(</span>
+    <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
+<span class="p">)</span>
+
+<span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;SourceCode&quot;</span><span class="p">:</span> <span class="s2">&quot;// File: contracts/interface/IBEP20.sol</span>
+</pre></div>
+</div>
 </div></blockquote>
 <dl>
 <dt>pragma…”,</dt><dd><blockquote>
