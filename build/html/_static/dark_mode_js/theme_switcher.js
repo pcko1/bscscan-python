@@ -14,10 +14,6 @@ $(document).ready(() => {
   createThemeSwitcher();
   $('#themeSwitcher').click(switchTheme);
 
-  $('footer').html(
-    $('footer').html() +
-      'Dark theme provided by <a href="http://mrdogebro.com">MrDogeBro</a>.'
-  );
 });
 
 const switchTheme = () => {
