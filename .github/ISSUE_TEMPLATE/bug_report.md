@@ -26,7 +26,7 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
+**System info (please complete the following information):**
  - OS and version: [e.g. Ubuntu 20.04.2 LTS]
  - Python version: [e.g. `3.8.2`]
  - `bscscan-python` version: [e.g. `2.0.0`]
