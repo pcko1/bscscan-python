@@ -1,8 +1,7 @@
 import json
-import warnings
 from importlib import resources
+
 from bscscan import configs
-from bscscan.enums.warnings_enum import WarningsEnum as Warnings
 
 CONFIG_FILE = "stable.json"
 
@@ -11,11 +10,8 @@ class BaseClient:
     def __init__(
         self,
         api_key: str,
-        suppress_warnings: bool = False,  # suppress warnings about old version
-        debug: bool = False,  # display generated URLs for debug purposes
+        debug: bool = False,  # display generated URLs for debugging purposes
     ):
-        if not suppress_warnings:
-            warnings.warn(Warnings.CONTEXT_MANAGER_WARNING)
         self._config = self._load_config()
         self._api_key = api_key
         self._debug = debug
