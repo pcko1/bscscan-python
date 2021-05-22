@@ -31,11 +31,11 @@ Install
 
 There are two ways to install this package; from PyPI or from source.
 
-Install from PyPI as::
+Install from PyPI as:: bash
 
    pip install bscscan-python
 
-Install from source as::
+Install from source as:: bash
 
    pip install git+https://github.com/pcko1/bscscan-python.git@stable
 
@@ -45,16 +45,17 @@ Basic Usage
 
 This package supports both synchronous and asynchronous calls.
 
-Both implementations need to be run inside a content manager, which is the *de facto pythonic* way for resource allocation.
+Both implementations need to be run inside a content manager, which is the 
+*de facto pythonic* way for resource allocation.
 
-Async client::
+Async client:: python
 
    from bscscan import AsyncBscScan
 
    async with AsyncBscScan(YOUR_API_KEY) as client:
       print(await client.get_bnb_last_price())
 
-Standard (sync) client::
+Standard (sync) client:: python
 
    from bscscan import BscScan
 
@@ -68,7 +69,7 @@ Using an existing ``Session`` object
 It is possible that you might already have a running ``Session`` object in your code.
 If that's the case, you can always pass it to ``BscScan`` in a slightly different instantiation.
 
-For the sync client::
+For the sync client:: python
 
    from requests import Session
    from bscscan.core.sync_client import SyncClient as BscScan
@@ -77,7 +78,7 @@ For the sync client::
    client = BscScan.from_session(api_key=YOUR_API_KEY, session=Session())
 
 
-For the async client::
+For the async client:: python
 
    from aiohttp import ClientSession
    from bscscan.core.async_client import AsyncClient as BscScan
@@ -85,16 +86,16 @@ For the async client::
    # you can substitute the session with your aiohttp.ClientSession
    client = await BscScan.from_session(api_key=YOUR_API_KEY, session=ClientSession())
 
-In this case, you don't need to use a context manager because it is assumed that you will
-close the open session somewhere else in your code.
+In this case, you don't need to use a context manager because it is assumed 
+that you will close the open session somewhere else in your code.
 
 
 Disclaimer
 ==========
 
-The author assumes no responsibility neither for the way this software is used
-nor for its behavior. The code is open-source and everyone is encouraged to inspect it before
-integrating into their products.
+The author assumes no responsibility for the way this software is used, for its 
+behavior or for any loss of funds. The code is open-source and everyone is 
+encouraged to inspect it before integrating it into their own products.
 
 
 Cite
@@ -102,7 +103,8 @@ Cite
 
 Please cite this software as:
 
-   Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4580473
+   Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. 
+   doi:10.5281/zenodo.4580473
 
 or in ``bibtex``::
 
@@ -122,38 +124,44 @@ FAQ
 * Why async?
 
    Because your application might not want to wait for BscScan to respond before
-   proceeding to the next line. Async calls execute in the background and are ideal for
-   I/O bound scenarios such as HTTP requests.
+   proceeding to the next line. Async calls execute in the background and are 
+   ideal for I/O bound scenarios such as HTTP requests.
 
 * How do I use method *X*?
 
-   Kindly read the :doc:`documentation <bscscan.modules>` of this package since detailed examples have been added for all methods.
+   Kindly read the :doc:`documentation <bscscan.modules>` of this package since 
+   detailed examples have been added for all methods.
 
 * Can you add support for *X*?
 
-   If (and only if) *X* is a method on BscScan.com that I have missed, please open a GitHub `issue`_.
+   If (and only if) *X* is a method on BscScan.com that I have missed, please 
+   open a GitHub `issue`_.
 
 * Is a particular functionality provided?
 
-   Kindly read the :doc:`documentation <bscscan.modules>` of this package. If it's not there, it's not provided.
+   Kindly read the :doc:`documentation <bscscan.modules>` of this package. 
+   If it's not there, it's not provided.
 
 * May I suggest some improvements?
 
-   Absolutely, PRs are more than just welcome. Just make sure the unittests pass and that coverage
-   remains at 100% in order for me to accept it.
+   Absolutely, PRs are more than just welcome. Just make sure the unittests pass 
+   and that coverage remains at 100% in order for me to accept it.
 
 * Are you affiliated with BscScan.com?
 
-   Not at all. I independently composed this package for my daily tasks and thought of open-sourcing it.
+   Not at all. I independently composed this package for my daily tasks and 
+   thought of open-sourcing it.
 
 * Are you open for collaboration?
 
-   Surprisingly, I have received several emails asking for collaboration. I am currently working full-time on my 
-   own projects so unfortunately I cannot promise much - yet, do reach out :)
+   Surprisingly, I have received several emails asking for collaboration. 
+   I am currently working full-time on my own projects so unfortunately 
+   I cannot promise much - yet, do reach out :)
 
 * How can I reach you?
 
-   My contact details may be found at https://pankotsias.com. For professional matters, kindly do prioritize LinkedIn.
+   My contact details may be found at https://pankotsias.com. 
+   For professional matters, kindly do prioritize LinkedIn.
 
 
 .. _BscScan: https://bscscan.com
