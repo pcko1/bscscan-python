@@ -97,7 +97,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#bscscan-client-module">bscscan.client module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-bscscan.client">bscscan.client module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-bscscan">Module contents</a></li>
 </ul>
 </li>
@@ -184,10 +184,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bscscan.core.html">bscscan.core package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#bscscan-core-async-client-module">bscscan.core.async_client module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#bscscan-core-base-module">bscscan.core.base module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#bscscan-core-sync-client-module">bscscan.core.sync_client module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#module-contents">Module contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#module-bscscan.core.async_client">bscscan.core.async_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#module-bscscan.core.base">bscscan.core.base module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#module-bscscan.core.sync_client">bscscan.core.sync_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.core.html#module-bscscan.core">Module contents</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bscscan.enums.html">bscscan.enums package</a><ul>
@@ -202,13 +202,13 @@
 <li class="toctree-l1"><a class="reference internal" href="bscscan.modules.html">bscscan.modules package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#module-bscscan.modules.accounts">bscscan.modules.accounts module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#bscscan-modules-blocks-module">bscscan.modules.blocks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#module-bscscan.modules.blocks">bscscan.modules.blocks module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#module-bscscan.modules.contracts">bscscan.modules.contracts module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#bscscan-modules-logs-module">bscscan.modules.logs module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#bscscan-modules-proxy-module">bscscan.modules.proxy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#module-bscscan.modules.logs">bscscan.modules.logs module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#module-bscscan.modules.proxy">bscscan.modules.proxy module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#module-bscscan.modules.stats">bscscan.modules.stats module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#module-bscscan.modules.tokens">bscscan.modules.tokens module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#bscscan-modules-transactions-module">bscscan.modules.transactions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#module-bscscan.modules.transactions">bscscan.modules.transactions module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bscscan.modules.html#module-bscscan.modules">Module contents</a></li>
 </ul>
 </li>
@@ -225,8 +225,15 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="bscscan-client-module">
-<h2>bscscan.client module<a class="headerlink" href="#bscscan-client-module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-bscscan.client">
+<span id="bscscan-client-module"></span><h2>bscscan.client module<a class="headerlink" href="#module-bscscan.client" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="bscscan.client.BscScan">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">bscscan.client.</span></code><code class="sig-name descname"><span class="pre">BscScan</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asynchronous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.client.BscScan" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Client factory.</p>
+</dd></dl>
+
 </div>
 <div class="section" id="module-bscscan">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-bscscan" title="Permalink to this headline">¶</a></h2>
