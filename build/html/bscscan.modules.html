@@ -1342,8 +1342,74 @@
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt id="bscscan.modules.logs.Logs.get_logs">
-<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_logs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_block</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_block</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_0</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_1</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_2</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_3</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_0_1_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_1_2_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_2_3_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_0_2_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_0_3_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_1_3_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.logs.Logs.get_logs" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">get_logs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_block</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_block</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_0</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_1</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_2</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_3</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_0_1_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_1_2_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_2_3_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_0_2_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_0_3_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic_1_3_opr</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bscscan.modules.logs.Logs.get_logs" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is an alternative to the native eth_getLogs. An address and/or
+topic_x parameters are required. When multiple topic_x parameters are
+used, the topic_x_y_opr (“and”/”or” operator) is also required.</p>
+<p><strong>NOTE: Only the first 1000 results are returned.</strong></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>from_block</strong> (<em>int</em>) – Start block of the query.</p></li>
+<li><p><strong>to_block</strong> (<em>int</em>) – End block of the query.</p></li>
+<li><p><strong>address</strong> (<em>str</em>) – Address of the logs.</p></li>
+<li><p><strong>topic_0</strong> (<em>str</em><em>, </em><em>optional</em>) – Topic 0 in the logs. Defaults to “”.</p></li>
+<li><p><strong>topic_1</strong> (<em>str</em><em>, </em><em>optional</em>) – Topic 1 in the logs. Defaults to “”.</p></li>
+<li><p><strong>topic_2</strong> (<em>str</em><em>, </em><em>optional</em>) – Topic 2 in the logs. Defaults to “”.</p></li>
+<li><p><strong>topic_3</strong> (<em>str</em><em>, </em><em>optional</em>) – Topic 3 in the logs. Defaults to “”.</p></li>
+<li><p><strong>topic_0_1_opr</strong> (<em>str</em><em>, </em><em>optional</em>) – Logical operator between topic 0 and 1. Defaults to “”.</p></li>
+<li><p><strong>topic_1_2_opr</strong> (<em>str</em><em>, </em><em>optional</em>) – Logical operator between topic 1 and 2. Defaults to “”.</p></li>
+<li><p><strong>topic_2_3_opr</strong> (<em>str</em><em>, </em><em>optional</em>) – Logical operator between topic 2 and 3. Defaults to “”.</p></li>
+<li><p><strong>topic_0_2_opr</strong> (<em>str</em><em>, </em><em>optional</em>) – Logical operator between topic 0 and 2. Defaults to “”.</p></li>
+<li><p><strong>topic_0_3_opr</strong> (<em>str</em><em>, </em><em>optional</em>) – Logical operator between topic 0 and 3. Defaults to “”.</p></li>
+<li><p><strong>topic_1_3_opr</strong> (<em>str</em><em>, </em><em>optional</em>) – Logical operator between topic 1 and 3. Defaults to “”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The event logs in a dictionary, including topics and data fields.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span>
+        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_logs</span><span class="p">(</span>
+            <span class="n">from_block</span><span class="o">=</span><span class="mi">4993830</span><span class="p">,</span>
+            <span class="n">to_block</span><span class="o">=</span><span class="mi">4993832</span><span class="p">,</span>
+            <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0xe561479bebee0e606c19bb1973fc4761613e3c42&quot;</span><span class="p">,</span>
+            <span class="n">topic_0</span><span class="o">=</span><span class="s2">&quot;0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef&quot;</span><span class="p">,</span>
+            <span class="n">topic_0_1_opr</span><span class="o">=</span><span class="s2">&quot;and&quot;</span><span class="p">,</span>
+            <span class="n">topic_1</span><span class="o">=</span><span class="s2">&quot;0x000000000000000000000000730e2065b9daee84c3003c05bf6d2b3a08e55667&quot;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span>
+    <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="s2">&quot;0xe561479bebee0e606c19bb1973fc4761613e3c42&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;topics&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;0x000000000000000000000000730e2065b9daee84c3003c05bf6d2b3a08e55667&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;0x000000000000000000000000d7d19938eae260d7f0e0a4c36e665ff4cf4b7acc&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="s2">&quot;0x000000000000000000000000000000000000000000000000076cd96f53f24b0a&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;blockNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;0x4c3326&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;timeStamp&quot;</span><span class="p">:</span> <span class="s2">&quot;0x602e9ef1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;gasPrice&quot;</span><span class="p">:</span> <span class="s2">&quot;0x2540be400&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;gasUsed&quot;</span><span class="p">:</span> <span class="s2">&quot;0x1b0f2&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;logIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;0xf7&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;transactionHash&quot;</span><span class="p">:</span> <span class="s2">&quot;0x73844fcfc6beab2e973a897c9573f4d79811b12213ce263045a203e0d3cea90e&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;transactionIndex&quot;</span><span class="p">:</span> <span class="s2">&quot;0xb9&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
 
 </dd></dl>
 

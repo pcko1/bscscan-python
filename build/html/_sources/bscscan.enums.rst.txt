@@ -36,14 +36,6 @@ bscscan.enums.tags\_enum module
    :undoc-members:
    :show-inheritance:
 
-bscscan.enums.warnings\_enum module
------------------------------------
-
-.. automodule:: bscscan.enums.warnings_enum
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Module contents
 ---------------
 
