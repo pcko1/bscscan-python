@@ -7,8 +7,14 @@ assignees: pcko1
 
 ---
 
+**Have you checked the documentation of this package?**
+Kindly take a look at the [list of provided endpoints](https://bscscan-python.pankotsias.com/bscscan.modules.html) by this package first, in case your proposed feature already exists there.
+
+**Is the feature on BscScan.com but missing from this package?**
+Please add a link to the missing feature.
+
 **Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+A clear and concise description of what the problem is, if any.
 
 **Describe the solution you'd like**
 A clear and concise description of what you want to happen.
