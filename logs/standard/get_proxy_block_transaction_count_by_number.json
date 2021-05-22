@@ -1,0 +1,9 @@
+{
+  "method": "get_proxy_block_transaction_count_by_number",
+  "module": "proxy",
+  "kwargs": {
+    "tag": "0x3d0900"
+  },
+  "log_timestamp": "2021-05-22-19:48:48",
+  "res": "0x7"
+}
