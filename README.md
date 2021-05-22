@@ -206,7 +206,7 @@ async with BscScan(YOUR_API_KEY) as bsc:
 
 ## Examples
 
-Detailed examples (arguments and results) for all methods may be found in the official documentation. 👉 [![Documentation Status](https://readthedocs.org/projects/bscscan-python/badge/?version=latest)](https://bscscan-python.readthedocs.io/en/latest/?badge=latest) :book:
+Detailed examples (arguments and results) for all methods may be found in the official documentation. [![Documentation Status](https://readthedocs.org/projects/bscscan-python/badge/?version=latest)](https://bscscan-python.readthedocs.io/en/latest/?badge=latest)
 
 
 ## Issues
