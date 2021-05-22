@@ -1,4 +1,15 @@
 {
+  "get_logs": {
+    "module": "logs",
+    "kwargs": {
+      "from_block": 4993830,
+      "to_block": 4993832,
+      "address": "0xe561479bebee0e606c19bb1973fc4761613e3c42",
+      "topic_0": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+      "topic_0_1_opr": "and",
+      "topic_1": "0x000000000000000000000000730e2065b9daee84c3003c05bf6d2b3a08e55667"
+    }
+  },
   "get_proxy_block_number": {
     "module": "proxy",
     "kwargs": {}

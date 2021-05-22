@@ -8,11 +8,17 @@ CONFIG_FILE = "stable.json"
 
 
 class BaseClient:
-    def __init__(self, api_key: str, suppress_warnings=False):
+    def __init__(
+        self,
+        api_key: str,
+        suppress_warnings: bool = False,  # suppress warnings about old version
+        debug: bool = False,  # display generated URLs for debug purposes
+    ):
         if not suppress_warnings:
             warnings.warn(Warnings.CONTEXT_MANAGER_WARNING)
         self._config = self._load_config()
         self._api_key = api_key
+        self._debug = debug
 
     @staticmethod
     def _load_config(config_file: str = CONFIG_FILE) -> dict:

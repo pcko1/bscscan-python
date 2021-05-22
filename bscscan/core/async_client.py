@@ -21,6 +21,8 @@ class AsyncClient(BaseClient):
                 f"{fields.API_KEY}"
                 f"{self._api_key}"
             )
+            if self._debug:
+                print(f"\n{url}\n")
             async with self._session.get(url) as response:
                 return parser.parse(await response.json())
 
@@ -34,7 +36,7 @@ class AsyncClient(BaseClient):
         await self._session.close()
 
     @classmethod
-    async def from_session(cls, api_key: str, session: ClientSession):
-        client = AsyncClient(api_key)
+    async def from_session(cls, api_key: str, session: ClientSession, **kwargs):
+        client = AsyncClient(api_key, **kwargs)
         client._session = session
         return await client._build()

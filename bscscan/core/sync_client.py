@@ -21,6 +21,8 @@ class SyncClient(BaseClient):
                 f"{fields.API_KEY}"
                 f"{self._api_key}"
             )
+            if self._debug:
+                print(f"\n{url}\n")
             with self._session.get(url) as response:
                 return parser.parse(response.json())
 
@@ -34,7 +36,7 @@ class SyncClient(BaseClient):
         self._session.close()
 
     @classmethod
-    def from_session(cls, api_key: str, session: Session):
-        client = SyncClient(api_key)
+    def from_session(cls, api_key: str, session: Session, **kwargs):
+        client = SyncClient(api_key, **kwargs)
         client._session = session
         return client._build()

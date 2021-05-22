@@ -1,10 +1,6 @@
 bscscan.modules package
 =======================
 
-All API endpoints are listed below. They are exposed via the client and all of 
-them are available using both the sync and async clients.
-
-
 Submodules
 ----------
 
@@ -28,6 +24,14 @@ bscscan.modules.contracts module
 --------------------------------
 
 .. automodule:: bscscan.modules.contracts
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+bscscan.modules.logs module
+---------------------------
+
+.. automodule:: bscscan.modules.logs
    :members:
    :undoc-members:
    :show-inheritance:

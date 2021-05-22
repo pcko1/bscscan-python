@@ -48,6 +48,7 @@ class ActionsEnum:
     GET_BLOCK_COUNTDOWN: str = "getblockcountdown"
     GET_BLOCK_NUMBER_BY_TIME: str = "getblocknobytime"
     GET_BLOCK_REWARD: str = "getblockreward"
+    GET_LOGS: str = "getLogs"
     GET_MINED_BLOCKS: str = "getminedblocks"
     GET_SOURCE_CODE: str = "getsourcecode"
     GET_STATUS: str = "getstatus"

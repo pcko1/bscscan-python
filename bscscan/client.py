@@ -6,8 +6,8 @@ from bscscan.core.sync_client import SyncClient
 class BscScan:
     """Client factory."""
 
-    def __new__(cls, api_key: str, asynchronous=True) -> BaseClient:
+    def __new__(cls, api_key: str, asynchronous=True, **kwargs) -> BaseClient:
         if asynchronous:
-            return AsyncClient(api_key=api_key)
+            return AsyncClient(api_key=api_key, **kwargs)
         else:
-            return SyncClient(api_key=api_key)
+            return SyncClient(api_key=api_key, **kwargs)

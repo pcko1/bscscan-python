@@ -28,6 +28,14 @@ bscscan.modules.contracts module
    :undoc-members:
    :show-inheritance:
 
+bscscan.modules.logs module
+---------------------------
+
+.. automodule:: bscscan.modules.logs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 bscscan.modules.proxy module
 ----------------------------
 
