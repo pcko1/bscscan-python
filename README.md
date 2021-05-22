@@ -16,7 +16,7 @@
 
 A complete Python API for [BscScan.com](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). Powered by [BscScan.com APIs](https://bscscan.com/apis).
 
-*This is a gently modified fork of the [etherscan-python](https://github.com/pcko1/etherscan-python) package.*
+*This is a fork of the [etherscan-python](https://github.com/pcko1/etherscan-python) package.*
 
 ___
 
@@ -107,6 +107,15 @@ The following endpoints are provided:
 
 </details>
 
+</details>
+
+<details><summary>Logs <a href="https://bscscan.com/apis#logs">(source)</a></summary>
+<p>
+  
+* `get_logs`
+
+</details>
+
 *If you think that a newly-added method is missing, kindly open an [issue](https://github.com/pcko1/bscscan-python/issues) as a feature request and I will do my best to add it.*
 
 ## Installation
@@ -133,50 +142,21 @@ In `bash`, test that everything looks OK on your end using your `YOUR_API_KEY` (
 bash run_tests.sh YOUR_API_KEY
 ````
 
-This will regenerate the logs under `logs/` with the most recent results and the timestamp of the execution.
-
-## Usage
-
+## Usa
 In `python`, create a client with your personal [BscScan.com](https://bscscan.com/) API key:
 
 ``` python
 from bscscan import BscScan
-bsc = BscScan(YOUR_API_KEY) # key in quotation marks
-```
 
-Then you can call all available methods, e.g.:
-
-``` python
-bsc.get_bnb_balance(address="0x0000000000000000000000000000000000001004")
+async with BscScan(YOUR_API_KEY) as bsc:
+    print(await bsc.get_bnb_balance(address="0x0000000000000000000000000000000000001004"))
 
 > '167195709084498025431541166'
 ```
 
 ## Examples
 
-Examples (arguments and results) for all methods may be found as JSON files [here](https://github.com/pcko1/bscscan-python/tree/master/logs).  For example, if you want to use the method `get_circulating_supply_by_contract_address`, you can find the supported arguments and the format of its output in its respective [JSON file](logs/standard/get_circulating_supply_by_contract_address.json):
-
-``` json
-{
-  "method": "get_circulating_supply_by_contract_address",
-  "module": "tokens",
-  "kwargs": {
-    "contract_address": "0xe9e7cea3dedca5984780bafc599bd69add087d56"
-  },
-  "log_timestamp": "2021-02-19-12:34:14",
-  "res": "422504134592569820000000000"
-}
-```
-
-where `kwargs` refer to the required named arguments and `res` refers to the expected result if you were to run:
-
-``` python
-bsc.get_circulating_supply_by_contract_address(contract_address="0xe9e7cea3dedca5984780bafc599bd69add087d56")
-
-> '422504134592569820000000000'
-```
-
-**Disclaimer**: Those examples blindly use argument values (addresses, contracts, etc.) that were randomly chosen and do not reflect any personal preference.
+Detailed examples (arguments and results) for all methods may be found in the official documentation.
 
 ## Issues
 
@@ -203,4 +183,4 @@ Feel free to leave a :star: if you found this package useful.
 
 ___
 
- Powered by [Bscscan.com APIs](https://bscscan.com/apis).
+Powered by [Bscscan.com APIs](https://bscscan.com/apis).
