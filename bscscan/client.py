@@ -19,5 +19,4 @@ class BscScan:
         """
         if asynchronous:
             return AsyncClient(api_key=api_key, debug=debug)
-        else:
-            return SyncClient(api_key=api_key, debug=debug)
+        return SyncClient(api_key=api_key, debug=debug)
