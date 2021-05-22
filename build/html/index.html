@@ -161,8 +161,7 @@
 <h1>Welcome to bscscan-python’s documentation!<a class="headerlink" href="#welcome-to-bscscan-python-s-documentation" title="Permalink to this headline">¶</a></h1>
 <p>This is an unofficial <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">&gt;=3.8</span></code> wrapper for the endpoints provided by <a class="reference external" href="https://bscscan.com">BscScan</a>.</p>
 <p>It supports asynchronous calls and it is available on <a class="reference external" href="https://pypi.org/project/bscscan-python/">PyPI</a>. Powered by <a class="reference external" href="https://bscscan.com/apis">BscScan APIs</a>.</p>
-<p>Please read the docs here <span class="xref std std-doc">bscscan.modules.rst</span> or here <span class="xref std std-ref">_client_modules</span>.
-Click here <a class="reference internal" href="bscscan.modules.html"><span class="doc">my document</span></a></p>
+<p>For a detailed list of all methods and their arguments, please refer to <a class="reference internal" href="bscscan.modules.html"><span class="doc">this page</span></a>.</p>
 </div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
@@ -189,7 +188,7 @@ Click here <a class="reference internal" href="bscscan.modules.html"><span class
 </pre></div>
 </div>
 <p>Install from source as:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pcko1</span><span class="o">/</span><span class="n">bscscan</span><span class="o">-</span><span class="n">python</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pcko1</span><span class="o">/</span><span class="n">bscscan</span><span class="o">-</span><span class="n">python</span><span class="o">.</span><span class="n">git</span><span class="nd">@stable</span>
 </pre></div>
 </div>
 </div>
@@ -211,6 +210,29 @@ Click here <a class="reference internal" href="bscscan.modules.html"><span class
    <span class="nb">print</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">get_bnb_last_price</span><span class="p">())</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="using-an-existing-session-object">
+<h1>Using an existing <code class="docutils literal notranslate"><span class="pre">Session</span></code> object<a class="headerlink" href="#using-an-existing-session-object" title="Permalink to this headline">¶</a></h1>
+<p>It is possible that you might already have a running <code class="docutils literal notranslate"><span class="pre">Session</span></code> object in your code.
+If that’s the case, you can always pass it to <code class="docutils literal notranslate"><span class="pre">BscScan</span></code> in a slightly different instantiation.</p>
+<p>For the sync client:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">requests</span> <span class="kn">import</span> <span class="n">Session</span>
+<span class="kn">from</span> <span class="nn">bscscan.core.sync_client</span> <span class="kn">import</span> <span class="n">SyncClient</span> <span class="k">as</span> <span class="n">BscScan</span>
+
+<span class="c1"># you can substitute the session with your requests.Session</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">BscScan</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">YOUR_API_KEY</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="n">Session</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>For the async client:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">aiohttp</span> <span class="kn">import</span> <span class="n">ClientSession</span>
+<span class="kn">from</span> <span class="nn">bscscan.core.async_client</span> <span class="kn">import</span> <span class="n">AsyncClient</span> <span class="k">as</span> <span class="n">BscScan</span>
+
+<span class="c1"># you can substitute the session with your aiohttp.ClientSession</span>
+<span class="n">client</span> <span class="o">=</span> <span class="k">await</span> <span class="n">BscScan</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">YOUR_API_KEY</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="n">ClientSession</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>In this case, you don’t need to use a context manager because it is assumed that you will
+close the open session somewhere else in your code.</p>
 </div>
 <div class="section" id="disclaimer">
 <h1>Disclaimer<a class="headerlink" href="#disclaimer" title="Permalink to this headline">¶</a></h1>
@@ -242,13 +264,13 @@ integrating into their products.</p>
 <li><p>Why async?</p>
 <blockquote>
 <div><p>Because your application might not want to wait for BscScan to respond before
-proceeding to the next step. Async calls execute in the background and are ideal for
+proceeding to the next line. Async calls execute in the background and are ideal for
 I/O bound scenarios such as HTTP requests.</p>
 </div></blockquote>
 </li>
 <li><p>How do I use method <em>X</em>?</p>
 <blockquote>
-<div><p>Kindly read the documentation of this package since detailed examples have been added for all methods.</p>
+<div><p>Kindly read the <a class="reference internal" href="bscscan.modules.html"><span class="doc">documentation</span></a> of this package since detailed examples have been added for all methods.</p>
 </div></blockquote>
 </li>
 <li><p>Can you add support for <em>X</em>?</p>
@@ -258,7 +280,7 @@ I/O bound scenarios such as HTTP requests.</p>
 </li>
 <li><p>Is a particular functionality provided?</p>
 <blockquote>
-<div><p>Kindly read the documentation of this package. If it’s not there, it’s not provided.</p>
+<div><p>Kindly read the <a class="reference internal" href="bscscan.modules.html"><span class="doc">documentation</span></a> of this package. If it’s not there, it’s not provided.</p>
 </div></blockquote>
 </li>
 <li><p>May I suggest some improvements?</p>
