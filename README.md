@@ -13,11 +13,10 @@
 [![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
 [![DOI](https://zenodo.org/badge/340319392.svg)](https://zenodo.org/badge/latestdoi/340319392)
 
-Read the official documentation here 👉 [![Documentation Status](https://readthedocs.org/projects/bscscan-python/badge/?version=latest)](https://bscscan-python.readthedocs.io/en/latest/?badge=latest)
-
-
 
 A complete Python API for [BscScan.com](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). Powered by [BscScan.com APIs](https://bscscan.com/apis).
+
+:book: Read the official documentation here 👉 [![Documentation Status](https://readthedocs.org/projects/bscscan-python/badge/?version=latest)](https://bscscan-python.readthedocs.io/en/latest/?badge=latest)
 
 *This is a fork of the [etherscan-python](https://github.com/pcko1/etherscan-python) package.*
 
@@ -159,7 +158,7 @@ async with BscScan(YOUR_API_KEY) as bsc:
 
 ## Examples
 
-Detailed examples (arguments and results) for all methods may be found in the official documentation. 👉 [![Documentation Status](https://readthedocs.org/projects/bscscan-python/badge/?version=latest)](https://bscscan-python.readthedocs.io/en/latest/?badge=latest)
+Detailed examples (arguments and results) for all methods may be found in the official documentation. 👉 [![Documentation Status](https://readthedocs.org/projects/bscscan-python/badge/?version=latest)](https://bscscan-python.readthedocs.io/en/latest/?badge=latest) :book:
 
 
 ## Issues
