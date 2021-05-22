@@ -31,11 +31,11 @@ Install
 
 There are two ways to install this package; from PyPI or from source.
 
-Install from PyPI as:: bash
+Install from PyPI as::
 
    pip install bscscan-python
 
-Install from source as:: bash
+Install from source as::
 
    pip install git+https://github.com/pcko1/bscscan-python.git@stable
 
@@ -48,14 +48,14 @@ This package supports both synchronous and asynchronous calls.
 Both implementations need to be run inside a content manager, which is the 
 *de facto pythonic* way for resource allocation.
 
-Async client:: python
+Async client::
 
    from bscscan import AsyncBscScan
 
    async with AsyncBscScan(YOUR_API_KEY) as client:
       print(await client.get_bnb_last_price())
 
-Standard (sync) client:: python
+Standard (sync) client::
 
    from bscscan import BscScan
 
@@ -69,7 +69,7 @@ Using an existing ``Session`` object
 It is possible that you might already have a running ``Session`` object in your code.
 If that's the case, you can always pass it to ``BscScan`` in a slightly different instantiation.
 
-For the sync client:: python
+For the sync client::
 
    from requests import Session
    from bscscan.core.sync_client import SyncClient as BscScan
@@ -78,7 +78,7 @@ For the sync client:: python
    client = BscScan.from_session(api_key=YOUR_API_KEY, session=Session())
 
 
-For the async client:: python
+For the async client::
 
    from aiohttp import ClientSession
    from bscscan.core.async_client import AsyncClient as BscScan

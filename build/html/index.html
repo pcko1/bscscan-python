@@ -183,55 +183,55 @@
 <div class="section" id="install">
 <h1>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h1>
 <p>There are two ways to install this package; from PyPI or from source.</p>
-<p>Install from PyPI as:: bash</p>
-<blockquote>
-<div><p>pip install bscscan-python</p>
-</div></blockquote>
-<p>Install from source as:: bash</p>
-<blockquote>
-<div><p>pip install git+https://github.com/pcko1/bscscan-python.git&#64;stable</p>
-</div></blockquote>
+<p>Install from PyPI as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">bscscan</span><span class="o">-</span><span class="n">python</span>
+</pre></div>
+</div>
+<p>Install from source as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">pcko1</span><span class="o">/</span><span class="n">bscscan</span><span class="o">-</span><span class="n">python</span><span class="o">.</span><span class="n">git</span><span class="nd">@stable</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="basic-usage">
 <h1>Basic Usage<a class="headerlink" href="#basic-usage" title="Permalink to this headline">¶</a></h1>
 <p>This package supports both synchronous and asynchronous calls.</p>
 <p>Both implementations need to be run inside a content manager, which is the
 <em>de facto pythonic</em> way for resource allocation.</p>
-<p>Async client:: python</p>
-<blockquote>
-<div><p>from bscscan import AsyncBscScan</p>
-<dl class="simple">
-<dt>async with AsyncBscScan(YOUR_API_KEY) as client:</dt><dd><p>print(await client.get_bnb_last_price())</p>
-</dd>
-</dl>
-</div></blockquote>
-<p>Standard (sync) client:: python</p>
-<blockquote>
-<div><p>from bscscan import BscScan</p>
-<dl class="simple">
-<dt>with BscScan(YOUR_API_KEY) as client:</dt><dd><p>print(client.get_bnb_last_price())</p>
-</dd>
-</dl>
-</div></blockquote>
+<p>Async client:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+
+<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bnb_last_price</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Standard (sync) client:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
+
+<span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">get_bnb_last_price</span><span class="p">())</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="using-an-existing-session-object">
 <h1>Using an existing <code class="docutils literal notranslate"><span class="pre">Session</span></code> object<a class="headerlink" href="#using-an-existing-session-object" title="Permalink to this headline">¶</a></h1>
 <p>It is possible that you might already have a running <code class="docutils literal notranslate"><span class="pre">Session</span></code> object in your code.
 If that’s the case, you can always pass it to <code class="docutils literal notranslate"><span class="pre">BscScan</span></code> in a slightly different instantiation.</p>
-<p>For the sync client:: python</p>
-<blockquote>
-<div><p>from requests import Session
-from bscscan.core.sync_client import SyncClient as BscScan</p>
-<p># you can substitute the session with your requests.Session
-client = BscScan.from_session(api_key=YOUR_API_KEY, session=Session())</p>
-</div></blockquote>
-<p>For the async client:: python</p>
-<blockquote>
-<div><p>from aiohttp import ClientSession
-from bscscan.core.async_client import AsyncClient as BscScan</p>
-<p># you can substitute the session with your aiohttp.ClientSession
-client = await BscScan.from_session(api_key=YOUR_API_KEY, session=ClientSession())</p>
-</div></blockquote>
+<p>For the sync client:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">requests</span> <span class="kn">import</span> <span class="n">Session</span>
+<span class="kn">from</span> <span class="nn">bscscan.core.sync_client</span> <span class="kn">import</span> <span class="n">SyncClient</span> <span class="k">as</span> <span class="n">BscScan</span>
+
+<span class="c1"># you can substitute the session with your requests.Session</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">BscScan</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">YOUR_API_KEY</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="n">Session</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>For the async client:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">aiohttp</span> <span class="kn">import</span> <span class="n">ClientSession</span>
+<span class="kn">from</span> <span class="nn">bscscan.core.async_client</span> <span class="kn">import</span> <span class="n">AsyncClient</span> <span class="k">as</span> <span class="n">BscScan</span>
+
+<span class="c1"># you can substitute the session with your aiohttp.ClientSession</span>
+<span class="n">client</span> <span class="o">=</span> <span class="k">await</span> <span class="n">BscScan</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">YOUR_API_KEY</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="n">ClientSession</span><span class="p">())</span>
+</pre></div>
+</div>
 <p>In this case, you don’t need to use a context manager because it is assumed
 that you will close the open session somewhere else in your code.</p>
 </div>
