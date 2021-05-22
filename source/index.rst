@@ -50,16 +50,16 @@ Both implementations need to be run inside a content manager, which is the
 
 Async client::
 
-   from bscscan import AsyncBscScan
+   from bscscan import BscScan
 
-   async with AsyncBscScan(YOUR_API_KEY) as client:
+   async with BscScan(YOUR_API_KEY) as client:
       print(await client.get_bnb_last_price())
 
-Standard (sync) client::
+Sync client::
 
    from bscscan import BscScan
 
-   with BscScan(YOUR_API_KEY) as client:
+   with BscScan(YOUR_API_KEY, asynchronous=False) as client:
       print(client.get_bnb_last_price())
 
 
@@ -67,7 +67,7 @@ Using an existing ``Session`` object
 ====================================
 
 It is possible that you might already have a running ``Session`` object in your code.
-If that's the case, you can always pass it to ``BscScan`` in a slightly different instantiation.
+If that's the case, you can always pass it to ``BscScan`` with a slightly different instantiation.
 
 For the sync client::
 
