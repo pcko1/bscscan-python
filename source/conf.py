@@ -58,7 +58,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "sphinx.ext.intersphinx",
-    "sphinx_rtd_dark_mode",
+    # "sphinx_rtd_dark_mode",
 ]
 
 # for sphinx_rtd_dark_mode extension
