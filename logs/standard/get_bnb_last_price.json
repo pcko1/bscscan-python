@@ -2,11 +2,11 @@
   "method": "get_bnb_last_price",
   "module": "stats",
   "kwargs": {},
-  "log_timestamp": "2021-05-21-22:43:59",
+  "log_timestamp": "2021-05-22-12:49:52",
   "res": {
-    "ethbtc": "0.00842",
-    "ethbtc_timestamp": "1621629815",
-    "ethusd": "301.52",
-    "ethusd_timestamp": "1621629820"
+    "ethbtc": "0.008437",
+    "ethbtc_timestamp": "1621680529",
+    "ethusd": "325.94",
+    "ethusd_timestamp": "1621680536"
   }
 }

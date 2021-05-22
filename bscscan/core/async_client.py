@@ -1,23 +1,19 @@
-from importlib import resources
-
 import bscscan
-from aiohttp import ClientSession as Session
-from bscscan import configs
+from aiohttp import ClientSession
 from bscscan.core.base import BaseClient
 from bscscan.enums.fields_enum import FieldsEnum as fields
 from bscscan.utils.parsing import ResponseParser as parser
 
-CONFIG_FILE = "stable.json"
-
 
 class AsyncClient(BaseClient):
-    async def _build(self, config: dict):
-        for func, v in config.items():
+    async def _build(self):
+        for func, v in self._config.items():
             if not func.startswith("_"):  # disabled if _
                 attr = getattr(getattr(bscscan, v["module"]), func)
-                setattr(self, func, await self._run(attr))
+                setattr(self, func, await self._exec(attr))
+        return self
 
-    async def _run(self, func):
+    async def _exec(self, func):
         async def wrapper(*args, **kwargs):
             url = (
                 f"{fields.PREFIX}"
@@ -31,10 +27,14 @@ class AsyncClient(BaseClient):
         return wrapper
 
     async def __aenter__(self):
-        self._session = Session()
-        with resources.path(configs, CONFIG_FILE) as path:
-            await self._build(self._load_config(str(path)))
-        return self
+        self._session = ClientSession()
+        return await self._build()
 
     async def __aexit__(self, exc_type, exc_val, exc_tb):
         await self._session.close()
+
+    @classmethod
+    async def from_session(cls, api_key: str, session: ClientSession):
+        client = AsyncClient(api_key)
+        client._session = session
+        return await client._build()
