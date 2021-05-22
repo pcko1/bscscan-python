@@ -54,6 +54,12 @@ html_theme = "sphinx_rtd_theme"
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
-extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon", "sphinx_rtd_dark_mode"]
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+    "sphinx.ext.intersphinx",
+    "sphinx_rtd_dark_mode",
+]
+
 # for sphinx_rtd_dark_mode extension
 default_dark_mode = False
