@@ -10,9 +10,6 @@
 # VSCode
 .vscode/*
 
-# Sphinx
-docs
-
 # eggs
 *egg*
 
