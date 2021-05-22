@@ -1,6 +1,10 @@
 bscscan.modules package
 =======================
 
+All API endpoints are listed below. They are exposed via the client and all of 
+them are available using both the sync and async clients.
+
+
 Submodules
 ----------
 

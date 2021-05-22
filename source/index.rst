@@ -109,7 +109,7 @@ Changelog (``v2.0.0``)
 #. All clients should now be instantiated within a context manager
 #. Added BEP721 endpoints in ``bscscan.modules.Accounts``
 #. ``block_no`` in ``client.get_block_reward_by_block_number`` is now ``int``
-#. Added more methods in ``modules.stats``
+#. Added more methods in ``bscscan.modules.Stats``
 #. Added documentation for every method
 
 Disclaimer
