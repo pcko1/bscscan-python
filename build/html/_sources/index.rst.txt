@@ -48,7 +48,7 @@ This package supports both synchronous and asynchronous calls.
 Both implementations need to be run inside a content manager, which is the 
 *de facto pythonic* way for resource allocation.
 
-Async client::
+Async client (default)::
 
    from bscscan import BscScan
 
@@ -69,15 +69,6 @@ Using an existing ``Session`` object
 It is possible that you might already have a running ``Session`` object in your code.
 If that's the case, you can always pass it to ``BscScan`` with a slightly different instantiation.
 
-For the sync client::
-
-   from requests import Session
-   from bscscan.core.sync_client import SyncClient as BscScan
-
-   # you can substitute the session with your requests.Session
-   client = BscScan.from_session(api_key=YOUR_API_KEY, session=Session())
-
-
 For the async client::
 
    from aiohttp import ClientSession
@@ -85,6 +76,14 @@ For the async client::
 
    # you can substitute the session with your aiohttp.ClientSession
    client = await BscScan.from_session(api_key=YOUR_API_KEY, session=ClientSession())
+
+For the sync client::
+
+   from requests import Session
+   from bscscan.core.sync_client import SyncClient as BscScan
+
+   # you can substitute the session with your requests.Session
+   client = BscScan.from_session(api_key=YOUR_API_KEY, session=Session())
 
 In this case, you don't need to use a context manager because it is assumed 
 that you will close the open session somewhere else in your code.

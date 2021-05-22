@@ -197,7 +197,7 @@
 <p>This package supports both synchronous and asynchronous calls.</p>
 <p>Both implementations need to be run inside a content manager, which is the
 <em>de facto pythonic</em> way for resource allocation.</p>
-<p>Async client:</p>
+<p>Async client (default):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
 <span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
@@ -216,20 +216,20 @@
 <h1>Using an existing <code class="docutils literal notranslate"><span class="pre">Session</span></code> object<a class="headerlink" href="#using-an-existing-session-object" title="Permalink to this headline">¶</a></h1>
 <p>It is possible that you might already have a running <code class="docutils literal notranslate"><span class="pre">Session</span></code> object in your code.
 If that’s the case, you can always pass it to <code class="docutils literal notranslate"><span class="pre">BscScan</span></code> with a slightly different instantiation.</p>
-<p>For the sync client:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">requests</span> <span class="kn">import</span> <span class="n">Session</span>
-<span class="kn">from</span> <span class="nn">bscscan.core.sync_client</span> <span class="kn">import</span> <span class="n">SyncClient</span> <span class="k">as</span> <span class="n">BscScan</span>
-
-<span class="c1"># you can substitute the session with your requests.Session</span>
-<span class="n">client</span> <span class="o">=</span> <span class="n">BscScan</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">YOUR_API_KEY</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="n">Session</span><span class="p">())</span>
-</pre></div>
-</div>
 <p>For the async client:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">aiohttp</span> <span class="kn">import</span> <span class="n">ClientSession</span>
 <span class="kn">from</span> <span class="nn">bscscan.core.async_client</span> <span class="kn">import</span> <span class="n">AsyncClient</span> <span class="k">as</span> <span class="n">BscScan</span>
 
 <span class="c1"># you can substitute the session with your aiohttp.ClientSession</span>
 <span class="n">client</span> <span class="o">=</span> <span class="k">await</span> <span class="n">BscScan</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">YOUR_API_KEY</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="n">ClientSession</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>For the sync client:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">requests</span> <span class="kn">import</span> <span class="n">Session</span>
+<span class="kn">from</span> <span class="nn">bscscan.core.sync_client</span> <span class="kn">import</span> <span class="n">SyncClient</span> <span class="k">as</span> <span class="n">BscScan</span>
+
+<span class="c1"># you can substitute the session with your requests.Session</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">BscScan</span><span class="o">.</span><span class="n">from_session</span><span class="p">(</span><span class="n">api_key</span><span class="o">=</span><span class="n">YOUR_API_KEY</span><span class="p">,</span> <span class="n">session</span><span class="o">=</span><span class="n">Session</span><span class="p">())</span>
 </pre></div>
 </div>
 <p>In this case, you don’t need to use a context manager because it is assumed

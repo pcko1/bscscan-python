@@ -2,7 +2,7 @@
   "method": "get_validators_list",
   "module": "stats",
   "kwargs": {},
-  "log_timestamp": "2021-05-22-12:49:51",
+  "log_timestamp": "2021-05-22-15:58:43",
   "res": [
     {
       "validatorAddress": "0x9f8ccdafcc39f3c7d6ebf637c9151673cbc36b88",

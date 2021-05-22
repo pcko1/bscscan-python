@@ -211,9 +211,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep20_token_transfer_events_by_address</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x63aea877b5d5fa234a1532f1b26a4f6d9051866e&quot;</span><span class="p">,</span>
@@ -276,9 +276,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep20_token_transfer_events_by_address_and_contract_paginated</span><span class="p">(</span>
             <span class="s2">&quot;contract_address&quot;</span><span class="p">:</span> <span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
@@ -342,9 +342,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep20_token_transfer_events_by_contract_address_paginated</span><span class="p">(</span>
             <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&quot;</span><span class="p">,</span>
@@ -407,9 +407,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep721_token_transfer_events_by_address</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="mh">0xcd4ee0a77e09afa8d5a6518f7cf8539bef684e6c</span><span class="s2">&quot;,</span>
@@ -472,9 +472,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep721_token_transfer_events_by_address_and_contract_paginated</span><span class="p">(</span>
             <span class="s2">&quot;contract_address&quot;</span><span class="p">:</span> <span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
@@ -538,9 +538,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bep721_token_transfer_events_by_contract_address_paginated</span><span class="p">(</span>
             <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0x5e74094cd416f55179dbd0e45b1a8ed030e396a1&quot;</span><span class="p">,</span>
@@ -597,9 +597,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bnb_balance</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
@@ -630,9 +630,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bnb_balance_multiple</span><span class="p">(</span>
             <span class="n">addresses</span><span class="o">=</span><span class="p">[</span>
@@ -685,9 +685,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_internal_txs_by_address</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
@@ -746,9 +746,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_internal_txs_by_address_paginated</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span><span class="p">,</span>
@@ -809,9 +809,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_internal_txs_by_block_range_paginated</span><span class="p">(</span>
             <span class="n">startblock</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
@@ -865,9 +865,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_internal_txs_by_txhash</span><span class="p">(</span>
             <span class="n">txhash</span><span class="o">=</span><span class="s2">&quot;0x6dbc8f3e1ba98c63463b19ebef957ccd842db274ed499a54f2cdde8499604d54&quot;</span>
@@ -920,9 +920,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_normal_txs_by_address</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
@@ -985,9 +985,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_normal_txs_by_address_paginated</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x35e7a025f4da968de7e4d7e4004197917f4070f1&quot;</span><span class="p">,</span>
@@ -1045,9 +1045,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_validated_blocks_by_address</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x4396e28197653d0c244d95f8c1e57da902a72b4e&quot;</span>
@@ -1094,9 +1094,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_validated_blocks_by_address_paginated</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x4396e28197653d0c244d95f8c1e57da902a72b4e&quot;</span><span class="p">,</span>
@@ -1149,9 +1149,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_block_number_by_timestamp</span><span class="p">(</span>
             <span class="n">timestamp</span><span class="o">=</span><span class="s2">&quot;1601510400&quot;</span><span class="p">,</span>
@@ -1182,9 +1182,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_block_reward_by_block_number</span><span class="p">(</span>
             <span class="n">block_no</span><span class="o">=</span><span class="s2">&quot;2150000&quot;</span>
@@ -1221,9 +1221,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_est_block_countdown_time_by_block_number</span><span class="p">(</span>
             <span class="n">block_no</span><span class="o">=</span><span class="s2">&quot;8000000&quot;</span>
@@ -1267,9 +1267,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_contract_abi</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
@@ -1299,9 +1299,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_contract_source_code</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001004&quot;</span>
@@ -1356,9 +1356,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_block_by_number</span><span class="p">(</span>
             <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;0x3d0900&quot;</span>
@@ -1425,9 +1425,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_block_number</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -1453,9 +1453,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_block_transaction_count_by_number</span><span class="p">(</span>
             <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;0x3d0900&quot;</span>
@@ -1488,9 +1488,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_call</span><span class="p">(</span>
             <span class="n">to</span><span class="o">=</span><span class="s2">&quot;0xAEEF46DB4855E25702F8237E8f403FddcaF931C0&quot;</span><span class="p">,</span>
@@ -1521,9 +1521,9 @@
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_code_at</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x0000000000000000000000000000000000001000&quot;</span>
@@ -1561,9 +1561,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_est_gas</span><span class="p">(</span>
             <span class="n">data</span><span class="o">=</span><span class="s2">&quot;0x4e71d92d&quot;</span><span class="p">,</span>
@@ -1595,9 +1595,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_gas_price</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -1626,9 +1626,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_storage_position_at</span><span class="p">(</span>
             <span class="n">position</span><span class="o">=</span><span class="s2">&quot;0x0&quot;</span><span class="p">,</span>
@@ -1662,9 +1662,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_transaction_by_block_number_and_index</span><span class="p">(</span>
             <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;0x3d0900&quot;</span><span class="p">,</span>
@@ -1710,9 +1710,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_transaction_by_hash</span><span class="p">(</span>
             <span class="n">txhash</span><span class="o">=</span><span class="s2">&quot;0xa0f2e87dfb75e3ebb8b23eff7b490442ff74cf8921eb61217dfc48918fe4020f&quot;</span>
@@ -1757,9 +1757,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_transaction_count</span><span class="p">(</span>
             <span class="n">address</span><span class="o">=</span><span class="s2">&quot;0x4430b3230294D12c6AB2aAC5C2cd68E80B16b581&quot;</span>
@@ -1789,9 +1789,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_proxy_transaction_receipt</span><span class="p">(</span>
             <span class="n">txhash</span><span class="o">=</span><span class="s2">&quot;0xa0f2e87dfb75e3ebb8b23eff7b490442ff74cf8921eb61217dfc48918fe4020f&quot;</span>
@@ -1855,9 +1855,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_bnb_last_price</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -1885,9 +1885,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_total_bnb_supply</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -1910,9 +1910,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_validators_list</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -1967,9 +1967,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_acc_balance_by_token_contract_address</span><span class="p">(</span>
             <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xe9e7cea3dedca5984780bafc599bd69add087d56&quot;</span><span class="p">,</span>
@@ -2000,9 +2000,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_circulating_supply_by_contract_address</span><span class="p">(</span>
             <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xe9e7cea3dedca5984780bafc599bd69add087d56&quot;</span>
@@ -2032,9 +2032,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_total_supply_by_contract_address</span><span class="p">(</span>
                 <span class="n">contract_address</span><span class="o">=</span><span class="s2">&quot;0xe9e7cea3dedca5984780bafc599bd69add087d56&quot;</span>
@@ -2073,9 +2073,9 @@ the blockchain and returns the hypothetically used gas.</p>
 </dd>
 </dl>
 <p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">AsyncBscScan</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bscscan</span> <span class="kn">import</span> <span class="n">BscScan</span>
 
-<span class="k">async</span> <span class="k">with</span> <span class="n">AsyncBscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+<span class="k">async</span> <span class="k">with</span> <span class="n">BscScan</span><span class="p">(</span><span class="n">YOUR_API_KEY</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span>
         <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_tx_receipt_status</span><span class="p">(</span>
             <span class="n">txhash</span><span class="o">=</span><span class="s2">&quot;0xe9975702518c79caf81d5da65dea689dcac701fcdd063f848d4f03c85392fd00&quot;</span>

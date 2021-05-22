@@ -17,9 +17,9 @@ class Tokens:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(
                     await client.get_total_supply_by_contract_address(
                             contract_address="0xe9e7cea3dedca5984780bafc599bd69add087d56"
@@ -51,9 +51,9 @@ class Tokens:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(
                     await client.get_circulating_supply_by_contract_address(
                         contract_address="0xe9e7cea3dedca5984780bafc599bd69add087d56"
@@ -86,9 +86,9 @@ class Tokens:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(
                     await client.get_acc_balance_by_token_contract_address(
                         contract_address="0xe9e7cea3dedca5984780bafc599bd69add087d56",

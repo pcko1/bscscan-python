@@ -16,9 +16,9 @@ class Contracts:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(
                     await client.get_contract_abi(
                         address="0x0000000000000000000000000000000000001004"
@@ -50,9 +50,9 @@ class Contracts:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(
                     await client.get_contract_source_code(
                         address="0x0000000000000000000000000000000000001004"

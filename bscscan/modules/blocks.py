@@ -16,9 +16,9 @@ class Blocks:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(
                     await client.get_block_reward_by_block_number(
                         block_no="2150000"
@@ -57,9 +57,9 @@ class Blocks:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(
                     await client.get_est_block_countdown_time_by_block_number(
                         block_no="8000000"
@@ -99,9 +99,9 @@ class Blocks:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(
                     await client.get_block_number_by_timestamp(
                         timestamp="1601510400",

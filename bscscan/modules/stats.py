@@ -13,9 +13,9 @@ class Stats:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(await client.get_total_bnb_supply())
 
         Results::
@@ -39,9 +39,9 @@ class Stats:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(await client.get_validators_list())
 
         Results::
@@ -81,9 +81,9 @@ class Stats:
 
         Example::
 
-            from bscscan import AsyncBscScan
+            from bscscan import BscScan
 
-            async with AsyncBscScan(YOUR_API_KEY) as client:
+            async with BscScan(YOUR_API_KEY) as client:
                 print(await client.get_bnb_last_price())
 
 
