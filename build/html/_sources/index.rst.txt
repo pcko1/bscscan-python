@@ -50,16 +50,16 @@ Both implementations need to be run inside a content manager, which is the
 
 Async client::
 
-   from bscscan import AsyncBscScan
+   from bscscan import BscScan
 
-   async with AsyncBscScan(YOUR_API_KEY) as client:
+   async with BscScan(YOUR_API_KEY) as client:
       print(await client.get_bnb_last_price())
 
-Standard (sync) client::
+Sync client::
 
    from bscscan import BscScan
 
-   with BscScan(YOUR_API_KEY) as client:
+   with BscScan(YOUR_API_KEY, asynchronous=False) as client:
       print(client.get_bnb_last_price())
 
 
@@ -67,7 +67,7 @@ Using an existing ``Session`` object
 ====================================
 
 It is possible that you might already have a running ``Session`` object in your code.
-If that's the case, you can always pass it to ``BscScan`` in a slightly different instantiation.
+If that's the case, you can always pass it to ``BscScan`` with a slightly different instantiation.
 
 For the sync client::
 
@@ -89,6 +89,29 @@ For the async client::
 In this case, you don't need to use a context manager because it is assumed 
 that you will close the open session somewhere else in your code.
 
+
+Migration from ``v1.0.0``
+=========================
+
+The most significant change between versions 1 and 2 is the instantiation of the 
+client. You are highly advised to modify that part in your existing scripts by
+following the examples shown above. The underlying API calls are mostly unaffected.
+Refer to the next section for the exhaustive changelog. 
+
+If you still want to use the old implementation, you can always grab it from PyPI::
+
+   pip install bscscan-python==1.0.0
+
+
+Changelog (``v2.0.0``)
+======================
+
+#. Added async client
+#. All clients should now be instantiated within a context manager
+#. Added BEP721 endpoints in ``bscscan.modules.Accounts``
+#. ``block_no`` in ``client.get_block_reward_by_block_number`` is now ``int``
+#. Added more methods in ``modules.stats``
+#. Added documentation for every method
 
 Disclaimer
 ==========
