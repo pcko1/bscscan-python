@@ -10,6 +10,8 @@ This is an unofficial ``Python >=3.8`` wrapper for the endpoints provided by `Bs
 
 It supports asynchronous calls and it is available on `PyPI`_. Powered by `BscScan APIs`_.
 
+Please read the docs here :doc:`bscscan.modules.rst` or here :ref:`_client_modules`.
+
 Indices and tables
 ==================
 
