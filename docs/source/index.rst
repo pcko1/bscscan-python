@@ -126,7 +126,7 @@ Cite
 Please cite this software as:
 
    Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. 
-   doi:10.5281/zenodo.4580473
+   doi:10.5281/zenodo.4781726
 
 or in ``bibtex``::
 
