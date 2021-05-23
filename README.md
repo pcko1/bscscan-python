@@ -30,11 +30,8 @@
   <a href="" alt="license">
         <img src="https://img.shields.io/github/license/pcko1/bscscan-python" /></a>
   
-  <a href="https://www.python.org/downloads/release/python-385/" alt="code-factor">
+  <a href="https://www.python.org/downloads/release/python-385/" alt="python-version">
         <img src="https://img.shields.io/badge/python-3.8-blue.svg" /></a>
-  
-  <a href="https://www.codefactor.io/repository/github/pcko1/bscscan-python" alt="code-factor">
-        <img src="https://www.codefactor.io/repository/github/pcko1/bscscan-python/badge" /></a>
   
   <a href="https://zenodo.org/badge/latestdoi/340319392" alt="DOI">
         <img src="https://zenodo.org/badge/340319392.svg" /></a>  
