@@ -12,6 +12,7 @@
 #
 import os
 import sys
+from unittest.mock import MagicMock
 
 sys.path.insert(0, os.path.abspath("../../../bscscan-python"))
 
@@ -63,3 +64,6 @@ extensions = [
 
 # for sphinx_rtd_dark_mode extension
 default_dark_mode = False
+
+# fix missing docstrings
+autodoc_mock_imports = ["requests", "aiohttp"]
