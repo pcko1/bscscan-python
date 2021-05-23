@@ -18,6 +18,5 @@ class BaseClient:
 
     @staticmethod
     def _load_config(config_file: str = CONFIG_FILE) -> dict:
-        with resources.path(configs, config_file) as path:
-            with open(path, "r") as f:
-                return json.load(f)
+        with resources.path(configs, config_file) as path, open(path, "r") as f:
+            return json.load(f)

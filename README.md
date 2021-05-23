@@ -1,24 +1,74 @@
 # bscscan-python
 
-[![Build Status](https://github.com/pcko1/bscscan-python/workflows/build/badge.svg)](https://github.com/pcko1/bscscan-python) 
-[![codecov](https://codecov.io/gh/pcko1/bscscan-python/branch/master/graph/badge.svg)](https://codecov.io/gh/pcko1/bscscan-python)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39faec4c53e45cda03c92d216278c65)](https://app.codacy.com/gh/pcko1/bscscan-python?utm_source=github.com&utm_medium=referral&utm_content=pcko1/bscscan-python&utm_campaign=Badge_Grade)
-[![](https://img.shields.io/codeclimate/tech-debt/pcko1/bscscan-python)](https://codeclimate.com/github/pcko1/bscscan-python)
-[![Maintainability](https://api.codeclimate.com/v1/badges/b9fefb77fed228a664d2/maintainability)](https://codeclimate.com/github/pcko1/bscscan-python/maintainability)
-[![CodeFactor](https://www.codefactor.io/repository/github/pcko1/bscscan-python/badge)](https://www.codefactor.io/repository/github/pcko1/bscscan-python)
+<p align="center">
+  <a href="https://github.com/pcko1/bscscan-python" alt="build">
+        <img src="https://github.com/pcko1/bscscan-python/workflows/build/badge.svg" /></a>
+  
+  <a href="https://codecov.io/gh/pcko1/bscscan-python" alt="codecov">
+        <img src="https://codecov.io/gh/pcko1/bscscan-python/branch/master/graph/badge.svg" /></a>
+  
+  <a href="https://app.codacy.com/gh/pcko1/bscscan-python?utm_source=github.com&utm_medium=referral&utm_content=pcko1/bscscan-python&utm_campaign=Badge_Grade" alt="code-quality">
+        <img src="https://api.codacy.com/project/badge/Grade/a39faec4c53e45cda03c92d216278c65" /></a>
+  
+  <a href="https://codeclimate.com/github/pcko1/bscscan-python" alt="tech-debt">
+        <img src="https://img.shields.io/codeclimate/tech-debt/pcko1/bscscan-python" /></a>
 
-[![PyPI](https://badge.fury.io/py/bscscan-python.svg)](https://badge.fury.io/py/bscscan-python)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/bscscan-python)
-![GitHub](https://img.shields.io/github/license/pcko1/bscscan-python)
-[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-385/)
-[![DOI](https://zenodo.org/badge/340319392.svg)](https://zenodo.org/badge/latestdoi/340319392) 
+  <a href="https://codeclimate.com/github/pcko1/bscscan-python/maintainability" alt="maintainability">
+        <img src="https://api.codeclimate.com/v1/badges/b9fefb77fed228a664d2/maintainability" /></a>
+  
+  <a href="https://www.codefactor.io/repository/github/pcko1/bscscan-python" alt="code-factor">
+        <img src="https://www.codefactor.io/repository/github/pcko1/bscscan-python/badge" /></a>
+</p>
 
+<p align="center">
+  <a href="https://badge.fury.io/py/bscscan-python" alt="pypi">
+        <img src="https://badge.fury.io/py/bscscan-python.svg" /></a>
+  
+  <a href="" alt="pypi-downloads">
+        <img src="https://img.shields.io/pypi/dm/bscscan-python" /></a>
+  
+  <a href="" alt="license">
+        <img src="https://img.shields.io/github/license/pcko1/bscscan-python" /></a>
+  
+  <a href="https://www.python.org/downloads/release/python-385/" alt="code-factor">
+        <img src="https://img.shields.io/badge/python-3.8-blue.svg" /></a>
+  
+  <a href="https://www.codefactor.io/repository/github/pcko1/bscscan-python" alt="code-factor">
+        <img src="https://www.codefactor.io/repository/github/pcko1/bscscan-python/badge" /></a>
+  
+  <a href="https://zenodo.org/badge/latestdoi/340319392" alt="DOI">
+        <img src="https://zenodo.org/badge/340319392.svg" /></a>  
+</p>
 
-A complete Python API for [BscScan.com](https://bscscan.com/), available on [PyPI](https://pypi.org/project/bscscan-python/). Powered by [BscScan.com APIs](https://bscscan.com/apis).
+<p align="center">
+  A complete Python API for <a href="https://bscscan.com/">BscScan.com</a>
+</p>
 
-*This is a fork of the [etherscan-python](https://github.com/pcko1/etherscan-python) package.*
+<p align="center">
+  Powered by <a href="https://bscscan.com/apis">BscScan.com APIs</a>
+</p>
 
-___
+<p align="center">
+  Available on <a href="https://pypi.org/project/bscscan-python/">PyPI</a> 
+</p>
+
+<p align="center">
+  :book: Read the official documentation here :book:
+</p>
+
+<p align="center">
+  👇
+</p>
+
+<p align="center">
+  <a href="https://bscscan-python.pankotsias.com/" alt="docs">
+        <img src="https://img.shields.io/badge/docs-passing-brightgreen" /></a> 
+</p>
+
+<p align="center">
+  <i>A fork of the <a href="https://github.com/pcko1/etherscan-python">etherscan-python</a> package.</i>
+</p>
+
 
 
 ## Endpoints
@@ -156,7 +206,8 @@ async with BscScan(YOUR_API_KEY) as bsc:
 
 ## Examples
 
-Detailed examples (arguments and results) for all methods may be found in the official documentation.
+Detailed examples (arguments and results) for all methods may be found in the [official documentation](https://bscscan-python.pankotsias.com/bscscan.modules.html). [![Documentation Status](https://img.shields.io/badge/docs-passing-brightgreen)](https://bscscan-python.pankotsias.com/)
+
 
 ## Issues
 
@@ -164,7 +215,7 @@ For problems regarding installing or using the package please open an [issue](ht
 
 ## Cite
 
-Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4580473
+Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4781726
 
 or in ```bibtex```:
 
@@ -175,7 +226,7 @@ or in ```bibtex```:
   year = {2021},
   publisher = {Zenodo},
   url = {https://github.com/pcko1/bscscan-python},
-  doi = {10.5281/zenodo.4580473}
+  doi = {10.5281/zenodo.4781726}
 }
 ```
 
