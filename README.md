@@ -62,7 +62,7 @@
 
 <p align="center">
   <a href="https://bscscan-python.pankotsias.com/" alt="docs">
-        <img src="https://readthedocs.org/projects/bscscan-python/badge/?version=latest" /></a> 
+        <img src="https://img.shields.io/badge/docs-passing-brightgreen" /></a> 
 </p>
 
 <p align="center">
@@ -206,7 +206,7 @@ async with BscScan(YOUR_API_KEY) as bsc:
 
 ## Examples
 
-Detailed examples (arguments and results) for all methods may be found in the [official documentation](https://bscscan-python.pankotsias.com/bscscan.modules.html). [![Documentation Status](https://readthedocs.org/projects/bscscan-python/badge/?version=latest)](https://bscscan-python.pankotsias.com/)
+Detailed examples (arguments and results) for all methods may be found in the [official documentation](https://bscscan-python.pankotsias.com/bscscan.modules.html). [![Documentation Status](https://img.shields.io/badge/docs-passing-brightgreen)](https://bscscan-python.pankotsias.com/)
 
 
 ## Issues
