@@ -62,7 +62,7 @@
 
 <p align="center">
   <a href="https://bscscan-python.pankotsias.com/" alt="docs">
-        <img src="https://readthedocs.org/projects/bscscan-python/badge/?version=latest" /></a> 
+        <img src="https://img.shields.io/badge/docs-passing-brightgreen" /></a> 
 </p>
 
 <p align="center">
@@ -206,7 +206,7 @@ async with BscScan(YOUR_API_KEY) as bsc:
 
 ## Examples
 
-Detailed examples (arguments and results) for all methods may be found in the [official documentation](https://bscscan-python.pankotsias.com/bscscan.modules.html). [![Documentation Status](https://readthedocs.org/projects/bscscan-python/badge/?version=latest)](https://bscscan-python.pankotsias.com/)
+Detailed examples (arguments and results) for all methods may be found in the [official documentation](https://bscscan-python.pankotsias.com/bscscan.modules.html). [![Documentation Status](https://img.shields.io/badge/docs-passing-brightgreen)](https://bscscan-python.pankotsias.com/)
 
 
 ## Issues
@@ -215,7 +215,7 @@ For problems regarding installing or using the package please open an [issue](ht
 
 ## Cite
 
-Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4580473
+Kotsias, P. C., pcko1/bscscan-python: v1.0.0. *https://github.com/pcko1/bscscan-python (2021)*. doi:10.5281/zenodo.4781726
 
 or in ```bibtex```:
 
@@ -226,7 +226,7 @@ or in ```bibtex```:
   year = {2021},
   publisher = {Zenodo},
   url = {https://github.com/pcko1/bscscan-python},
-  doi = {10.5281/zenodo.4580473}
+  doi = {10.5281/zenodo.4781726}
 }
 ```
 

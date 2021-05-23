@@ -136,7 +136,7 @@ or in ``bibtex``::
       year = {2021},
       publisher = {Zenodo},
       url = {https://github.com/pcko1/bscscan-python},
-      doi = {10.5281/zenodo.4580473}
+      doi = {10.5281/zenodo.4781726}
    }
 
 
