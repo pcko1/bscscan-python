@@ -192,7 +192,7 @@ In `bash`, test that everything looks OK on your end using your `YOUR_API_KEY` (
 bash run_tests.sh YOUR_API_KEY
 ````
 
-## Usa
+## Usage
 In `python`, create a client with your personal [BscScan.com](https://bscscan.com/) API key:
 
 ``` python
