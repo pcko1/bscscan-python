@@ -172,7 +172,7 @@ Before proceeding, you should register an account on [BscScan.com](https://bscsc
 Install from source:
 
 ``` bash
-pip install git+https://github.com/pcko1/bscscan-python.git
+pip install git+https://github.com/pcko1/bscscan-python.git@stable
 ```
 
 Alternatively, install from [PyPI](https://pypi.org/project/bscscan-python/):
@@ -189,7 +189,7 @@ In `bash`, test that everything looks OK on your end using your `YOUR_API_KEY` (
 bash run_tests.sh YOUR_API_KEY
 ````
 
-## Usa
+## Usage
 In `python`, create a client with your personal [BscScan.com](https://bscscan.com/) API key:
 
 ``` python
