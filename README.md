@@ -193,10 +193,17 @@ bash run_tests.sh YOUR_API_KEY
 In `python`, create a client with your personal [BscScan.com](https://bscscan.com/) API key:
 
 ``` python
+import asyncio
 from bscscan import BscScan
 
-async with BscScan(YOUR_API_KEY) as bsc:
+YOUR_API_KEY = "..."
+
+async def main():
+  async with BscScan(YOUR_API_KEY) as bsc:
     print(await bsc.get_bnb_balance(address="0x0000000000000000000000000000000000001004"))
+
+if __name__ == "__main__":
+  asyncio.run(main())
 
 > '167195709084498025431541166'
 ```
