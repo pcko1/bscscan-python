@@ -186,8 +186,10 @@ pip install bscscan-python
 In `bash`, test that everything looks OK on your end using your `YOUR_API_KEY` (without quotation marks):
 
 ``` bash
-pip install coverage && bash run_tests.sh YOUR_API_KEY
+bash run_tests.sh YOUR_API_KEY
 ````
+
+Note: This will install the `coverage` package in your activated `python` environment.
 
 ## Usage
 In `python`, create a client with your personal [BscScan.com](https://bscscan.com/) API key:
