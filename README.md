@@ -186,7 +186,7 @@ pip install bscscan-python
 In `bash`, test that everything looks OK on your end using your `YOUR_API_KEY` (without quotation marks) before proceeding:
 
 ``` bash
-bash run_tests.sh YOUR_API_KEY
+pip install coverage && bash run_tests.sh YOUR_API_KEY
 ````
 
 ## Usage
