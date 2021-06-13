@@ -2,6 +2,6 @@
   "method": "get_proxy_block_number",
   "module": "proxy",
   "kwargs": {},
-  "log_timestamp": "2021-05-22-19:48:47",
-  "res": "0x7486bc"
+  "log_timestamp": "2021-06-13-12:51:29",
+  "res": "0x7e079b"
 }

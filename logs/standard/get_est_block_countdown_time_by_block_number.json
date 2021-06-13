@@ -2,13 +2,13 @@
   "method": "get_est_block_countdown_time_by_block_number",
   "module": "blocks",
   "kwargs": {
-    "block_no": "8000000"
+    "block_no": "15000000"
   },
-  "log_timestamp": "2021-05-22-19:48:42",
+  "log_timestamp": "2021-06-13-12:51:24",
   "res": {
-    "CurrentBlock": "7636666",
-    "CountdownBlock": "8000000",
-    "RemainingBlock": "363334",
-    "EstimateTimeInSec": "1090017.0"
+    "CurrentBlock": "8259478",
+    "CountdownBlock": "15000000",
+    "RemainingBlock": "6740522",
+    "EstimateTimeInSec": "20221581.0"
   }
 }

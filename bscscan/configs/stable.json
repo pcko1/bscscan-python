@@ -95,7 +95,7 @@
   "get_est_block_countdown_time_by_block_number": {
     "module": "blocks",
     "kwargs": {
-      "block_no": "8000000"
+      "block_no": "15000000"
     }
   },
   "get_block_number_by_timestamp": {

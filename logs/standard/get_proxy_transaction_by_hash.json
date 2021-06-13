@@ -4,7 +4,7 @@
   "kwargs": {
     "txhash": "0xa0f2e87dfb75e3ebb8b23eff7b490442ff74cf8921eb61217dfc48918fe4020f"
   },
-  "log_timestamp": "2021-05-22-19:48:49",
+  "log_timestamp": "2021-06-13-12:51:31",
   "res": {
     "blockHash": "0x3a21da1d1f88577771f1e94b554294d699f696487a3554c1618521d68b48a493",
     "blockNumber": "0x3d0900",
@@ -17,6 +17,7 @@
     "to": "0x0000000000000000000000000000000000001000",
     "transactionIndex": "0x6",
     "value": "0x50bbe73ea9b000",
+    "type": "0x0",
     "v": "0x93",
     "r": "0x4e63792b339521b74cdb3cad2d8fdf0f5fc3dbb2e169a5a536692dd89eca4da1",
     "s": "0x40f8ccd64337d6cfb15f1d40932068356da34138b8c9f6a818a68d20607451dc"

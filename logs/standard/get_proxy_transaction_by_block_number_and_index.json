@@ -5,7 +5,7 @@
     "tag": "0x3d0900",
     "index": "0x0"
   },
-  "log_timestamp": "2021-05-22-19:48:50",
+  "log_timestamp": "2021-06-13-12:51:31",
   "res": {
     "blockHash": "0x3a21da1d1f88577771f1e94b554294d699f696487a3554c1618521d68b48a493",
     "blockNumber": "0x3d0900",
@@ -18,6 +18,7 @@
     "to": "0x3900afd6613022d8e37a9ba945e02ee920bc48dc",
     "transactionIndex": "0x0",
     "value": "0x0",
+    "type": "0x0",
     "v": "0x94",
     "r": "0xd6a7a7eef0023721c580cb05802293433fb9c08614a9606d2a2139943bc4498",
     "s": "0x625f62272dfb849c08cd47f5f008421502caf87c508885c7d6c853f73989253f"
