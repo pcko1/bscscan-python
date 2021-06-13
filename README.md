@@ -30,11 +30,8 @@
   <a href="" alt="license">
         <img src="https://img.shields.io/github/license/pcko1/bscscan-python" /></a>
   
-  <a href="https://www.python.org/downloads/release/python-385/" alt="code-factor">
+  <a href="https://www.python.org/downloads/release/python-385/" alt="python-version">
         <img src="https://img.shields.io/badge/python-3.8-blue.svg" /></a>
-  
-  <a href="https://www.codefactor.io/repository/github/pcko1/bscscan-python" alt="code-factor">
-        <img src="https://www.codefactor.io/repository/github/pcko1/bscscan-python/badge" /></a>
   
   <a href="https://zenodo.org/badge/latestdoi/340319392" alt="DOI">
         <img src="https://zenodo.org/badge/340319392.svg" /></a>  
@@ -175,7 +172,7 @@ Before proceeding, you should register an account on [BscScan.com](https://bscsc
 Install from source:
 
 ``` bash
-pip install git+https://github.com/pcko1/bscscan-python.git
+pip install git+https://github.com/pcko1/bscscan-python.git@stable
 ```
 
 Alternatively, install from [PyPI](https://pypi.org/project/bscscan-python/):
@@ -192,14 +189,21 @@ In `bash`, test that everything looks OK on your end using your `YOUR_API_KEY` (
 bash run_tests.sh YOUR_API_KEY
 ````
 
-## Usa
+## Usage
 In `python`, create a client with your personal [BscScan.com](https://bscscan.com/) API key:
 
 ``` python
+import asyncio
 from bscscan import BscScan
 
-async with BscScan(YOUR_API_KEY) as bsc:
+YOUR_API_KEY = "..."
+
+async def main():
+  async with BscScan(YOUR_API_KEY) as bsc:
     print(await bsc.get_bnb_balance(address="0x0000000000000000000000000000000000001004"))
+
+if __name__ == "__main__":
+  asyncio.run(main())
 
 > '167195709084498025431541166'
 ```
