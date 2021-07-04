@@ -16,7 +16,7 @@ setup(
         "bscscan.modules",
         "bscscan.utils",
     ],
-    python_requires='>=3.7',
+    python_requires='>=3.8',
     install_requires=["aiohttp", "requests"],
     include_package_data=True,
     zip_safe=False,
