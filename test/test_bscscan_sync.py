@@ -26,12 +26,13 @@ class Case(TestCase):
     def test_methods(self):
         print(f"\nMODULE: {self._MODULE}")
         config = load(CONFIG_PATH)
-        with BscScan(api_key=API_KEY, asynchronous=False, debug=True) as bscscan:
+        with BscScan(api_key=API_KEY, asynchronous=False, testnet=False, debug=True) as bscscan:
             for fun, v in config.items():
                 if not fun.startswith("_"):  # disabled if _
                     if v["module"] == self._MODULE:
                         res = getattr(bscscan, fun)(**v["kwargs"])
-                        print(f"ASYNC: False, METHOD: {fun}, RTYPE: {type(res)}")
+                        print(
+                            f"ASYNC: False, METHOD: {fun}, RTYPE: {type(res)}")
                         fname = f"logs/standard/{fun}.json"
                         log = {
                             "method": fun,

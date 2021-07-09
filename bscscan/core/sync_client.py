@@ -11,13 +11,17 @@ class SyncClient(BaseClient):
             if not func.startswith("_"):  # disabled if _
                 attr = getattr(getattr(bscscan, v["module"]), func)
                 setattr(self, func, self._exec(attr))
-        self._server_prefix = fields.PREFIX if not self._isTestnet else fields.TESTNET_PREFIX
         return self
 
     def _exec(self, func):
+        if self._isTestnet:
+            server_prefix = fields.TESTNET_PREFIX
+        else:
+            server_prefix = fields.PREFIX
+
         def wrapper(*args, **kwargs):
             url = (
-                f"{self._server_prefix}"
+                f"{server_prefix}"
                 f"{func(*args, **kwargs)}"
                 f"{fields.API_KEY}"
                 f"{self._api_key}"
