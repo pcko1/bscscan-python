@@ -10,10 +10,12 @@ class BaseClient:
     def __init__(
         self,
         api_key: str,
-        debug: bool = False,  # display generated URLs for debugging purposes
+        testnet: bool = False,  # connect to testnet instead of mainnet
+        debug: bool = False,   # display generated URLs for debugging purposes
     ):
         self._config = self._load_config()
         self._api_key = api_key
+        self._isTestnet = testnet
         self._debug = debug
 
     @staticmethod

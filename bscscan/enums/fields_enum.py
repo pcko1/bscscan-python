@@ -27,6 +27,7 @@ class FieldsEnum:
     PAGE: str = "&page="
     POSITION: str = "&position="
     PREFIX: str = "https://api.bscscan.com/api?"
+    TESTNET_PREFIX: str = "https://api-testnet.bscscan.com/api?"
     SORT: str = "&sort="
     START_BLOCK: str = "&startblock="
     START_DATE: str = "&startdate="

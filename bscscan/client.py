@@ -6,7 +6,7 @@ from bscscan.core.sync_client import SyncClient
 class BscScan:
     """Client factory."""
 
-    def __new__(cls, api_key: str, asynchronous=True, debug=False) -> BaseClient:
+    def __new__(cls, api_key: str, asynchronous=True, testnet=False, debug=False) -> BaseClient:
         """Create a new client.
 
         Args:
@@ -18,5 +18,5 @@ class BscScan:
             BaseClient: BscScan client.
         """
         if asynchronous:
-            return AsyncClient(api_key=api_key, debug=debug)
-        return SyncClient(api_key=api_key, debug=debug)
+            return AsyncClient(api_key=api_key, testnet=testnet, debug=debug)
+        return SyncClient(api_key=api_key, testnet=testnet, debug=debug)
