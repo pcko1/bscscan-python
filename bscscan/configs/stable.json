@@ -45,6 +45,12 @@
       "address": "0x4430b3230294D12c6AB2aAC5C2cd68E80B16b581"
     }
   },
+  "send_proxy_raw_transaction": {
+    "module": "proxy",
+    "kwargs": {
+      "hex": "0xf904808000831cfde080"
+    }
+  },
   "get_proxy_transaction_receipt": {
     "module": "proxy",
     "kwargs": {

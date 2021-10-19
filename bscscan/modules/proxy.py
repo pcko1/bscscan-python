@@ -281,6 +281,39 @@ class Proxy:
         )
 
     @staticmethod
+    def send_proxy_raw_transaction(hex: str):
+        """Submits a pre-signed transaction for broadcast to the Binance Smart Chain network.
+
+        Args:
+            hex (str): the string representing the signed raw transaction data to broadcast..
+
+        Returns:
+            str: the transaction hash of the submitted raw transaction.Use get_proxy_transaction_receipt to retrieve full details.
+
+        Example::
+
+            from bscscan import BscScan
+
+            async with BscScan(YOUR_API_KEY) as client:
+                print(
+                    await client.send_proxy_raw_transaction(hex="0xf904808000831cfde080")
+                )
+
+        Results::
+
+            0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331
+
+        """
+        return (
+            f"{fields.MODULE}"
+            f"{modules.PROXY}"
+            f"{fields.ACTION}"
+            f"{actions.ETH_SEND_RAW_TRANSACTION}"
+            f"{fields.HEX}"
+            f"{hex}"
+        )
+
+    @staticmethod
     def get_proxy_transaction_receipt(txhash: str):
         """Get receipt of transaction from its hash.
 
@@ -485,7 +518,7 @@ class Proxy:
 
     @staticmethod
     def get_proxy_est_gas(
-        from_addr: str, to_addr: str, data: str, value: str, gas_price: str, gas: str
+            from_addr: str, to_addr: str, data: str, value: str, gas_price: str, gas: str
     ):
         """Get gas estimate by making a dummy call/transaction that is not added to
         the blockchain and returns the hypothetically used gas.

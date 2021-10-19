@@ -40,6 +40,7 @@ class ActionsEnum:
     )
     ETH_GET_TRANSACTION_BY_HASH: str = "eth_getTransactionByHash"
     ETH_GET_TRANSACTION_COUNT: str = "eth_getTransactionCount"
+    ETH_SEND_RAW_TRANSACTION = "eth_sendRawTransaction"
     ETH_GET_TRANSACTION_RECEIPT: str = "eth_getTransactionReceipt"
     ETH_GET_UNCLE_BY_BLOCK_NUMBER_AND_INDEX: str = "eth_getUncleByBlockNumberAndIndex"
     GAS_ESTIMATE: str = "gasestimate"
