@@ -281,11 +281,11 @@ class Proxy:
         )
 
     @staticmethod
-    def send_proxy_raw_transaction(hex: str):
+    def send_proxy_raw_transaction(hexs: str):
         """Submits a pre-signed transaction for broadcast to the Binance Smart Chain network.
 
         Args:
-            hex (str): the string representing the signed raw transaction data to broadcast..
+            hexs (str): the string representing the signed raw transaction data to broadcast..
 
         Returns:
             str: the transaction hash of the submitted raw transaction.Use get_proxy_transaction_receipt to retrieve full details.
