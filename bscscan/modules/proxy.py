@@ -285,10 +285,11 @@ class Proxy:
         """Submits a pre-signed transaction for broadcast to the Binance Smart Chain network.
 
         Args:
-            hexs (str): the string representing the signed raw transaction data to broadcast..
+            hexs (str): the string representing the signed raw transaction data to broadcast.
 
         Returns:
-            str: the transaction hash of the submitted raw transaction.Use get_proxy_transaction_receipt to retrieve full details.
+            str: the transaction hash of the submitted raw transaction.
+            Use get_proxy_transaction_receipt to retrieve full details.
 
         Example::
 
@@ -296,7 +297,7 @@ class Proxy:
 
             async with BscScan(YOUR_API_KEY) as client:
                 print(
-                    await client.send_proxy_raw_transaction(hex="0xf904808000831cfde080")
+                    await client.send_proxy_raw_transaction(hexs="0xf904808000831cfde080")
                 )
 
         Results::
