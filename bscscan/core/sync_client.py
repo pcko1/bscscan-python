@@ -23,7 +23,7 @@ class SyncClient(BaseClient):
             )
             if self._debug:
                 print(f"\n{url}\n")
-            with self._session.get(url) as response:
+            with self._session.get(url, timeout=self._timeout) as response:
                 return parser.parse(response.json())
 
         return wrapper
